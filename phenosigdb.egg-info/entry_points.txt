@@ -1,0 +1,3 @@
+[console_scripts]
+phenosigdb-build = phenosigdb.build:main
+phenosigdb-validate = phenosigdb.validate:main

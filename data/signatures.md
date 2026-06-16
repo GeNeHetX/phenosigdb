@@ -1,76 +1,4 @@
-# PhenoSigDB
-
-PhenoSigDB is a lightweight, versioned reference database of phenotypic transcriptomic signatures.
-
-## What this repository owns
-
-- The canonical data model
-- The curation layout
-- Validation rules
-- A minimal Python API
-- The distributable database artifacts
-
-## Storage model
-
-The canonical release artifact is:
-
-- `data/phenosigdb.parquet`
-
-Each row represents one gene in one signature.
-
-The companion debug export is:
-
-- `data/phenosigdb.csv.gz`
-
-## Canonical columns
-
-- `signature_id`
-- `signature_name`
-- `source`
-- `species`
-- `gene`
-- `cell_family`
-- `context`
-- `disease`
-- `tags`
-
-## Licensing
-
-- Code in this repository is MIT licensed.
-- Curated signature data are released under CC BY 4.0.
-
-See [LICENSE](LICENSE) and [LICENSE-DATA.md](LICENSE-DATA.md).
-
-## Build and validate
-
-```bash
-pip install -e .
-phenosigdb-build
-phenosigdb-validate
-```
-
-## Python API
-
-```python
-from phenosigdb import phenosig
-
-genes = phenosig(query="CAF", format="dict")
-table = phenosig(cell_family="fibroblast", format="table")
-meta = phenosig(source="Elyada.etal;PMID:31197017", format="metadata")
-```
-
-## Curation
-
-Curated sources live under `curation/<source_name>/` with:
-
-- `source.yaml`
-- `members.tsv`
-
-`curation/example_source/` is a template example and is ignored by the build.
-
-<!-- PHENOSIGDB_SIGNATURES_START -->
-
-## Available Signatures
+# Available Signatures
 
 | Signature family | Signatures | Species | Cell family | Context | Disease |
 | --- | --- | --- | --- | --- | --- |
@@ -100,5 +28,3 @@ Curated sources live under `curation/<source_name>/` with:
 | `scIBD` | scIBD.Nie23.B.Plasma.Cycling.GC.B, scIBD.Nie23.B.Plasma.Cycling.plasma, scIBD.Nie23.B.Plasma.GC.B, scIBD.Nie23.B.Plasma.IgA+IgG+.plasma, scIBD.Nie23.B.Plasma.IgA-IgG-.plasma, scIBD.Nie23.B.Plasma.IgA.plasma, scIBD.Nie23.B.Plasma.IgG.plasma, scIBD.Nie23.B.Plasma.Memory.B, scIBD.Nie23.B.Plasma.Naive.B, scIBD.Nie23.B.Plasma.Pro-B, scIBD.Nie23.CD4T.CD4+.TNF.high.Trm, scIBD.Nie23.CD4T.CD4+.TNF.low.Trm, scIBD.Nie23.CD4T.CD4+.Tem, scIBD.Nie23.CD4T.CD4+.Tfh, scIBD.Nie23.CD4T.CD4+.Th17, scIBD.Nie23.CD4T.CD4+.Tn, scIBD.Nie23.CD4T.CD4+.Treg, scIBD.Nie23.CD4T.CD4+.activated.T, scIBD.Nie23.CD4T.CD4+.blood-Tcm, scIBD.Nie23.CD4T.CD4+.tissue-Tcm, scIBD.Nie23.CD8T.CD8+.IEL, scIBD.Nie23.CD8T.CD8+.MAIT, scIBD.Nie23.CD8T.CD8+.Tcm, scIBD.Nie23.CD8T.CD8+.Teff, scIBD.Nie23.CD8T.CD8+.Tem, scIBD.Nie23.CD8T.CD8+.Tn, scIBD.Nie23.CD8T.CD8+.Trm, scIBD.Nie23.CD8T.CD8+.activated.T, scIBD.Nie23.Endothelial.Adult.arterial.EC, scIBD.Nie23.Endothelial.Adult.arterial.capillary, scIBD.Nie23.Endothelial.Adult.venous.EC, scIBD.Nie23.Endothelial.Cycling.EC, scIBD.Nie23.Endothelial.Fetal.arterial.EC, scIBD.Nie23.Endothelial.Fetal.venous.capillary, scIBD.Nie23.Endothelial.LEC, scIBD.Nie23.Epithelial.Adult.colonocyte, scIBD.Nie23.Epithelial.BEST4+.epithelial, scIBD.Nie23.Epithelial.Cycling.TA, scIBD.Nie23.Epithelial.DUOX2+.epithelial, scIBD.Nie23.Epithelial.Enterocyte, scIBD.Nie23.Epithelial.Enteroendocrine, scIBD.Nie23.Epithelial.Fetal.colonocyte, scIBD.Nie23.Epithelial.Fetal.cycling.TA, scIBD.Nie23.Epithelial.Fetal.enterocyte, scIBD.Nie23.Epithelial.Fetal.progenitor, scIBD.Nie23.Epithelial.Goblet, scIBD.Nie23.Epithelial.Paneth, scIBD.Nie23.Epithelial.Pediatric.colonocyte, scIBD.Nie23.Epithelial.TA, scIBD.Nie23.Epithelial.Tuft, scIBD.Nie23.ILC.CD16+.NK, scIBD.Nie23.ILC.CD56+.SELL.high.NK, scIBD.Nie23.ILC.CD56+.SELL.low.NK, scIBD.Nie23.ILC.NCR+.ILC3, scIBD.Nie23.ILC.NCR-.ILC3, scIBD.Nie23.Mesenchymal.Cycling.SMC, scIBD.Nie23.Mesenchymal.Cycling.stromal, scIBD.Nie23.Mesenchymal.Fetal.stromal.1, scIBD.Nie23.Mesenchymal.Fetal.stromal.2, scIBD.Nie23.Mesenchymal.Immature.pericyte, scIBD.Nie23.Mesenchymal.Mature.pericyte, scIBD.Nie23.Mesenchymal.Mesoderm.1, scIBD.Nie23.Mesenchymal.Mesoderm.2, scIBD.Nie23.Mesenchymal.Mesothelium, scIBD.Nie23.Mesenchymal.Myofibroblast.1, scIBD.Nie23.Mesenchymal.Myofibroblast.2, scIBD.Nie23.Mesenchymal.SMC.1, scIBD.Nie23.Mesenchymal.SMC.2, scIBD.Nie23.Mesenchymal.Stromal.1, scIBD.Nie23.Mesenchymal.Stromal.2, scIBD.Nie23.Mesenchymal.Stromal.3, scIBD.Nie23.Mesenchymal.Stromal.4, scIBD.Nie23.Mesenchymal.Transitional.stromal, scIBD.Nie23.Myeloid.APOE+.macrophage, scIBD.Nie23.Myeloid.AREG+.macrophage, scIBD.Nie23.Myeloid.Classical.monocyte, scIBD.Nie23.Myeloid.Cycling.macrophage, scIBD.Nie23.Myeloid.Inflammatory.monocyte, scIBD.Nie23.Myeloid.LAMP3+.DC, scIBD.Nie23.Myeloid.LYVE1+.macrophage, scIBD.Nie23.Myeloid.Mast, scIBD.Nie23.Myeloid.Megakaryocyte, scIBD.Nie23.Myeloid.Non-classical.monocyte, scIBD.Nie23.Myeloid.cDC1, scIBD.Nie23.Myeloid.cDC2, scIBD.Nie23.Myeloid.pDC, scIBD.Nie23.Neuronal.Adult.glia, scIBD.Nie23.Neuronal.Cycling.ENCC/glia, scIBD.Nie23.Neuronal.Differentiating.glia, scIBD.Nie23.Neuronal.ENCC/glia.progenitor, scIBD.Nie23.Neuronal.Fetal.glia.1, scIBD.Nie23.Neuronal.Fetal.glia.2, scIBD.Nie23.Neuronal.Fetal.glia.3, scIBD.Nie23.Neuronal.Neuroblast, scIBD.Nie23.Neuronal.Neuronal/Branch.A, scIBD.Nie23.Neuronal.Neuronal/Branch.B | human | immune | inflammation | IBD |
 | `scPancreas_Mouse` | scPancreas_Mouse.Schlesinger20.Acinar.cells, scPancreas_Mouse.Schlesinger20.Adj.tumoral.cells.c17, scPancreas_Mouse.Schlesinger20.Chief.like.cells.c11, scPancreas_Mouse.Schlesinger20.Duct.cells, scPancreas_Mouse.Schlesinger20.Duct.like.tumoral.cells.c0, scPancreas_Mouse.Schlesinger20.Duct.like.tumoral.cells.c1, scPancreas_Mouse.Schlesinger20.Nine.month.c19, scPancreas_Mouse.Schlesinger20.Prolif.c14, scPancreas_Mouse.Schlesinger20.Senescent.tumor.cells.c18, scPancreas_Mouse.Schlesinger20.Stomac.chief.cells.c21, scPancreas_Mouse.Schlesinger20.Stomac.pit.cells.c22, scPancreas_Mouse.Schlesinger20.Stomach.cells.c23, scPancreas_Mouse.Schlesinger20.Tuft.cells.c25, scPancreas_Mouse.Schlesinger20.Tumoral.cells.c10 | mouse | epithelial | physiology | normal |
 | `siNETs` | siNETs.Patte25.epithelial, siNETs.Patte25.immune, siNETs.Patte25.mesenchymal, siNETs.Patte25.vesicular | human | tumor | cancer | siNETs |
-
-<!-- PHENOSIGDB_SIGNATURES_END -->
