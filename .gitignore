@@ -1,3 +1,7 @@
 .DS_Store
 .agents.md
 .agents.MD
+__pycache__/
+*.py[cod]
+.pytest_cache/
+audit_human_empty_signatures/

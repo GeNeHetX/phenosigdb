@@ -1,0 +1,1133 @@
+signature_id	signature_name	gene
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TFF3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SPINK4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGHG4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	FABP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	REG4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MUC2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	FCGBP
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PHGR1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	B3GNT7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ZC3HAV1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	AL603756.1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGLC3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGKC
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	REG1A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ANPEP
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	LGALS1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SERPINA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGLC2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PIGR
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PPP1R15A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MUC13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PI3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SDC4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	GAPDH
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	KLF4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	GPX2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGHG3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	KRT20
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	LGALS4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	FABP5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CCL20
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SFN
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	C19ORF33
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CRIP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL22L1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HNF4A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CD55
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CLDN4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGHA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	NDRG1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CTNNB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IFI6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CEACAM5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGHG1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	EMP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HSPA6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PLAUR
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SRGN
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	B4GALT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HSPA1B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	EIF5A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PHLDA2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TMSB10
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	C4ORF48
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	AL121761.2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MCL1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SH3BGRL3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	JCHAIN
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	NFKBIA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	B2M
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	LGALS3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	DNAJB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PMAIP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGFBP7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TRIB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MISP
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL36A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HSPH1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	LRRC75A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IFITM1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	EPCAM
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MIF
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CDH17
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	AGR3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	FOSB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	S100A10
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CFL1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MXD1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MYADM
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PFN1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ASS1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HSPB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL41
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPS29
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HSPA5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CES2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	BHLHE40
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HMGN2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IGHM
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPS28
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CLDN7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	VIM
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MALL
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TUBB4B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ACTB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TIMP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ODC1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CKS2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	AGPAT2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL35
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPS27
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	AGR2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ETS2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ZFAND2A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	AC020656.1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	LDHA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL17
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CSTB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	DDIT4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	NAMPT
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ARF6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SERTAD1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SLC6A8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	FXYD3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ETHE1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	H3F3B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	C15ORF48
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CTSB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SET
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SELENOM
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL28
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TMA7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SNHG25
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ISG15
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	COX6A1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPS17
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SEC61G
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	NDUFA3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	DEDD2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	YWHAZ
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	C12ORF75
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TNFAIP3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	IER5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CDC42EP5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TRIM15
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	WTAP
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MIDN
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TSPAN13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	BAG3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	DSC2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	GTF2A2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SNRPG
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	KRT8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TSPAN3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL21
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RABAC1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ENO1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL37
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PHLDA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PPDPF
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ATP5ME
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SAR1A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	AP2S1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ACTN4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CD99
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	NENF
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	GPI
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	UPP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HNRNPH1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ATP1B1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	COX6B1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	C9ORF16
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	NBL1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	DSG2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	INSIG1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CD44
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RPL38
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ANXA2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TFRC
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PKM
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PLS1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ROMO1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CAMK2N1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ACTG1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TPI1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TXN
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SNRPD2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PRR13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CEACAM6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MT-CYB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ANKRD11
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	N4BP2L2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SH2D4A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ABHD2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SYNE2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	AAK1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ZKSCAN1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PSMA7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SPATS2L
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PABPC4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	GTF2I
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SH3YL1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PLAC8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RERE
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	GNAS
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PMEPA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	UBXN4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TCF25
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	LPIN2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ST13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	UBB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TESC
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	SRRM2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MT-ATP6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TAF1D
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	BST2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MECOM
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	ANXA10
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	GSTM3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	DONSON
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RNASET2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	GSTP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	NDUFC2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	JPT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	OCIAD2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RNF213
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HOOK2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TENT5A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CAPN8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PNISR
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PHF14
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CTSE
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HLA-DMA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	RARRES3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	HPGD
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MALAT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	LINC01133
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MT1M
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PLA2G16
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CLDN18
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CYSTM1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MT1E
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TFF1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PIK3C2G
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	CA2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	VSIG2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MT1X
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MUC1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	KRT17
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	TFF2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	KRT7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MUC6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	MT1G
+GASTRIC_CANCER.Sathe20.gastricTumorCell.1	gastricTumorCell 1	PSCA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	KRT7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	KRT17
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	ZFAS1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PSMA7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PLA2G16
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	JPT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	BST2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PMEPA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PDZK1IP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RAC1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-DRA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CD74
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	AREG
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	BPIFB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HMGA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-DRB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	OCIAD2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS20
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL27A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GSTP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-DMA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL15
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RARRES3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	EIF3E
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SRI
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS18
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PPA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	IFITM3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NPM1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS23
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL29
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HSP90AB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-C
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPSA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL10A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MZT2A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL30
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TM4SF1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL19
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HINT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	UQCRH
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	C6ORF48
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TAF1D
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	EEF1B2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MIB2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HSPD1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TSPAN8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NAP1L1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	S100A14
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CYC1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL7A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS16
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PRDX1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-DRB5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	IL32
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NDUFC2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PSMA4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TKT
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL14
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NACA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CHCHD2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PRSS3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-DPA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL12
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS11
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PHF14
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MT-ATP6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CCT6A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PARK7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RBCK1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	BTF3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CLDN3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	F12
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	YBX1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GPRC5A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-DPB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL24
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	KRT18
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RNF213
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RACK1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PSMB9
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TIMM13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL18
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	EIF3H
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SNU13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NPM3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PSME2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS14
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	STAU1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	AURKAIP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NCL
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RNASET2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SNRPD1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TRIM54
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RAB13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PPP1R14B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CKS1B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PHB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MRPL14
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RALBP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PCBD1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NOL7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RAN
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	ATP6V1F
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CCT3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HES1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CHCHD10
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PSMB2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPLP0
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HSPE1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	ANP32B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PDCD5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	FERMT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MT-CYB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SEC11A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TMC5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SOX4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	FAU
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RAB25
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GUK1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NDUFA4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GDF15
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MTDH
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS9
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	YWHAB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PPM1G
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GPX4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CDV3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	COX5A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	STOML2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL13A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL9
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SF3B6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL27
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SNHG7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PDCD6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	LAPTM4B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	LY6E
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TSPO
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	EIF4EBP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SMAP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GADD45GIP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	XRN2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PA2G4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MT-ND2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS19
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	ADRM1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SDCBP2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HNRNPA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MYL12B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	UBXN4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	EIF3I
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL18A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RAB2A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TPT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PSMD7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SSB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL22
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GSTK1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SERBP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MRPS34
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RHOD
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SH3YL1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	FHL2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CYBA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MT-ND4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TALDO1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HTATIP2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	S100A16
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PTGES3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	COX4I1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PSMB8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NOB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	KRT19
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	C1QBP
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TRIM31
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	S100A6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TMEM176A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	OAZ1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CIB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TYMP
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS13
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	EEF1A1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HLA-B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SNRPB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPL23
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RTF2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	LYZ
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SMIM24
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SNHG9
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PPDPF
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MYADM
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TM9SF3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	LGALS1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SSR4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SCNN1A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	USP53
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	STARD10
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TOB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GPX2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CEACAM5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	JUNB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MT-ND4L
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	B4GALT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	UQCRQ
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GADD45B
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS28
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS17
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MT-ND3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MCL1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MXD1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MUC6
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RPS29
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	DNAJB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	C19ORF33
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	XBP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TMA7
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NDRG1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CST3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TMSB4X
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SEC62
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NDUFA3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	FOS
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	HNRNPH1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TCEAL9
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SMIM22
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PPP1R15A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	ATP5ME
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RHOB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CTSD
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CRIP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	B2M
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SFN
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	DUSP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MTRNR2L8
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	NDUFB1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	IGFBP2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	ZFP36
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	KCNQ1OT1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	JUND
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	EGR1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	LDHB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	FABP5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CLU
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MTRNR2L12
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	AGR2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	KLF4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	REG4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	ANXA10
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	FOSB
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SNHG25
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TSC22D3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	C4ORF48
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SERPINA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CD24
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	DDX5
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	ALDH1A1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PIGR
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	FABP1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	KRT20
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	VSIG2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SGK1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	JCHAIN
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	IGLC2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	IGKC
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CXCL17
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	IGHG4
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TFF3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	SPINK1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	IGLC3
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	GLUL
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	RNASE1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PHGR1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MUC1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MT2A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	CA2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	FCGBP
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	IGHA1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	REG1A
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TFF1
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	MUC5AC
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PSCA
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	TFF2
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	PGC
+GASTRIC_CANCER.Sathe20.gastricTumorCell.2	gastricTumorCell 2	LIPF
+GASTRIC_CANCER.Sathe20.normal	normal	PGA5
+GASTRIC_CANCER.Sathe20.normal	normal	LIPF
+GASTRIC_CANCER.Sathe20.normal	normal	PGC
+GASTRIC_CANCER.Sathe20.normal	normal	PGA4
+GASTRIC_CANCER.Sathe20.normal	normal	GKN1
+GASTRIC_CANCER.Sathe20.normal	normal	GKN2
+GASTRIC_CANCER.Sathe20.normal	normal	PGA3
+GASTRIC_CANCER.Sathe20.normal	normal	PSCA
+GASTRIC_CANCER.Sathe20.normal	normal	RPL13A
+GASTRIC_CANCER.Sathe20.normal	normal	RPL19
+GASTRIC_CANCER.Sathe20.normal	normal	RPL30
+GASTRIC_CANCER.Sathe20.normal	normal	RPS18
+GASTRIC_CANCER.Sathe20.normal	normal	RPL29
+GASTRIC_CANCER.Sathe20.normal	normal	RPL18
+GASTRIC_CANCER.Sathe20.normal	normal	RPS16
+GASTRIC_CANCER.Sathe20.normal	normal	S100A6
+GASTRIC_CANCER.Sathe20.normal	normal	RPS3
+GASTRIC_CANCER.Sathe20.normal	normal	RPS5
+GASTRIC_CANCER.Sathe20.normal	normal	RPL28
+GASTRIC_CANCER.Sathe20.normal	normal	RPS19
+GASTRIC_CANCER.Sathe20.normal	normal	RPL8
+GASTRIC_CANCER.Sathe20.normal	normal	RPS2
+GASTRIC_CANCER.Sathe20.normal	normal	GAPDH
+GASTRIC_CANCER.Sathe20.normal	normal	IFITM3
+GASTRIC_CANCER.Sathe20.normal	normal	S100A10
+GASTRIC_CANCER.Sathe20.normal	normal	RPL7A
+GASTRIC_CANCER.Sathe20.normal	normal	RPL18A
+GASTRIC_CANCER.Sathe20.normal	normal	RPS15
+GASTRIC_CANCER.Sathe20.normal	normal	CLDN7
+GASTRIC_CANCER.Sathe20.normal	normal	CLDN4
+GASTRIC_CANCER.Sathe20.normal	normal	RPL12
+GASTRIC_CANCER.Sathe20.normal	normal	CLDN3
+GASTRIC_CANCER.Sathe20.normal	normal	GHRL
+GASTRIC_CANCER.Sathe20.normal	normal	RPL27A
+GASTRIC_CANCER.Sathe20.normal	normal	ANXA2
+GASTRIC_CANCER.Sathe20.normal	normal	ZFAS1
+GASTRIC_CANCER.Sathe20.normal	normal	MUCL3
+GASTRIC_CANCER.Sathe20.normal	normal	RPLP2
+GASTRIC_CANCER.Sathe20.normal	normal	TFF3
+GASTRIC_CANCER.Sathe20.normal	normal	RPS20
+GASTRIC_CANCER.Sathe20.normal	normal	RPS8
+GASTRIC_CANCER.Sathe20.normal	normal	KRT18
+GASTRIC_CANCER.Sathe20.normal	normal	TMSB10
+GASTRIC_CANCER.Sathe20.normal	normal	RPL10A
+GASTRIC_CANCER.Sathe20.normal	normal	LGALS4
+GASTRIC_CANCER.Sathe20.normal	normal	PRSS3
+GASTRIC_CANCER.Sathe20.normal	normal	CXCL17
+GASTRIC_CANCER.Sathe20.normal	normal	RPL7
+GASTRIC_CANCER.Sathe20.normal	normal	RPL13
+GASTRIC_CANCER.Sathe20.normal	normal	RPS7
+GASTRIC_CANCER.Sathe20.normal	normal	TPT1
+GASTRIC_CANCER.Sathe20.normal	normal	RPS9
+GASTRIC_CANCER.Sathe20.normal	normal	RPS23
+GASTRIC_CANCER.Sathe20.normal	normal	RPS11
+GASTRIC_CANCER.Sathe20.normal	normal	HMGA1
+GASTRIC_CANCER.Sathe20.normal	normal	FTL
+GASTRIC_CANCER.Sathe20.normal	normal	LDHA
+GASTRIC_CANCER.Sathe20.normal	normal	IL32
+GASTRIC_CANCER.Sathe20.normal	normal	EEF1B2
+GASTRIC_CANCER.Sathe20.normal	normal	RPS14
+GASTRIC_CANCER.Sathe20.normal	normal	RPL35
+GASTRIC_CANCER.Sathe20.normal	normal	CAMK2N1
+GASTRIC_CANCER.Sathe20.normal	normal	HINT1
+GASTRIC_CANCER.Sathe20.normal	normal	CYSTM1
+GASTRIC_CANCER.Sathe20.normal	normal	GPRC5A
+GASTRIC_CANCER.Sathe20.normal	normal	MUC1
+GASTRIC_CANCER.Sathe20.normal	normal	TXN
+GASTRIC_CANCER.Sathe20.normal	normal	RPSA
+GASTRIC_CANCER.Sathe20.normal	normal	LY6E
+GASTRIC_CANCER.Sathe20.normal	normal	RPS13
+GASTRIC_CANCER.Sathe20.normal	normal	NACA
+GASTRIC_CANCER.Sathe20.normal	normal	PSMA7
+GASTRIC_CANCER.Sathe20.normal	normal	RPS12
+GASTRIC_CANCER.Sathe20.normal	normal	RPL10
+GASTRIC_CANCER.Sathe20.normal	normal	RPL27
+GASTRIC_CANCER.Sathe20.normal	normal	MT1G
+GASTRIC_CANCER.Sathe20.normal	normal	ISG15
+GASTRIC_CANCER.Sathe20.normal	normal	RPL32
+GASTRIC_CANCER.Sathe20.normal	normal	RPL14
+GASTRIC_CANCER.Sathe20.normal	normal	KRT7
+GASTRIC_CANCER.Sathe20.normal	normal	RAC1
+GASTRIC_CANCER.Sathe20.normal	normal	TFF2
+GASTRIC_CANCER.Sathe20.normal	normal	S100A16
+GASTRIC_CANCER.Sathe20.normal	normal	LGALS3
+GASTRIC_CANCER.Sathe20.normal	normal	RPL15
+GASTRIC_CANCER.Sathe20.normal	normal	PTMA
+GASTRIC_CANCER.Sathe20.normal	normal	UQCRH
+GASTRIC_CANCER.Sathe20.normal	normal	PPA1
+GASTRIC_CANCER.Sathe20.normal	normal	RPL22L1
+GASTRIC_CANCER.Sathe20.normal	normal	VSIG2
+GASTRIC_CANCER.Sathe20.normal	normal	EPCAM
+GASTRIC_CANCER.Sathe20.normal	normal	GLUL
+GASTRIC_CANCER.Sathe20.normal	normal	RPL24
+GASTRIC_CANCER.Sathe20.normal	normal	ENO1
+GASTRIC_CANCER.Sathe20.normal	normal	ETHE1
+GASTRIC_CANCER.Sathe20.normal	normal	RACK1
+GASTRIC_CANCER.Sathe20.normal	normal	UBA52
+GASTRIC_CANCER.Sathe20.normal	normal	S100A14
+GASTRIC_CANCER.Sathe20.normal	normal	SRI
+GASTRIC_CANCER.Sathe20.normal	normal	XIST
+GASTRIC_CANCER.Sathe20.normal	normal	FXYD5
+GASTRIC_CANCER.Sathe20.normal	normal	RPS21
+GASTRIC_CANCER.Sathe20.normal	normal	PDZK1IP1
+GASTRIC_CANCER.Sathe20.normal	normal	TIMP1
+GASTRIC_CANCER.Sathe20.normal	normal	RPL23A
+GASTRIC_CANCER.Sathe20.normal	normal	HSPD1
+GASTRIC_CANCER.Sathe20.normal	normal	EIF5A
+GASTRIC_CANCER.Sathe20.normal	normal	MISP
+GASTRIC_CANCER.Sathe20.normal	normal	REG4
+GASTRIC_CANCER.Sathe20.normal	normal	RPS27A
+GASTRIC_CANCER.Sathe20.normal	normal	S100A11
+GASTRIC_CANCER.Sathe20.normal	normal	RPLP0
+GASTRIC_CANCER.Sathe20.normal	normal	CA9
+GASTRIC_CANCER.Sathe20.normal	normal	CD55
+GASTRIC_CANCER.Sathe20.normal	normal	CYBA
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-DRA
+GASTRIC_CANCER.Sathe20.normal	normal	FAU
+GASTRIC_CANCER.Sathe20.normal	normal	JPT1
+GASTRIC_CANCER.Sathe20.normal	normal	RPS15A
+GASTRIC_CANCER.Sathe20.normal	normal	TPI1
+GASTRIC_CANCER.Sathe20.normal	normal	RBCK1
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-C
+GASTRIC_CANCER.Sathe20.normal	normal	AGPAT2
+GASTRIC_CANCER.Sathe20.normal	normal	RPS6
+GASTRIC_CANCER.Sathe20.normal	normal	ACTB
+GASTRIC_CANCER.Sathe20.normal	normal	IFI27
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-B
+GASTRIC_CANCER.Sathe20.normal	normal	PHLDA2
+GASTRIC_CANCER.Sathe20.normal	normal	RPL3
+GASTRIC_CANCER.Sathe20.normal	normal	BST2
+GASTRIC_CANCER.Sathe20.normal	normal	CD9
+GASTRIC_CANCER.Sathe20.normal	normal	PFN1
+GASTRIC_CANCER.Sathe20.normal	normal	NPM1
+GASTRIC_CANCER.Sathe20.normal	normal	PKM
+GASTRIC_CANCER.Sathe20.normal	normal	SNRPB
+GASTRIC_CANCER.Sathe20.normal	normal	LCN2
+GASTRIC_CANCER.Sathe20.normal	normal	RAN
+GASTRIC_CANCER.Sathe20.normal	normal	PSMB9
+GASTRIC_CANCER.Sathe20.normal	normal	CHCHD2
+GASTRIC_CANCER.Sathe20.normal	normal	SH3BGRL3
+GASTRIC_CANCER.Sathe20.normal	normal	MUC5AC
+GASTRIC_CANCER.Sathe20.normal	normal	RPS3A
+GASTRIC_CANCER.Sathe20.normal	normal	FERMT1
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-DRB1
+GASTRIC_CANCER.Sathe20.normal	normal	RPS4X
+GASTRIC_CANCER.Sathe20.normal	normal	TKT
+GASTRIC_CANCER.Sathe20.normal	normal	HNRNPA1
+GASTRIC_CANCER.Sathe20.normal	normal	MIB2
+GASTRIC_CANCER.Sathe20.normal	normal	FHL2
+GASTRIC_CANCER.Sathe20.normal	normal	PSME2
+GASTRIC_CANCER.Sathe20.normal	normal	PMEPA1
+GASTRIC_CANCER.Sathe20.normal	normal	RPL9
+GASTRIC_CANCER.Sathe20.normal	normal	PDLIM1
+GASTRIC_CANCER.Sathe20.normal	normal	C9ORF16
+GASTRIC_CANCER.Sathe20.normal	normal	PRELID1
+GASTRIC_CANCER.Sathe20.normal	normal	RPL26
+GASTRIC_CANCER.Sathe20.normal	normal	CTSB
+GASTRIC_CANCER.Sathe20.normal	normal	ANXA1
+GASTRIC_CANCER.Sathe20.normal	normal	F12
+GASTRIC_CANCER.Sathe20.normal	normal	KRT17
+GASTRIC_CANCER.Sathe20.normal	normal	BTF3
+GASTRIC_CANCER.Sathe20.normal	normal	PPP1R1B
+GASTRIC_CANCER.Sathe20.normal	normal	C1QBP
+GASTRIC_CANCER.Sathe20.normal	normal	PYCARD
+GASTRIC_CANCER.Sathe20.normal	normal	SERPINB5
+GASTRIC_CANCER.Sathe20.normal	normal	KRT8
+GASTRIC_CANCER.Sathe20.normal	normal	S100A4
+GASTRIC_CANCER.Sathe20.normal	normal	PPIA
+GASTRIC_CANCER.Sathe20.normal	normal	EIF3H
+GASTRIC_CANCER.Sathe20.normal	normal	CA2
+GASTRIC_CANCER.Sathe20.normal	normal	PRDX1
+GASTRIC_CANCER.Sathe20.normal	normal	MTDH
+GASTRIC_CANCER.Sathe20.normal	normal	SNHG7
+GASTRIC_CANCER.Sathe20.normal	normal	SNRPD1
+GASTRIC_CANCER.Sathe20.normal	normal	IFI6
+GASTRIC_CANCER.Sathe20.normal	normal	EIF6
+GASTRIC_CANCER.Sathe20.normal	normal	TIMM13
+GASTRIC_CANCER.Sathe20.normal	normal	ATP1B3
+GASTRIC_CANCER.Sathe20.normal	normal	PRELID3B
+GASTRIC_CANCER.Sathe20.normal	normal	RHOC
+GASTRIC_CANCER.Sathe20.normal	normal	LGALS1
+GASTRIC_CANCER.Sathe20.normal	normal	CD74
+GASTRIC_CANCER.Sathe20.normal	normal	TM4SF1
+GASTRIC_CANCER.Sathe20.normal	normal	DNAJC15
+GASTRIC_CANCER.Sathe20.normal	normal	YBX1
+GASTRIC_CANCER.Sathe20.normal	normal	EIF3E
+GASTRIC_CANCER.Sathe20.normal	normal	PPP1R14B
+GASTRIC_CANCER.Sathe20.normal	normal	RPL37
+GASTRIC_CANCER.Sathe20.normal	normal	TMEM45B
+GASTRIC_CANCER.Sathe20.normal	normal	FUOM
+GASTRIC_CANCER.Sathe20.normal	normal	MSMB
+GASTRIC_CANCER.Sathe20.normal	normal	ASS1
+GASTRIC_CANCER.Sathe20.normal	normal	CD44
+GASTRIC_CANCER.Sathe20.normal	normal	ARPC1B
+GASTRIC_CANCER.Sathe20.normal	normal	PSMB8
+GASTRIC_CANCER.Sathe20.normal	normal	MZT2A
+GASTRIC_CANCER.Sathe20.normal	normal	H2AFZ
+GASTRIC_CANCER.Sathe20.normal	normal	SNRPG
+GASTRIC_CANCER.Sathe20.normal	normal	CYC1
+GASTRIC_CANCER.Sathe20.normal	normal	HSPE1
+GASTRIC_CANCER.Sathe20.normal	normal	PTGES3
+GASTRIC_CANCER.Sathe20.normal	normal	ADRM1
+GASTRIC_CANCER.Sathe20.normal	normal	ACAA2
+GASTRIC_CANCER.Sathe20.normal	normal	SRPK1
+GASTRIC_CANCER.Sathe20.normal	normal	PPM1G
+GASTRIC_CANCER.Sathe20.normal	normal	METTL7A
+GASTRIC_CANCER.Sathe20.normal	normal	PLBD1
+GASTRIC_CANCER.Sathe20.normal	normal	GUK1
+GASTRIC_CANCER.Sathe20.normal	normal	NUTF2
+GASTRIC_CANCER.Sathe20.normal	normal	RNASE1
+GASTRIC_CANCER.Sathe20.normal	normal	CKS2
+GASTRIC_CANCER.Sathe20.normal	normal	RAB5IF
+GASTRIC_CANCER.Sathe20.normal	normal	AP2S1
+GASTRIC_CANCER.Sathe20.normal	normal	PHB2
+GASTRIC_CANCER.Sathe20.normal	normal	CSTB
+GASTRIC_CANCER.Sathe20.normal	normal	ZNF511
+GASTRIC_CANCER.Sathe20.normal	normal	SET
+GASTRIC_CANCER.Sathe20.normal	normal	MT1F
+GASTRIC_CANCER.Sathe20.normal	normal	EEF1A1
+GASTRIC_CANCER.Sathe20.normal	normal	CCT3
+GASTRIC_CANCER.Sathe20.normal	normal	SNU13
+GASTRIC_CANCER.Sathe20.normal	normal	MT1E
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-A
+GASTRIC_CANCER.Sathe20.normal	normal	CHCHD10
+GASTRIC_CANCER.Sathe20.normal	normal	MRPL12
+GASTRIC_CANCER.Sathe20.normal	normal	RAB25
+GASTRIC_CANCER.Sathe20.normal	normal	NME1
+GASTRIC_CANCER.Sathe20.normal	normal	COX5A
+GASTRIC_CANCER.Sathe20.normal	normal	CXCL1
+GASTRIC_CANCER.Sathe20.normal	normal	KRT19
+GASTRIC_CANCER.Sathe20.normal	normal	SLC39A4
+GASTRIC_CANCER.Sathe20.normal	normal	STOML2
+GASTRIC_CANCER.Sathe20.normal	normal	POMP
+GASTRIC_CANCER.Sathe20.normal	normal	LAPTM4B
+GASTRIC_CANCER.Sathe20.normal	normal	RPL39
+GASTRIC_CANCER.Sathe20.normal	normal	ZNF706
+GASTRIC_CANCER.Sathe20.normal	normal	SKAP2
+GASTRIC_CANCER.Sathe20.normal	normal	CKLF
+GASTRIC_CANCER.Sathe20.normal	normal	LAD1
+GASTRIC_CANCER.Sathe20.normal	normal	SF3B6
+GASTRIC_CANCER.Sathe20.normal	normal	TUBB
+GASTRIC_CANCER.Sathe20.normal	normal	RPL4
+GASTRIC_CANCER.Sathe20.normal	normal	IFITM2
+GASTRIC_CANCER.Sathe20.normal	normal	RALA
+GASTRIC_CANCER.Sathe20.normal	normal	IL18
+GASTRIC_CANCER.Sathe20.normal	normal	SNRPD2
+GASTRIC_CANCER.Sathe20.normal	normal	VDAC2
+GASTRIC_CANCER.Sathe20.normal	normal	TAP1
+GASTRIC_CANCER.Sathe20.normal	normal	ZYX
+GASTRIC_CANCER.Sathe20.normal	normal	CCT5
+GASTRIC_CANCER.Sathe20.normal	normal	CLDN18
+GASTRIC_CANCER.Sathe20.normal	normal	GPI
+GASTRIC_CANCER.Sathe20.normal	normal	MALL
+GASTRIC_CANCER.Sathe20.normal	normal	CHMP4B
+GASTRIC_CANCER.Sathe20.normal	normal	PGK1
+GASTRIC_CANCER.Sathe20.normal	normal	CKS1B
+GASTRIC_CANCER.Sathe20.normal	normal	TSPAN8
+GASTRIC_CANCER.Sathe20.normal	normal	NBL1
+GASTRIC_CANCER.Sathe20.normal	normal	MUC13
+GASTRIC_CANCER.Sathe20.normal	normal	MRPL14
+GASTRIC_CANCER.Sathe20.normal	normal	MRPS12
+GASTRIC_CANCER.Sathe20.normal	normal	NOP56
+GASTRIC_CANCER.Sathe20.normal	normal	TYMP
+GASTRIC_CANCER.Sathe20.normal	normal	PLP2
+GASTRIC_CANCER.Sathe20.normal	normal	RPL23
+GASTRIC_CANCER.Sathe20.normal	normal	ATP6V1F
+GASTRIC_CANCER.Sathe20.normal	normal	FAM49B
+GASTRIC_CANCER.Sathe20.normal	normal	PERP
+GASTRIC_CANCER.Sathe20.normal	normal	PCBD1
+GASTRIC_CANCER.Sathe20.normal	normal	ABRACL
+GASTRIC_CANCER.Sathe20.normal	normal	GPX4
+GASTRIC_CANCER.Sathe20.normal	normal	GGCT
+GASTRIC_CANCER.Sathe20.normal	normal	CDC42EP5
+GASTRIC_CANCER.Sathe20.normal	normal	XRN2
+GASTRIC_CANCER.Sathe20.normal	normal	RANBP1
+GASTRIC_CANCER.Sathe20.normal	normal	PLA2G16
+GASTRIC_CANCER.Sathe20.normal	normal	EMP1
+GASTRIC_CANCER.Sathe20.normal	normal	CCT6A
+GASTRIC_CANCER.Sathe20.normal	normal	YWHAZ
+GASTRIC_CANCER.Sathe20.normal	normal	LSM4
+GASTRIC_CANCER.Sathe20.normal	normal	PDCD5
+GASTRIC_CANCER.Sathe20.normal	normal	AHCY
+GASTRIC_CANCER.Sathe20.normal	normal	TMEM176A
+GASTRIC_CANCER.Sathe20.normal	normal	PAFAH1B3
+GASTRIC_CANCER.Sathe20.normal	normal	ATP5MC3
+GASTRIC_CANCER.Sathe20.normal	normal	ANP32B
+GASTRIC_CANCER.Sathe20.normal	normal	EIF3I
+GASTRIC_CANCER.Sathe20.normal	normal	CCT2
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-E
+GASTRIC_CANCER.Sathe20.normal	normal	VSIG1
+GASTRIC_CANCER.Sathe20.normal	normal	PA2G4
+GASTRIC_CANCER.Sathe20.normal	normal	NOL7
+GASTRIC_CANCER.Sathe20.normal	normal	OLA1
+GASTRIC_CANCER.Sathe20.normal	normal	PSMB2
+GASTRIC_CANCER.Sathe20.normal	normal	PSMA5
+GASTRIC_CANCER.Sathe20.normal	normal	AURKAIP1
+GASTRIC_CANCER.Sathe20.normal	normal	NUDT8
+GASTRIC_CANCER.Sathe20.normal	normal	SELENOW
+GASTRIC_CANCER.Sathe20.normal	normal	RPL11
+GASTRIC_CANCER.Sathe20.normal	normal	SMS
+GASTRIC_CANCER.Sathe20.normal	normal	CIB1
+GASTRIC_CANCER.Sathe20.normal	normal	RHEB
+GASTRIC_CANCER.Sathe20.normal	normal	MTPN
+GASTRIC_CANCER.Sathe20.normal	normal	PSME1
+GASTRIC_CANCER.Sathe20.normal	normal	HSP90AB1
+GASTRIC_CANCER.Sathe20.normal	normal	RCN1
+GASTRIC_CANCER.Sathe20.normal	normal	ABHD11
+GASTRIC_CANCER.Sathe20.normal	normal	FABP1
+GASTRIC_CANCER.Sathe20.normal	normal	PHB
+GASTRIC_CANCER.Sathe20.normal	normal	OAZ1
+GASTRIC_CANCER.Sathe20.normal	normal	PDCD6
+GASTRIC_CANCER.Sathe20.normal	normal	EIF3K
+GASTRIC_CANCER.Sathe20.normal	normal	DCTPP1
+GASTRIC_CANCER.Sathe20.normal	normal	FTH1
+GASTRIC_CANCER.Sathe20.normal	normal	EBPL
+GASTRIC_CANCER.Sathe20.normal	normal	PLEK2
+GASTRIC_CANCER.Sathe20.normal	normal	CEACAM6
+GASTRIC_CANCER.Sathe20.normal	normal	FAM3B
+GASTRIC_CANCER.Sathe20.normal	normal	RNF7
+GASTRIC_CANCER.Sathe20.normal	normal	HTATIP2
+GASTRIC_CANCER.Sathe20.normal	normal	CXCL16
+GASTRIC_CANCER.Sathe20.normal	normal	POLR1D
+GASTRIC_CANCER.Sathe20.normal	normal	MRPL15
+GASTRIC_CANCER.Sathe20.normal	normal	POLR2H
+GASTRIC_CANCER.Sathe20.normal	normal	HNRNPAB
+GASTRIC_CANCER.Sathe20.normal	normal	PGAM1
+GASTRIC_CANCER.Sathe20.normal	normal	TNFRSF12A
+GASTRIC_CANCER.Sathe20.normal	normal	MDH2
+GASTRIC_CANCER.Sathe20.normal	normal	SNRPE
+GASTRIC_CANCER.Sathe20.normal	normal	RBM17
+GASTRIC_CANCER.Sathe20.normal	normal	EEF1D
+GASTRIC_CANCER.Sathe20.normal	normal	PLAUR
+GASTRIC_CANCER.Sathe20.normal	normal	CLIC1
+GASTRIC_CANCER.Sathe20.normal	normal	MGLL
+GASTRIC_CANCER.Sathe20.normal	normal	SNRPF
+GASTRIC_CANCER.Sathe20.normal	normal	CXCL3
+GASTRIC_CANCER.Sathe20.normal	normal	LSM2
+GASTRIC_CANCER.Sathe20.normal	normal	SMAGP
+GASTRIC_CANCER.Sathe20.normal	normal	PSMA4
+GASTRIC_CANCER.Sathe20.normal	normal	KIAA1324
+GASTRIC_CANCER.Sathe20.normal	normal	GADD45GIP1
+GASTRIC_CANCER.Sathe20.normal	normal	SNRPB2
+GASTRIC_CANCER.Sathe20.normal	normal	PKP3
+GASTRIC_CANCER.Sathe20.normal	normal	FBL
+GASTRIC_CANCER.Sathe20.normal	normal	CNIH4
+GASTRIC_CANCER.Sathe20.normal	normal	COX4I1
+GASTRIC_CANCER.Sathe20.normal	normal	ATP5F1D
+GASTRIC_CANCER.Sathe20.normal	normal	LEPROTL1
+GASTRIC_CANCER.Sathe20.normal	normal	EIF4EBP1
+GASTRIC_CANCER.Sathe20.normal	normal	SGK1
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-DPA1
+GASTRIC_CANCER.Sathe20.normal	normal	CALM2
+GASTRIC_CANCER.Sathe20.normal	normal	SSRP1
+GASTRIC_CANCER.Sathe20.normal	normal	UBE2I
+GASTRIC_CANCER.Sathe20.normal	normal	CACYBP
+GASTRIC_CANCER.Sathe20.normal	normal	NPM3
+GASTRIC_CANCER.Sathe20.normal	normal	CHMP2B
+GASTRIC_CANCER.Sathe20.normal	normal	C6ORF48
+GASTRIC_CANCER.Sathe20.normal	normal	MTCH2
+GASTRIC_CANCER.Sathe20.normal	normal	HMGB1
+GASTRIC_CANCER.Sathe20.normal	normal	TOP1
+GASTRIC_CANCER.Sathe20.normal	normal	RPL35A
+GASTRIC_CANCER.Sathe20.normal	normal	RGS10
+GASTRIC_CANCER.Sathe20.normal	normal	CBX3
+GASTRIC_CANCER.Sathe20.normal	normal	RALBP1
+GASTRIC_CANCER.Sathe20.normal	normal	MYH14
+GASTRIC_CANCER.Sathe20.normal	normal	NDUFA12
+GASTRIC_CANCER.Sathe20.normal	normal	SLC25A5
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-DPB1
+GASTRIC_CANCER.Sathe20.normal	normal	SUMO2
+GASTRIC_CANCER.Sathe20.normal	normal	HIGD2A
+GASTRIC_CANCER.Sathe20.normal	normal	ZNF593
+GASTRIC_CANCER.Sathe20.normal	normal	CDV3
+GASTRIC_CANCER.Sathe20.normal	normal	BANF1
+GASTRIC_CANCER.Sathe20.normal	normal	ELOC
+GASTRIC_CANCER.Sathe20.normal	normal	TOMM40
+GASTRIC_CANCER.Sathe20.normal	normal	EIF1
+GASTRIC_CANCER.Sathe20.normal	normal	H2AFV
+GASTRIC_CANCER.Sathe20.normal	normal	RSL1D1
+GASTRIC_CANCER.Sathe20.normal	normal	IMPDH2
+GASTRIC_CANCER.Sathe20.normal	normal	TRMT112
+GASTRIC_CANCER.Sathe20.normal	normal	PLEC
+GASTRIC_CANCER.Sathe20.normal	normal	TUBA1B
+GASTRIC_CANCER.Sathe20.normal	normal	HEBP2
+GASTRIC_CANCER.Sathe20.normal	normal	MALAT1
+GASTRIC_CANCER.Sathe20.normal	normal	SSB
+GASTRIC_CANCER.Sathe20.normal	normal	TAF1D
+GASTRIC_CANCER.Sathe20.normal	normal	BAX
+GASTRIC_CANCER.Sathe20.normal	normal	LSM7
+GASTRIC_CANCER.Sathe20.normal	normal	CPNE1
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-DRB5
+GASTRIC_CANCER.Sathe20.normal	normal	PSMB3
+GASTRIC_CANCER.Sathe20.normal	normal	ARPC3
+GASTRIC_CANCER.Sathe20.normal	normal	AGR3
+GASTRIC_CANCER.Sathe20.normal	normal	MIF
+GASTRIC_CANCER.Sathe20.normal	normal	OPTN
+GASTRIC_CANCER.Sathe20.normal	normal	CLTB
+GASTRIC_CANCER.Sathe20.normal	normal	RPA3
+GASTRIC_CANCER.Sathe20.normal	normal	SDCBP2
+GASTRIC_CANCER.Sathe20.normal	normal	PSMB1
+GASTRIC_CANCER.Sathe20.normal	normal	PFDN2
+GASTRIC_CANCER.Sathe20.normal	normal	HDGF
+GASTRIC_CANCER.Sathe20.normal	normal	ARPC5
+GASTRIC_CANCER.Sathe20.normal	normal	WDR43
+GASTRIC_CANCER.Sathe20.normal	normal	GTF2A2
+GASTRIC_CANCER.Sathe20.normal	normal	MAP1LC3B
+GASTRIC_CANCER.Sathe20.normal	normal	EDN1
+GASTRIC_CANCER.Sathe20.normal	normal	C4ORF3
+GASTRIC_CANCER.Sathe20.normal	normal	NOB1
+GASTRIC_CANCER.Sathe20.normal	normal	STAU1
+GASTRIC_CANCER.Sathe20.normal	normal	RPL36
+GASTRIC_CANCER.Sathe20.normal	normal	TPM4
+GASTRIC_CANCER.Sathe20.normal	normal	HES6
+GASTRIC_CANCER.Sathe20.normal	normal	GSTO1
+GASTRIC_CANCER.Sathe20.normal	normal	SLC25A3
+GASTRIC_CANCER.Sathe20.normal	normal	NHP2
+GASTRIC_CANCER.Sathe20.normal	normal	ANXA10
+GASTRIC_CANCER.Sathe20.normal	normal	CLTA
+GASTRIC_CANCER.Sathe20.normal	normal	UBE2L3
+GASTRIC_CANCER.Sathe20.normal	normal	SSBP1
+GASTRIC_CANCER.Sathe20.normal	normal	DYNLT1
+GASTRIC_CANCER.Sathe20.normal	normal	CARHSP1
+GASTRIC_CANCER.Sathe20.normal	normal	TMEM106C
+GASTRIC_CANCER.Sathe20.normal	normal	PSMA3
+GASTRIC_CANCER.Sathe20.normal	normal	CLU
+GASTRIC_CANCER.Sathe20.normal	normal	GTF3A
+GASTRIC_CANCER.Sathe20.normal	normal	FAM96B
+GASTRIC_CANCER.Sathe20.normal	normal	CTSS
+GASTRIC_CANCER.Sathe20.normal	normal	GNG5
+GASTRIC_CANCER.Sathe20.normal	normal	HLA-DMA
+GASTRIC_CANCER.Sathe20.normal	normal	MRPL18
+GASTRIC_CANCER.Sathe20.normal	normal	RALY
+GASTRIC_CANCER.Sathe20.normal	normal	DYNLL1
+GASTRIC_CANCER.Sathe20.normal	normal	RPL22
+GASTRIC_CANCER.Sathe20.normal	normal	PSMG2
+GASTRIC_CANCER.Sathe20.normal	normal	GPX2
+GASTRIC_CANCER.Sathe20.normal	normal	SERPINB1
+GASTRIC_CANCER.Sathe20.normal	normal	AREG
+GASTRIC_CANCER.Sathe20.normal	normal	COX6C
+GASTRIC_CANCER.Sathe20.normal	normal	IGHG4
+GASTRIC_CANCER.Sathe20.normal	normal	EIF3M
+GASTRIC_CANCER.Sathe20.normal	normal	NAP1L1
+GASTRIC_CANCER.Sathe20.normal	normal	RPS24
+GASTRIC_CANCER.Sathe20.normal	normal	DUSP23
+GASTRIC_CANCER.Sathe20.normal	normal	YBX3
+GASTRIC_CANCER.Sathe20.normal	normal	OCIAD2
+GASTRIC_CANCER.Sathe20.normal	normal	RAD21
+GASTRIC_CANCER.Sathe20.normal	normal	GSTP1
+GASTRIC_CANCER.Sathe20.normal	normal	DPP7
+GASTRIC_CANCER.Sathe20.normal	normal	CXCL8
+GASTRIC_CANCER.Sathe20.normal	normal	SQLE
+GASTRIC_CANCER.Sathe20.normal	normal	ODC1
+GASTRIC_CANCER.Sathe20.normal	normal	SAP18
+GASTRIC_CANCER.Sathe20.normal	normal	SPTBN1
+GASTRIC_CANCER.Sathe20.normal	normal	LSM8
+GASTRIC_CANCER.Sathe20.normal	normal	ACTG1
+GASTRIC_CANCER.Sathe20.normal	normal	SNRPD3
+GASTRIC_CANCER.Sathe20.normal	normal	MAL2
+GASTRIC_CANCER.Sathe20.normal	normal	TRIM31
+GASTRIC_CANCER.Sathe20.normal	normal	ENY2
+GASTRIC_CANCER.Sathe20.normal	normal	TMEM147
+GASTRIC_CANCER.Sathe20.normal	normal	ERO1A
+GASTRIC_CANCER.Sathe20.normal	normal	DEK
+GASTRIC_CANCER.Sathe20.normal	normal	RPL6
+GASTRIC_CANCER.Sathe20.normal	normal	LAMTOR5
+GASTRIC_CANCER.Sathe20.normal	normal	PPP1R15A
+GASTRIC_CANCER.Sathe20.normal	normal	SNX3
+GASTRIC_CANCER.Sathe20.normal	normal	MRPS26
+GASTRIC_CANCER.Sathe20.normal	normal	POLR2J
+GASTRIC_CANCER.Sathe20.normal	normal	PSMB7
+GASTRIC_CANCER.Sathe20.normal	normal	CTNNB1
+GASTRIC_CANCER.Sathe20.normal	normal	KIF5B
+GASTRIC_CANCER.Sathe20.normal	normal	C19ORF53
+GASTRIC_CANCER.Sathe20.normal	normal	SIVA1
+GASTRIC_CANCER.Sathe20.normal	normal	SEC11A
+GASTRIC_CANCER.Sathe20.normal	normal	MGST3
+GASTRIC_CANCER.Sathe20.normal	normal	SLC25A6
+GASTRIC_CANCER.Sathe20.normal	normal	HNF4A
+GASTRIC_CANCER.Sathe20.normal	normal	ETS2
+GASTRIC_CANCER.Sathe20.normal	normal	FKBP1A
+GASTRIC_CANCER.Sathe20.normal	normal	RPLP1
+GASTRIC_CANCER.Sathe20.normal	normal	VDAC1
+GASTRIC_CANCER.Sathe20.normal	normal	EIF3F
+GASTRIC_CANCER.Sathe20.normal	normal	TPM3
+GASTRIC_CANCER.Sathe20.normal	normal	CYCS
+GASTRIC_CANCER.Sathe20.normal	normal	COX6B1
+GASTRIC_CANCER.Sathe20.normal	normal	H3F3A
+GASTRIC_CANCER.Sathe20.normal	normal	NCL
+GASTRIC_CANCER.Sathe20.normal	normal	RTRAF
+GASTRIC_CANCER.Sathe20.normal	normal	ERGIC3
+GASTRIC_CANCER.Sathe20.normal	normal	PARP14
+GASTRIC_CANCER.Sathe20.normal	normal	PARK7
+GASTRIC_CANCER.Sathe20.normal	normal	SPINK1
+GASTRIC_CANCER.Sathe20.normal	normal	GDF15
+GASTRIC_CANCER.Sathe20.normal	normal	C1ORF43
+GASTRIC_CANCER.Sathe20.normal	normal	NCOA7
+GASTRIC_CANCER.Sathe20.normal	normal	TALDO1
+GASTRIC_CANCER.Sathe20.normal	normal	PTMS
+GASTRIC_CANCER.Sathe20.normal	normal	ZFAND2A
+GASTRIC_CANCER.Sathe20.normal	normal	MYL12B
+GASTRIC_CANCER.Sathe20.normal	normal	NPC2
+GASTRIC_CANCER.Sathe20.normal	normal	MT1M
+GASTRIC_CANCER.Sathe20.normal	normal	RPL41
+GASTRIC_CANCER.Sathe20.normal	normal	PMAIP1
+GASTRIC_CANCER.Sathe20.normal	normal	ATP5MC1
+GASTRIC_CANCER.Sathe20.normal	normal	DBI
+GASTRIC_CANCER.Sathe20.normal	normal	RPS25
+GASTRIC_CANCER.Sathe20.normal	normal	ERH
+GASTRIC_CANCER.Sathe20.normal	normal	MT1X
+GASTRIC_CANCER.Sathe20.normal	normal	YWHAB
+GASTRIC_CANCER.Sathe20.normal	normal	SOD2
+GASTRIC_CANCER.Sathe20.normal	normal	MZT2B
+GASTRIC_CANCER.Sathe20.normal	normal	ANAPC11
+GASTRIC_CANCER.Sathe20.normal	normal	RPL31
+GASTRIC_CANCER.Sathe20.normal	normal	TSPO
+GASTRIC_CANCER.Sathe20.normal	normal	HSPA8
+GASTRIC_CANCER.Sathe20.normal	normal	IGHA1
+GASTRIC_CANCER.Sathe20.normal	normal	SCAND1
+GASTRIC_CANCER.Sathe20.normal	normal	RBM3
+GASTRIC_CANCER.Sathe20.normal	normal	TPM1
+GASTRIC_CANCER.Sathe20.normal	normal	RAB2A
+GASTRIC_CANCER.Sathe20.normal	normal	TUBB4B
+GASTRIC_CANCER.Sathe20.normal	normal	SOD1
+GASTRIC_CANCER.Sathe20.normal	normal	NDUFB9
+GASTRIC_CANCER.Sathe20.normal	normal	POLR2K
+GASTRIC_CANCER.Sathe20.normal	normal	TMEM230
+GASTRIC_CANCER.Sathe20.normal	normal	SDC4
+GASTRIC_CANCER.Sathe20.normal	normal	NDUFS5
+GASTRIC_CANCER.Sathe20.normal	normal	ARPC2
+GASTRIC_CANCER.Sathe20.normal	normal	MT2A
+GASTRIC_CANCER.Sathe20.normal	normal	CFL1
+GASTRIC_CANCER.Sathe20.normal	normal	HMGB2
+GASTRIC_CANCER.Sathe20.normal	normal	AZGP1
+GASTRIC_CANCER.Sathe20.normal	normal	C15ORF48
+GASTRIC_CANCER.Sathe20.normal	normal	DYNLRB1
+GASTRIC_CANCER.Sathe20.normal	normal	RARRES3
+GASTRIC_CANCER.Sathe20.normal	normal	IGFBP2
+GASTRIC_CANCER.Sathe20.normal	normal	MARCKSL1
+GASTRIC_CANCER.Sathe20.normal	normal	COX6A1
+GASTRIC_CANCER.Sathe20.normal	normal	NOP53
+GASTRIC_CANCER.Sathe20.normal	normal	PPIB
+GASTRIC_CANCER.Sathe20.normal	normal	APRT
+GASTRIC_CANCER.Sathe20.normal	normal	SEM1
+GASTRIC_CANCER.Sathe20.normal	normal	SERBP1
+GASTRIC_CANCER.Sathe20.normal	normal	TRIB1
+GASTRIC_CANCER.Sathe20.normal	normal	CST3
+GASTRIC_CANCER.Sathe20.normal	normal	UBE2S
+GASTRIC_CANCER.Sathe20.normal	normal	CD24
+GASTRIC_CANCER.Sathe20.normal	normal	RPS26
+GASTRIC_CANCER.Sathe20.normal	normal	SLC40A1
+GASTRIC_CANCER.Sathe20.normal	normal	C19ORF33
+GASTRIC_CANCER.Sathe20.normal	normal	NDUFC2
+GASTRIC_CANCER.Sathe20.normal	normal	MUC6
+GASTRIC_CANCER.Sathe20.normal	normal	FXYD3
+GASTRIC_CANCER.Sathe20.normal	normal	CEACAM5
+GASTRIC_CANCER.Sathe20.normal	normal	DDX5
+GASTRIC_CANCER.Sathe20.normal	normal	SMIM22
+GASTRIC_CANCER.Sathe20.normal	normal	TCEAL9
+GASTRIC_CANCER.Sathe20.normal	normal	MT-ND3
+GASTRIC_CANCER.Sathe20.normal	normal	SERPINA1
+GASTRIC_CANCER.Sathe20.normal	normal	SSR4
+GASTRIC_CANCER.Sathe20.normal	normal	TSC22D3
+GASTRIC_CANCER.Sathe20.normal	normal	TFF1
+GASTRIC_CANCER.Sathe20.normal	normal	NDRG1
+GASTRIC_CANCER.Sathe20.normal	normal	TMSB4X
+GASTRIC_CANCER.Sathe20.normal	normal	CTSE
+GASTRIC_CANCER.Sathe20.normal	normal	SEC62
+GASTRIC_CANCER.Sathe20.normal	normal	MTRNR2L12
+GASTRIC_CANCER.Sathe20.normal	normal	S100P
+GASTRIC_CANCER.Sathe20.normal	normal	KCNQ1OT1
+GASTRIC_CANCER.Sathe20.normal	normal	MT-ND4L
+GASTRIC_CANCER.Sathe20.normal	normal	NR2F2
+GASTRIC_CANCER.Sathe20.normal	normal	CBR1
+GASTRIC_CANCER.Sathe20.normal	normal	MARCKS
+GASTRIC_CANCER.Sathe20.normal	normal	NEAT1
+GASTRIC_CANCER.Sathe20.normal	normal	REG1A
+GASTRIC_CANCER.Sathe20.normal	normal	BCAS1
+GASTRIC_CANCER.Sathe20.normal	normal	CYP3A5
+GASTRIC_CANCER.Sathe20.normal	normal	PLCG2
+GASTRIC_CANCER.Sathe20.normal	normal	GOLM1
+GASTRIC_CANCER.Sathe20.normal	normal	JCHAIN
+GASTRIC_CANCER.Sathe20.normal	normal	DONSON
+GASTRIC_CANCER.Sathe20.normal	normal	AKAP9
+GASTRIC_CANCER.Sathe20.normal	normal	ALDH1A1
+GASTRIC_CANCER.Sathe20.normal	normal	SMIM14
+GASTRIC_CANCER.Sathe20.normal	normal	JUN
+GASTRIC_CANCER.Sathe20.normal	normal	JUND
+GASTRIC_CANCER.Sathe20.normal	normal	NKTR
+GASTRIC_CANCER.Sathe20.normal	normal	JUNB
+GASTRIC_CANCER.Sathe20.normal	normal	GADD45B
+GASTRIC_CANCER.Sathe20.normal	normal	SLC44A4

@@ -12,27 +12,66 @@ PhenoSigDB is a lightweight, versioned reference database of phenotypic transcri
 
 ## Storage model
 
-The canonical release artifact is:
+Reference artifacts:
 
 - `data/phenosigdb.parquet`
+  - original curated species
+- `data/phenosigdb_human.parquet`
+  - all signatures represented in human symbols
+- `data/phenosigdb_mouse.parquet`
+  - all signatures represented in mouse symbols
+- `data/phenosigdb.csv.gz`
+  - debug export of the original curated species table
+- `data/phenosigdb_reference_metadata.json`
+  - build metadata, pinned homology metadata, split/collapse summary
+- `data/phenosigdb_human_translation_signature_stats.tsv`
+- `data/phenosigdb_mouse_translation_signature_stats.tsv`
 
 Each row represents one gene in one signature.
-
-The companion debug export is:
-
-- `data/phenosigdb.csv.gz`
 
 ## Canonical columns
 
 - `signature_id`
 - `signature_name`
 - `source`
+- `source_author`
+- `source_pmid`
+- `source_doi`
 - `species`
+- `species_original`
 - `gene`
+- `gene_original`
 - `cell_family`
 - `context`
 - `disease`
 - `tags`
+- `homology_relation`
+- `homology_db_class_key`
+
+Notes:
+
+- `species` and `gene` are the actual reference species and symbols in that parquet.
+- `species_original` and `gene_original` preserve curated provenance.
+- after many-to-one collapse, `gene_original` can contain several source genes separated by `;`.
+
+## Naming convention
+
+`signature_id` uses:
+
+```text
+<DOMAIN>.<SourceKey>.<SignatureName>
+```
+
+- `DOMAIN` is a short uppercase biological or disease domain, for example `PDAC`, `CAF`, `IMMUNE`, `GI`.
+- `SourceKey` is first-author plus year, for example `Moffitt15`, `Elyada19`.
+- `SignatureName` is the source-specific signature label with spaces normalized to dots.
+
+Examples:
+
+- `PDAC.Moffitt15.Classical`
+- `CAF.Elyada19.iCAF`
+- `IMMUNE.Becht16.Tcells`
+- `GI.Busslinger21.Stem.cells`
 
 ## Licensing
 
@@ -45,7 +84,60 @@ See [LICENSE](LICENSE) and [LICENSE-DATA.md](LICENSE-DATA.md).
 
 ```bash
 pip install -e .
-phenosigdb-build
+phenosigdb-build --download-homology
+phenosigdb-validate
+```
+
+`phenosigdb-build` always writes `data/phenosigdb.parquet`.
+
+If a tagged MGI homology file is available locally, or `--download-homology` is used, it also writes:
+
+- `data/phenosigdb_human.parquet`
+- `data/phenosigdb_mouse.parquet`
+- translation metadata and per-signature translation stats
+
+Translation rules are fixed:
+
+- `1:1` homologs are kept
+- `1:many` mappings are split
+- `many:1` mappings are collapsed within each signature
+- `many:many` mappings do both
+
+Split/collapse counts and extreme sizes are recorded in the metadata files.
+
+If a translated signature ends up with zero mapped genes, it cannot appear in the row-per-gene parquet. Those cases are tracked in the translation stats TSVs and the reference metadata JSON.
+
+## Add New Papers
+
+Raw supplementary material and one-off extraction code go in `curation/source_material/`, not in curated source folders.
+
+Put PDFs, spreadsheets, and source files in:
+
+```text
+curation/source_material/<SourceKey>/raw/
+```
+
+Keep one local build script in the source folder, for example:
+
+```text
+curation/source_material/<SourceKey>/build_curated.R
+```
+
+When ready, manually create the curated folder:
+
+```text
+curation/<DOMAIN>.<SourceKey>/
+```
+
+with:
+
+- `source.yaml`
+- `members.tsv`
+
+Then run:
+
+```bash
+phenosigdb-build --download-homology
 phenosigdb-validate
 ```
 
@@ -59,6 +151,38 @@ table = phenosig(cell_family="fibroblast", format="table")
 meta = phenosig(source="Elyada.etal;PMID:31197017", format="metadata")
 ```
 
+Reference-species options read prebuilt parquet files:
+
+```python
+from phenosigdb import phenosig
+
+original = phenosig(query="fibroblast", format="dict", reference_species="original")
+all_human = phenosig(query="fibroblast", format="dict", reference_species="human")
+all_mouse = phenosig(query="fibroblast", format="dict", reference_species="mouse")
+```
+
+- `reference_species="original"` reads `data/phenosigdb.parquet`
+- `reference_species="human"` reads `data/phenosigdb_human.parquet`
+- `reference_species="mouse"` reads `data/phenosigdb_mouse.parquet`
+
+## R Use
+
+```r
+library(arrow)
+
+db_original <- read_parquet("data/phenosigdb.parquet")
+db_human <- read_parquet("data/phenosigdb_human.parquet")
+db_mouse <- read_parquet("data/phenosigdb_mouse.parquet")
+```
+
+Downstream R code should choose the parquet it wants. No homology translation logic is required in the R package.
+
+Translation provenance lives in:
+
+- `data/phenosigdb_reference_metadata.json`
+- `data/phenosigdb_human_translation_signature_stats.tsv`
+- `data/phenosigdb_mouse_translation_signature_stats.tsv`
+
 ## Curation
 
 Curated sources live under `curation/<source_name>/` with:
@@ -66,39 +190,30 @@ Curated sources live under `curation/<source_name>/` with:
 - `source.yaml`
 - `members.tsv`
 
+`curation/` contains both canonical curated folders and `source_material/`. Raw supplementary files, notes, and one-off extraction scripts belong in `curation/source_material/`, not in canonical curated folders.
+
 `curation/example_source/` is a template example and is ignored by the build.
 
 <!-- PHENOSIGDB_SIGNATURES_START -->
 
 ## Available Signatures
 
-| Signature family | Signatures | Species | Cell family | Context | Disease |
-| --- | --- | --- | --- | --- | --- |
-| `CAF` | CAF.Dominguez20.hCAF0TGFB, CAF.Dominguez20.hCAF1early, CAF.Dominguez20.hCAF2il6lif, CAF.Elyada19.iCAF, CAF.Elyada19.myo, CAF.Kieffer20.CAF.S1, CAF.Kieffer20.IFNγ.iCAF, CAF.Kieffer20.IL.iCAF, CAF.Kieffer20.Normal.Fibroblast, CAF.Kieffer20.TGFβ.myCAF, CAF.Kieffer20.detox.iCAF, CAF.Kieffer20.ecm.myCAF, CAF.Kieffer20.wound.myCAF, CAF.Neuzillet22.MYH11, CAF.Neuzillet22.PDPN, CAF.Neuzillet22.POSTN, CAF.Neuzillet22.subPOSTN | human | fibroblast | cancer | PDAC |
-| `CCCA` | CCCA.Gavish23.MP1.Cell.Cycle.G2.M, CCCA.Gavish23.MP10.Protein.maturation, CCCA.Gavish23.MP11.Translation.initiation, CCCA.Gavish23.MP12.EMT.I, CCCA.Gavish23.MP13.EMT.II, CCCA.Gavish23.MP14.EMT.III, CCCA.Gavish23.MP15.EMT.IV, CCCA.Gavish23.MP16.MES.glioma., CCCA.Gavish23.MP17.Interferon.MHC.II.I., CCCA.Gavish23.MP18.Interferon.MHC.II.II., CCCA.Gavish23.MP19.Epithelial.Senescence, CCCA.Gavish23.MP2.Cell.Cycle.G1.S, CCCA.Gavish23.MP20.MYC, CCCA.Gavish23.MP21.Respiration, CCCA.Gavish23.MP22.Secreted.I, CCCA.Gavish23.MP23.Secreted.II, CCCA.Gavish23.MP24.Cilia, CCCA.Gavish23.MP25.Astrocytes, CCCA.Gavish23.MP26.NPC.Glioma, CCCA.Gavish23.MP27.Oligo.Progenitor, CCCA.Gavish23.MP28.Oligo.normal, CCCA.Gavish23.MP29.NPC.OPC, CCCA.Gavish23.MP3.Cell.Cylce.HMG.rich, CCCA.Gavish23.MP30.PDAC.classical, CCCA.Gavish23.MP31.Alveolar, CCCA.Gavish23.MP32.Skin.pigmentation, CCCA.Gavish23.MP33.RBCs, CCCA.Gavish23.MP34.Platelet.activation, CCCA.Gavish23.MP35.Hemato.related.I, CCCA.Gavish23.MP36.IG, CCCA.Gavish23.MP37.Hemato.related.II, CCCA.Gavish23.MP38.Glutathione, CCCA.Gavish23.MP39.Metal.response, CCCA.Gavish23.MP4.Chromatin, CCCA.Gavish23.MP40.PDAC.related, CCCA.Gavish23.MP41.Unassigned, CCCA.Gavish23.MP5.Stress, CCCA.Gavish23.MP6.Hypoxia, CCCA.Gavish23.MP7.Stress.in.vitro., CCCA.Gavish23.MP8.Proteasomal.degradation, CCCA.Gavish23.MP9.Unfolded.protein.response | human | tumor | cancer | cholangiocarcinoma |
-| `CCK` | CCK.Sia13.INFLAMGenes, CCK.Sia13.PROLIFGenes | human | epithelial | cancer | cholangiocarcinoma |
-| `CCK_STIM` | CCK_STIM.Serrano23.Desert-like, CCK_STIM.Serrano23.Hepati.Stem-like, CCK_STIM.Serrano23.Immune.Classical, CCK_STIM.Serrano23.Inflammatory.Stroma, CCK_STIM.Serrano23.Tumor.Classical | human | epithelial | cancer | cholangiocarcinoma |
-| `ECM` | ECM.Helms22.PSCcaf | human | stromal | cancer | PDAC |
-| `FibroAtlas` | FibroAtlas.Gao24.AlveolarFibro.ADH1B+, FibroAtlas.Gao24.ApFibro.CD74, FibroAtlas.Gao24.EpithelialCryptFibro.SOX6, FibroAtlas.Gao24.Fibro.CTNNB1, FibroAtlas.Gao24.InflaFibro.HGF, FibroAtlas.Gao24.InflaFibro.HSPA6, FibroAtlas.Gao24.InflaFibro.IL6, FibroAtlas.Gao24.LaminaPropriaFibro.ADAMDEC, FibroAtlas.Gao24.Mesothelial, FibroAtlas.Gao24.MyoFibro.HOPX, FibroAtlas.Gao24.MyoFibro.LRRC15, FibroAtlas.Gao24.MyoFibro.SFRP2, FibroAtlas.Gao24.Myofibro.MMP1, FibroAtlas.Gao24.Pericyte, FibroAtlas.Gao24.Progenitor.like.fibro.COL15A1, FibroAtlas.Gao24.Progenitor.like.fibroblast.PI16, FibroAtlas.Gao24.ProlifevrativeFibro.STMN1, FibroAtlas.Gao24.SMC.HHIP, FibroAtlas.Gao24.SMC.MYH11, FibroAtlas.Gao24.SynovialLiningFibro.PRG4 | human | fibroblast | physiology | normal |
-| `HCC` | HCC.Petitprez19.andersen.cholangio.subtype1.dn, HCC.Petitprez19.andersen.cholangio.subtype1.up, HCC.Petitprez19.andersen.krt19.avb.dn, HCC.Petitprez19.andersen.krt19.avb.up, HCC.Petitprez19.boyault.liver.cancer.subclass.g3.dn, HCC.Petitprez19.boyault.liver.cancer.subclass.g3.up, HCC.Petitprez19.boyault.up.in.g1, HCC.Petitprez19.boyault.up.in.g12, HCC.Petitprez19.boyault.up.in.g123, HCC.Petitprez19.boyault.up.in.g13, HCC.Petitprez19.boyault.up.in.g2, HCC.Petitprez19.boyault.up.in.g23, HCC.Petitprez19.boyault.up.in.g3, HCC.Petitprez19.boyault.up.in.g4, HCC.Petitprez19.boyault.up.in.g456, HCC.Petitprez19.boyault.up.in.g5, HCC.Petitprez19.boyault.up.in.g56, HCC.Petitprez19.boyault.up.in.g6, HCC.Petitprez19.budhu.liver.cancer.metastasis.dn, HCC.Petitprez19.budhu.liver.cancer.metastasis.up, HCC.Petitprez19.cairo.hepatoblastoma.classes.dn, HCC.Petitprez19.cairo.hepatoblastoma.classes.up, HCC.Petitprez19.chiang.ctnnb1, HCC.Petitprez19.chiang.inflam, HCC.Petitprez19.chiang.liver.cancer.subclass.proliferation.dn, HCC.Petitprez19.chiang.liver.cancer.subclass.proliferation.up, HCC.Petitprez19.chiang.poly7, HCC.Petitprez19.chiang.prolif, HCC.Petitprez19.chiang.unannot, HCC.Petitprez19.coulouarn.temporal.tgfb1.signature.dn, HCC.Petitprez19.coulouarn.temporal.tgfb1.signature.up, HCC.Petitprez19.hao.survival, HCC.Petitprez19.hoshida.liver.cancer.late.recurrence.dn, HCC.Petitprez19.hoshida.liver.cancer.late.recurrence.up, HCC.Petitprez19.hoshida.liver.cancer.subclass.s1, HCC.Petitprez19.hoshida.liver.cancer.subclass.s2, HCC.Petitprez19.hoshida.liver.cancer.subclass.s3, HCC.Petitprez19.hoshida.liver.cancer.survival.dn, HCC.Petitprez19.hoshida.liver.cancer.survival.up, HCC.Petitprez19.iizuka.liver.cancer.early.recurrence, HCC.Petitprez19.kaposi.liver.cancer.met.dn, HCC.Petitprez19.kaposi.liver.cancer.met.up, HCC.Petitprez19.kim.poor.survival.dn, HCC.Petitprez19.kim.poor.survival.up, HCC.Petitprez19.kurokawa.liver.cancer.early.recurrence.dn, HCC.Petitprez19.kurokawa.liver.cancer.early.recurrence.up, HCC.Petitprez19.lee.liver.cancer.survival.dn, HCC.Petitprez19.lee.liver.cancer.survival.up, HCC.Petitprez19.lee.up.in.a, HCC.Petitprez19.lee.up.in.b, HCC.Petitprez19.marquardt.cancer.stem.cell.118, HCC.Petitprez19.marquardt.cancer.stem.cell.618, HCC.Petitprez19.minguez.vascular.invasion.dn, HCC.Petitprez19.minguez.vascular.invasion.up, HCC.Petitprez19.oishi.cholangio.stem.cell.like.dn, HCC.Petitprez19.oishi.cholangio.stem.cell.like.up, HCC.Petitprez19.okamoto.liver.cancer.multicentric.occurrence.dn, HCC.Petitprez19.okamoto.liver.cancer.multicentric.occurrence.up, HCC.Petitprez19.roessler.liver.cancer.metastasis.dn, HCC.Petitprez19.roessler.liver.cancer.metastasis.up, HCC.Petitprez19.wang.recurrent.liver.cancer.dn, HCC.Petitprez19.wang.recurrent.liver.cancer.up, HCC.Petitprez19.woo.cholangio.like.dn, HCC.Petitprez19.woo.cholangio.like.up, HCC.Petitprez19.woo.liver.cancer.recurrence.dn, HCC.Petitprez19.woo.liver.cancer.recurrence.up, HCC.Petitprez19.yamashita.liver.cancer.stem.cell.dn, HCC.Petitprez19.yamashita.liver.cancer.stem.cell.up, HCC.Petitprez19.yamashita.liver.cancer.with.epcam.dn, HCC.Petitprez19.yamashita.liver.cancer.with.epcam.up, HCC.Petitprez19.ye.metastatic.liver.cancer, HCC.Petitprez19.yoshioka.liver.cancer.early.recurrence.dn, HCC.Petitprez19.yoshioka.liver.cancer.early.recurrence.up | human | tumor | cancer | HCC |
-| `IMMU` | IMMU.Rodrigues18.GeneralImmu, IMMU.Rodrigues18.ICKrelated | human | immune | unknown | unknown |
-| `IMMU_MCPcounter` | IMMU_MCPcounter.Becht16.B.lineage, IMMU_MCPcounter.Becht16.CD8Tcells, IMMU_MCPcounter.Becht16.Cytotox.lymph, IMMU_MCPcounter.Becht16.Endothelial, IMMU_MCPcounter.Becht16.Fibroblasts, IMMU_MCPcounter.Becht16.Mono.lineage, IMMU_MCPcounter.Becht16.Myeloid.dendritic, IMMU_MCPcounter.Becht16.NK, IMMU_MCPcounter.Becht16.Neutrophils, IMMU_MCPcounter.Becht16.Tcells | human | immune | unknown | unknown |
-| `IMMU_Neutro` | IMMU_Neutro.Wu24.ARG1+, IMMU_Neutro.Wu24.CXCL8+IL1B+, IMMU_Neutro.Wu24.CXCR2+, IMMU_Neutro.Wu24.HLA-DR+CD74+, IMMU_Neutro.Wu24.IFIT1+ISG15+, IMMU_Neutro.Wu24.MMP9+, IMMU_Neutro.Wu24.NFKBIZ+HIF1A+, IMMU_Neutro.Wu24.S100A12+, IMMU_Neutro.Wu24.TXNIP+, IMMU_Neutro.Wu24.VEGFA+SPP1+ | human | neutrophil | unknown | unknown |
-| `IMMU_Tcell` | IMMU_Tcell.Chu23.CD4.Tn, IMMU_Tcell.Chu23.CD4.c0.Tcm, IMMU_Tcell.Chu23.CD4.c1.Treg, IMMU_Tcell.Chu23.CD4.c3.Tfh, IMMU_Tcell.Chu23.CD4/CD8.c4.Tstr, IMMU_Tcell.Chu23.CD8.Teff, IMMU_Tcell.Chu23.CD8.Tn, IMMU_Tcell.Chu23.CD8.c5.Tisg | human | T_cell | unknown | unknown |
-| `IMMU_monoMac` | IMMU_monoMac.Mulder21.DC2.DC3.cluster14, IMMU_monoMac.Mulder21.Macro.cluster11, IMMU_monoMac.Mulder21.Macro.cluster13, IMMU_monoMac.Mulder21.Macro.cluster16, IMMU_monoMac.Mulder21.Macro.cluster17, IMMU_monoMac.Mulder21.Macro.cluster2, IMMU_monoMac.Mulder21.Macro.cluster3, IMMU_monoMac.Mulder21.Macro.cluster6, IMMU_monoMac.Mulder21.Macro.cluster7, IMMU_monoMac.Mulder21.Mono.CD16neg.cluster12, IMMU_monoMac.Mulder21.Mono.CD16neg.cluster15, IMMU_monoMac.Mulder21.Mono.CD16neg.cluster4, IMMU_monoMac.Mulder21.Mono.CD16neg.cluster8, IMMU_monoMac.Mulder21.Mono.CD16pos.cluster1, IMMU_monoMac.Mulder21.Mono.CD16pos.cluster5, IMMU_monoMac.Mulder21.Prolif.cluster10, IMMU_monoMac.Mulder21.T.cell.doublets.cluster9 | human | macrophage | unknown | unknown |
-| `Organoid_Atlas` | Organoid_Atlas.Xu25.atlas.organoidVec.BEST4+.epithelial, Organoid_Atlas.Xu25.atlas.organoidVec.Interstitial.cells.of.Cajal.(ICC), Organoid_Atlas.Xu25.atlas.organoidVec.Microfold.cells, Organoid_Atlas.Xu25.atlas.organoidVec.acinar.cells, Organoid_Atlas.Xu25.atlas.organoidVec.airway.secretory.cells, Organoid_Atlas.Xu25.atlas.organoidVec.alpha.cells, Organoid_Atlas.Xu25.atlas.organoidVec.alveolar.type.1.(AT1).cells, Organoid_Atlas.Xu25.atlas.organoidVec.alveolar.type.2.(AT2).cells, Organoid_Atlas.Xu25.atlas.organoidVec.basal.cells, Organoid_Atlas.Xu25.atlas.organoidVec.beta.cells, Organoid_Atlas.Xu25.atlas.organoidVec.biliary.cells, Organoid_Atlas.Xu25.atlas.organoidVec.cardiovascular.cells, Organoid_Atlas.Xu25.atlas.organoidVec.chief.cells, Organoid_Atlas.Xu25.atlas.organoidVec.ciliated.cells, Organoid_Atlas.Xu25.atlas.organoidVec.club.cells, Organoid_Atlas.Xu25.atlas.organoidVec.colonocytes, Organoid_Atlas.Xu25.atlas.organoidVec.cycling.stromal.cells, Organoid_Atlas.Xu25.atlas.organoidVec.delta.cells, Organoid_Atlas.Xu25.atlas.organoidVec.ductal.cells, Organoid_Atlas.Xu25.atlas.organoidVec.enterocytes, Organoid_Atlas.Xu25.atlas.organoidVec.enteroendocrine.cells, Organoid_Atlas.Xu25.atlas.organoidVec.epsilon.cells, Organoid_Atlas.Xu25.atlas.organoidVec.goblet.cells, Organoid_Atlas.Xu25.atlas.organoidVec.hepatocytes, Organoid_Atlas.Xu25.atlas.organoidVec.immune, Organoid_Atlas.Xu25.atlas.organoidVec.kupffer.cells, Organoid_Atlas.Xu25.atlas.organoidVec.luminal.cells, Organoid_Atlas.Xu25.atlas.organoidVec.lymphatic.endothelium, Organoid_Atlas.Xu25.atlas.organoidVec.mesoderm.1.(HAND1), Organoid_Atlas.Xu25.atlas.organoidVec.mesoderm.2.(ZEB2), Organoid_Atlas.Xu25.atlas.organoidVec.mesothelial.cells, Organoid_Atlas.Xu25.atlas.organoidVec.neck.cells, Organoid_Atlas.Xu25.atlas.organoidVec.neuroendocrine.cells, Organoid_Atlas.Xu25.atlas.organoidVec.neuron, Organoid_Atlas.Xu25.atlas.organoidVec.pancreatic.cells, Organoid_Atlas.Xu25.atlas.organoidVec.paneth.cells, Organoid_Atlas.Xu25.atlas.organoidVec.pericytes, Organoid_Atlas.Xu25.atlas.organoidVec.pit.cells, Organoid_Atlas.Xu25.atlas.organoidVec.quiescent.cells, Organoid_Atlas.Xu25.atlas.organoidVec.schwann.cell, Organoid_Atlas.Xu25.atlas.organoidVec.smooth.muscle.cells.(SMC), Organoid_Atlas.Xu25.atlas.organoidVec.stellate.cells, Organoid_Atlas.Xu25.atlas.organoidVec.stem.cells, Organoid_Atlas.Xu25.atlas.organoidVec.stromal.1.(ADAMDEC1), Organoid_Atlas.Xu25.atlas.organoidVec.stromal.2.(NPY), Organoid_Atlas.Xu25.atlas.organoidVec.stromal.3.(C7), Organoid_Atlas.Xu25.atlas.organoidVec.thyrocytes, Organoid_Atlas.Xu25.atlas.organoidVec.tuft.cells | human | epithelial | organoid | unknown |
-| `PDAC` | PDAC.Bailey16.ADEX, PDAC.Bailey16.Immunogenic, PDAC.Bailey16.Progenitor, PDAC.Bailey16.Squamous, PDAC.ChanSengYue20.BasallikeA, PDAC.ChanSengYue20.BasallikeB, PDAC.ChanSengYue20.ClassicalA, PDAC.ChanSengYue20.ClassicalB, PDAC.ChanSengYue20.Fibroblast, PDAC.ChanSengYue20.Hepatocyte, PDAC.ChanSengYue20.Immune.cell, PDAC.ChanSengYue20.Normal.pancreas, PDAC.ChanSengYue20.Sig11.Unknown, PDAC.ChanSengYue20.Sig12.Unknown, PDAC.ChanSengYue20.Sig7.Unknown, PDAC.ChanSengYue20.Sig9.Unknown, PDAC.Hwang22.Fibro.Adhesive, PDAC.Hwang22.Fibro.Immunomodulatory, PDAC.Hwang22.Fibro.Myofibroblastic, PDAC.Hwang22.Fibro.Neurotropic, PDAC.Hwang22.Malignlineage.Acinarlike, PDAC.Hwang22.Malignlineage.Basaloid, PDAC.Hwang22.Malignlineage.Classicallike, PDAC.Hwang22.Malignlineage.Mesenchymal, PDAC.Hwang22.Malignlineage.Neurallikeprogenitor, PDAC.Hwang22.Malignlineage.Neuroendocrinelike, PDAC.Hwang22.Malignlineage.Squamoid, PDAC.Hwang22.Malignstate.Adhesive, PDAC.Hwang22.Malignstate.CyclingG2M, PDAC.Hwang22.Malignstate.CyclingS, PDAC.Hwang22.Malignstate.Interferonsignaling, PDAC.Hwang22.Malignstate.MYCsignaling, PDAC.Hwang22.Malignstate.Ribosomal, PDAC.Hwang22.Malignstate.TNFNFkBsignaling, PDAC.Maurer18.StromaECM, PDAC.Maurer18.StromaImmune, PDAC.Moffitt15.ActivatedStroma, PDAC.Moffitt15.BasalLike, PDAC.Moffitt15.CellCycle, PDAC.Moffitt15.Classical, PDAC.Moffitt15.Endocrine, PDAC.Moffitt15.Exocrine, PDAC.Moffitt15.F10, PDAC.Moffitt15.F14, PDAC.Moffitt15.F2, PDAC.Moffitt15.Immune, PDAC.Moffitt15.Liver, PDAC.Moffitt15.Lung, PDAC.Moffitt15.Muscle, PDAC.Moffitt15.NormalStroma, PDAC.Puleo18.Basal, PDAC.Puleo18.Classic, PDAC.Puleo18.Endocrine, PDAC.Puleo18.Exocrine, PDAC.Puleo18.ICA9, PDAC.Puleo18.Immune, PDAC.Puleo18.StromaActiv, PDAC.Puleo18.StromaActivInflam, PDAC.Puleo18.StromaInactive, PDAC.Puleo18.Tech | human | tumor | cancer | PDAC |
-| `PDAC_PDAssigner` | PDAC_PDAssigner.Colisson11.Classical, PDAC_PDAssigner.Colisson11.Exocrine, PDAC_PDAssigner.Colisson11.QM | human | tumor | cancer | PDAC |
-| `PDAC_PDXph1` | PDAC_PDXph1.Nicolle17.basal, PDAC_PDXph1.Nicolle17.classical | human | tumor | cancer | PDAC |
-| `SPEM` | SPEM.Bockerstett20.Chief1, SPEM.Bockerstett20.Chief2, SPEM.Bockerstett20.Endothelial, SPEM.Bockerstett20.Foveolar1, SPEM.Bockerstett20.Foveolar2, SPEM.Bockerstett20.Macrophage, SPEM.Bockerstett20.Metaplasic, SPEM.Bockerstett20.Mucous.Neck1, SPEM.Bockerstett20.Mucous.Neck2, SPEM.Bockerstett20.Neuroendocrine, SPEM.Bockerstett20.Parietal, SPEM.Bockerstett20.Proliftff2, SPEM.Bockerstett20.Smooth.muscle, SPEM.Bockerstett20.Tcells-Bcells1, SPEM.Bockerstett20.Tcells-Bcells2 | human | epithelial | physiology | normal |
-| `Stroma` | Stroma.Grunwald21.DesertedStroma, Stroma.Grunwald21.ReactiveStroma | human | stromal | cancer | PDAC |
-| `scADM_Mouse` | scADM_Mouse.Ma21.Acute.SPEM.sig, scADM_Mouse.Ma21.Chief, scADM_Mouse.Ma21.Chronic.SPEM.sig, scADM_Mouse.Ma21.Delta, scADM_Mouse.Ma21.EC, scADM_Mouse.Ma21.FoveolarPit, scADM_Mouse.Ma21.ImmatureFoveolarPit, scADM_Mouse.Ma21.NeckChief.int, scADM_Mouse.Ma21.NeckIsthmus, scADM_Mouse.Ma21.Parietal, scADM_Mouse.Ma21.Prolif.Isthmus | mouse | epithelial | physiology | normal |
-| `scDuctalPancreas_Mouse` | scDuctalPancreas_Mouse.Fernandez24.Acinar.S, scDuctalPancreas_Mouse.Fernandez24.Acinar.i, scDuctalPancreas_Mouse.Fernandez24.Aft3.population, scDuctalPancreas_Mouse.Fernandez24.Apo.Tesc.population, scDuctalPancreas_Mouse.Fernandez24.ApoE.C.population, scDuctalPancreas_Mouse.Fernandez24.B.big, scDuctalPancreas_Mouse.Fernandez24.B.big.v2, scDuctalPancreas_Mouse.Fernandez24.Ciliated, scDuctalPancreas_Mouse.Fernandez24.Cxcl1.2.population, scDuctalPancreas_Mouse.Fernandez24.EMT.population, scDuctalPancreas_Mouse.Fernandez24.IFN.responsive, scDuctalPancreas_Mouse.Fernandez24.LCN2.population, scDuctalPancreas_Mouse.Fernandez24.M.medium, scDuctalPancreas_Mouse.Fernandez24.M.medium.v2, scDuctalPancreas_Mouse.Fernandez24.Obp2b.population, scDuctalPancreas_Mouse.Fernandez24.Prolif, scDuctalPancreas_Mouse.Fernandez24.S.small, scDuctalPancreas_Mouse.Fernandez24.S.small.v2, scDuctalPancreas_Mouse.Fernandez24.Tesc.population, scDuctalPancreas_Mouse.Fernandez24.Wfdc18.1.population, scDuctalPancreas_Mouse.Fernandez24.Wfdc18.2.population, scDuctalPancreas_Mouse.Fernandez24.Wnt.responsive, scDuctalPancreas_Mouse.Fernandez24.Yap.responsive | mouse | epithelial | physiology | normal |
-| `scGC` | scGC.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4, scGC.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3, scGC.Kim22.Diffuse.Gastric.Cancer.non.malignant.D1, scGC.Kim22.Diffuse.Gastric.Cancer.premalignant.D2, scGC.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3, scGC.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1, scGC.Kim22.Intestinal.Gastric.Cancer.premalignant.I2 | human | tumor | cancer | gastric_cancer |
-| `scGI` | scGI.Busslinger21.duodenum.normal.cells.single.cell.BCHE.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.D.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.Differentiating.stem.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.EC.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.Early.immature.enterocytes, scGI.Busslinger21.duodenum.normal.cells.single.cell.Goblet.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.I.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.Immune.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.K.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.Late.immature.enterocytes, scGI.Busslinger21.duodenum.normal.cells.single.cell.MX.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.Mature.enterocytes, scGI.Busslinger21.duodenum.normal.cells.single.cell.Paneth.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.Stem.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.Transit.amplifying.cells, scGI.Busslinger21.duodenum.normal.cells.single.cell.Tuft.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Antral.ECs, scGI.Busslinger21.stomach.normal.cells.single.cell.Chief.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.D.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Differentiating.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.G.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Immature.pit.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Immune.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Isthmus, scGI.Busslinger21.stomach.normal.cells.single.cell.LYZ.positive.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Mature.pit.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Metallothionein.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Neck.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Oxyntic.ECLs, scGI.Busslinger21.stomach.normal.cells.single.cell.PPP1R1B.positive.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Parietal.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Prezymogenic.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.REG3A.positive.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.Tuft.cells, scGI.Busslinger21.stomach.normal.cells.single.cell.X.cells | human | epithelial | physiology | normal |
-| `scGastricTME` | scGastricTME.Sathe20.gastricTumorCell.1, scGastricTME.Sathe20.gastricTumorCell.2, scGastricTME.Sathe20.normal | human | tumor | cancer | gastric_cancer |
-| `scIBD` | scIBD.Nie23.B.Plasma.Cycling.GC.B, scIBD.Nie23.B.Plasma.Cycling.plasma, scIBD.Nie23.B.Plasma.GC.B, scIBD.Nie23.B.Plasma.IgA+IgG+.plasma, scIBD.Nie23.B.Plasma.IgA-IgG-.plasma, scIBD.Nie23.B.Plasma.IgA.plasma, scIBD.Nie23.B.Plasma.IgG.plasma, scIBD.Nie23.B.Plasma.Memory.B, scIBD.Nie23.B.Plasma.Naive.B, scIBD.Nie23.B.Plasma.Pro-B, scIBD.Nie23.CD4T.CD4+.TNF.high.Trm, scIBD.Nie23.CD4T.CD4+.TNF.low.Trm, scIBD.Nie23.CD4T.CD4+.Tem, scIBD.Nie23.CD4T.CD4+.Tfh, scIBD.Nie23.CD4T.CD4+.Th17, scIBD.Nie23.CD4T.CD4+.Tn, scIBD.Nie23.CD4T.CD4+.Treg, scIBD.Nie23.CD4T.CD4+.activated.T, scIBD.Nie23.CD4T.CD4+.blood-Tcm, scIBD.Nie23.CD4T.CD4+.tissue-Tcm, scIBD.Nie23.CD8T.CD8+.IEL, scIBD.Nie23.CD8T.CD8+.MAIT, scIBD.Nie23.CD8T.CD8+.Tcm, scIBD.Nie23.CD8T.CD8+.Teff, scIBD.Nie23.CD8T.CD8+.Tem, scIBD.Nie23.CD8T.CD8+.Tn, scIBD.Nie23.CD8T.CD8+.Trm, scIBD.Nie23.CD8T.CD8+.activated.T, scIBD.Nie23.Endothelial.Adult.arterial.EC, scIBD.Nie23.Endothelial.Adult.arterial.capillary, scIBD.Nie23.Endothelial.Adult.venous.EC, scIBD.Nie23.Endothelial.Cycling.EC, scIBD.Nie23.Endothelial.Fetal.arterial.EC, scIBD.Nie23.Endothelial.Fetal.venous.capillary, scIBD.Nie23.Endothelial.LEC, scIBD.Nie23.Epithelial.Adult.colonocyte, scIBD.Nie23.Epithelial.BEST4+.epithelial, scIBD.Nie23.Epithelial.Cycling.TA, scIBD.Nie23.Epithelial.DUOX2+.epithelial, scIBD.Nie23.Epithelial.Enterocyte, scIBD.Nie23.Epithelial.Enteroendocrine, scIBD.Nie23.Epithelial.Fetal.colonocyte, scIBD.Nie23.Epithelial.Fetal.cycling.TA, scIBD.Nie23.Epithelial.Fetal.enterocyte, scIBD.Nie23.Epithelial.Fetal.progenitor, scIBD.Nie23.Epithelial.Goblet, scIBD.Nie23.Epithelial.Paneth, scIBD.Nie23.Epithelial.Pediatric.colonocyte, scIBD.Nie23.Epithelial.TA, scIBD.Nie23.Epithelial.Tuft, scIBD.Nie23.ILC.CD16+.NK, scIBD.Nie23.ILC.CD56+.SELL.high.NK, scIBD.Nie23.ILC.CD56+.SELL.low.NK, scIBD.Nie23.ILC.NCR+.ILC3, scIBD.Nie23.ILC.NCR-.ILC3, scIBD.Nie23.Mesenchymal.Cycling.SMC, scIBD.Nie23.Mesenchymal.Cycling.stromal, scIBD.Nie23.Mesenchymal.Fetal.stromal.1, scIBD.Nie23.Mesenchymal.Fetal.stromal.2, scIBD.Nie23.Mesenchymal.Immature.pericyte, scIBD.Nie23.Mesenchymal.Mature.pericyte, scIBD.Nie23.Mesenchymal.Mesoderm.1, scIBD.Nie23.Mesenchymal.Mesoderm.2, scIBD.Nie23.Mesenchymal.Mesothelium, scIBD.Nie23.Mesenchymal.Myofibroblast.1, scIBD.Nie23.Mesenchymal.Myofibroblast.2, scIBD.Nie23.Mesenchymal.SMC.1, scIBD.Nie23.Mesenchymal.SMC.2, scIBD.Nie23.Mesenchymal.Stromal.1, scIBD.Nie23.Mesenchymal.Stromal.2, scIBD.Nie23.Mesenchymal.Stromal.3, scIBD.Nie23.Mesenchymal.Stromal.4, scIBD.Nie23.Mesenchymal.Transitional.stromal, scIBD.Nie23.Myeloid.APOE+.macrophage, scIBD.Nie23.Myeloid.AREG+.macrophage, scIBD.Nie23.Myeloid.Classical.monocyte, scIBD.Nie23.Myeloid.Cycling.macrophage, scIBD.Nie23.Myeloid.Inflammatory.monocyte, scIBD.Nie23.Myeloid.LAMP3+.DC, scIBD.Nie23.Myeloid.LYVE1+.macrophage, scIBD.Nie23.Myeloid.Mast, scIBD.Nie23.Myeloid.Megakaryocyte, scIBD.Nie23.Myeloid.Non-classical.monocyte, scIBD.Nie23.Myeloid.cDC1, scIBD.Nie23.Myeloid.cDC2, scIBD.Nie23.Myeloid.pDC, scIBD.Nie23.Neuronal.Adult.glia, scIBD.Nie23.Neuronal.Cycling.ENCC/glia, scIBD.Nie23.Neuronal.Differentiating.glia, scIBD.Nie23.Neuronal.ENCC/glia.progenitor, scIBD.Nie23.Neuronal.Fetal.glia.1, scIBD.Nie23.Neuronal.Fetal.glia.2, scIBD.Nie23.Neuronal.Fetal.glia.3, scIBD.Nie23.Neuronal.Neuroblast, scIBD.Nie23.Neuronal.Neuronal/Branch.A, scIBD.Nie23.Neuronal.Neuronal/Branch.B | human | immune | inflammation | IBD |
-| `scPancreas_Mouse` | scPancreas_Mouse.Schlesinger20.Acinar.cells, scPancreas_Mouse.Schlesinger20.Adj.tumoral.cells.c17, scPancreas_Mouse.Schlesinger20.Chief.like.cells.c11, scPancreas_Mouse.Schlesinger20.Duct.cells, scPancreas_Mouse.Schlesinger20.Duct.like.tumoral.cells.c0, scPancreas_Mouse.Schlesinger20.Duct.like.tumoral.cells.c1, scPancreas_Mouse.Schlesinger20.Nine.month.c19, scPancreas_Mouse.Schlesinger20.Prolif.c14, scPancreas_Mouse.Schlesinger20.Senescent.tumor.cells.c18, scPancreas_Mouse.Schlesinger20.Stomac.chief.cells.c21, scPancreas_Mouse.Schlesinger20.Stomac.pit.cells.c22, scPancreas_Mouse.Schlesinger20.Stomach.cells.c23, scPancreas_Mouse.Schlesinger20.Tuft.cells.c25, scPancreas_Mouse.Schlesinger20.Tumoral.cells.c10 | mouse | epithelial | physiology | normal |
-| `siNETs` | siNETs.Patte25.epithelial, siNETs.Patte25.immune, siNETs.Patte25.mesenchymal, siNETs.Patte25.vesicular | human | tumor | cancer | siNETs |
+| Domain | Signature count | Species | Cell family | Context | Disease |
+| --- | ---: | --- | --- | --- | --- |
+| `CAF` | 38 | human | fibroblast | cancer | PDAC |
+| `CCA` | 7 | human | epithelial | cancer | cholangiocarcinoma |
+| `ECM` | 1 | human | stromal | cancer | PDAC |
+| `FIBROBLAST` | 31 | human, mouse | fibroblast | unknown | unknown |
+| `GASTRIC` | 26 | human, mouse | epithelial | physiology | normal |
+| `GASTRIC_CANCER` | 10 | human | tumor | cancer | gastric_cancer |
+| `GI` | 35 | human | epithelial | physiology | normal |
+| `HCC` | 73 | human | tumor | cancer | HCC |
+| `IBD` | 96 | human | immune | inflammation | IBD |
+| `IMMUNE` | 47 | human | T_cell, immune, macrophage, neutrophil | unknown | unknown |
+| `ORGANOID` | 48 | human | epithelial | organoid | unknown |
+| `PANCREAS` | 37 | mouse | epithelial | physiology | normal |
+| `PAN_CANCER` | 41 | human | tumor | cancer | cancer |
+| `PDAC` | 67 | human | stromal, tumor | cancer | PDAC |
+| `SINET` | 4 | human | tumor | cancer | siNETs |
 
 <!-- PHENOSIGDB_SIGNATURES_END -->

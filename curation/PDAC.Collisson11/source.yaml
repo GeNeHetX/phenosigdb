@@ -1,0 +1,9 @@
+source: Collisson.etal;PMID:21460848
+species: human
+cell_family: tumor
+context: cancer
+disease: PDAC
+tags: PDAC;tumor
+source_author: Collisson.etal
+source_pmid: '21460848'
+source_doi: null

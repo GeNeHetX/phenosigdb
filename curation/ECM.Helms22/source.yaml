@@ -4,3 +4,6 @@ cell_family: stromal
 context: cancer
 disease: PDAC
 tags: ECM;stromal
+source_author: Helms.etal
+source_pmid: '34548310'
+source_doi: null

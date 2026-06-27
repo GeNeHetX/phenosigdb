@@ -9,23 +9,22 @@ from .io import (
     ALLOWED_CONTEXT,
     ALLOWED_SPECIES,
     CANONICAL_COLUMNS,
-    PARQUET_PATH,
     normalize_blank,
+    parquet_path,
     read_database,
 )
-
 
 def _missing_columns(frame: pd.DataFrame) -> list[str]:
     return [column for column in CANONICAL_COLUMNS if column not in frame.columns]
 
 
-def validate_database(data: str | Path | pd.DataFrame | None = None) -> pd.DataFrame:
+def validate_database(data: str | Path | pd.DataFrame | None = None, reference_species: str = "original") -> pd.DataFrame:
     if data is None:
-        frame = read_database(PARQUET_PATH)
+        frame = read_database(reference_species=reference_species)
     elif isinstance(data, pd.DataFrame):
         frame = data.copy()
     else:
-        frame = read_database(data)
+        frame = read_database(path=data)
 
     missing = _missing_columns(frame)
     if missing:
@@ -48,6 +47,7 @@ def validate_database(data: str | Path | pd.DataFrame | None = None) -> pd.DataF
 
     for column, allowed in (
         ("species", ALLOWED_SPECIES),
+        ("species_original", ALLOWED_SPECIES),
         ("cell_family", ALLOWED_CELL_FAMILY),
         ("context", ALLOWED_CONTEXT),
     ):
@@ -60,8 +60,24 @@ def validate_database(data: str | Path | pd.DataFrame | None = None) -> pd.DataF
         if invalid:
             raise ValueError(f"Invalid values in {column}: {', '.join(invalid)}")
 
+    for column in ("gene_original", "homology_relation"):
+        empty = frame[column].map(normalize_blank).isna()
+        if empty.any():
+            count = int(empty.sum())
+            raise ValueError(f"Column '{column}' contains {count} missing or empty values")
+
+    if reference_species in {"human", "mouse"}:
+        species_values = {value for value in frame["species"].map(normalize_blank) if value is not None}
+        invalid = sorted(species_values.difference({reference_species}))
+        if invalid:
+            raise ValueError(f"Translated reference contains non-{reference_species} species values: {', '.join(invalid)}")
+
     return frame
 
 
 def main() -> None:
-    validate_database()
+    validate_database(reference_species="original")
+    for ref in ("human", "mouse"):
+        path = parquet_path(reference_species=ref)
+        if path.exists():
+            validate_database(path, reference_species=ref)

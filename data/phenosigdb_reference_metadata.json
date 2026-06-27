@@ -1,0 +1,79 @@
+{
+  "generated_at_utc": "2026-06-17T19:30:55.839029+00:00",
+  "artifacts": {
+    "original": {
+      "parquet": "data/phenosigdb.parquet",
+      "csv_gz": "data/phenosigdb.csv.gz",
+      "gene_rows": 152843,
+      "signature_count": 561,
+      "species": [
+        "human",
+        "mouse"
+      ]
+    },
+    "human": {
+      "parquet": "data/phenosigdb_human.parquet",
+      "csv_gz": null,
+      "gene_rows": 152594,
+      "signature_count": 561,
+      "species": [
+        "human"
+      ],
+      "translation_signature_stats_tsv": "data/phenosigdb_human_translation_signature_stats.tsv",
+      "translation_summary": {
+        "target_species": "human",
+        "source_gene_rows": 152843,
+        "output_gene_rows": 152594,
+        "same_species_rows": 139147,
+        "needs_translation_rows": 13696,
+        "unmapped_rows": 940,
+        "split_source_rows": 618,
+        "split_added_rows": 997,
+        "max_split_size": 9,
+        "collapse_output_rows": 162,
+        "collapse_removed_rows": 306,
+        "max_collapse_size": 6,
+        "relation_source_rows": {
+          "one_to_one": 12138,
+          "one_to_many": 618
+        }
+      }
+    },
+    "mouse": {
+      "parquet": "data/phenosigdb_mouse.parquet",
+      "csv_gz": null,
+      "gene_rows": 150213,
+      "signature_count": 561,
+      "species": [
+        "mouse"
+      ],
+      "translation_signature_stats_tsv": "data/phenosigdb_mouse_translation_signature_stats.tsv",
+      "translation_summary": {
+        "target_species": "mouse",
+        "source_gene_rows": 152843,
+        "output_gene_rows": 150213,
+        "same_species_rows": 13696,
+        "needs_translation_rows": 139147,
+        "unmapped_rows": 13804,
+        "split_source_rows": 5649,
+        "split_added_rows": 17067,
+        "max_split_size": 75,
+        "collapse_output_rows": 3317,
+        "collapse_removed_rows": 5893,
+        "max_collapse_size": 20,
+        "relation_source_rows": {
+          "one_to_one": 118460,
+          "many_to_one": 6883
+        }
+      }
+    }
+  },
+  "homology": {
+    "status": "used",
+    "path": "data/reference/homology/mgi_alliance_mouse_human_homology_20260615.tsv",
+    "tag": "20260615",
+    "url": "https://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt",
+    "downloaded_at_utc": "2026-06-16T21:00:53.374363+00:00",
+    "source_last_modified": "Mon, 15 Jun 2026 12:00:26 GMT"
+  }
+}

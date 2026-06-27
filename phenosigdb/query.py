@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from .io import PARQUET_PATH, read_database
+from .io import read_database
 
 
 def _contains(series: pd.Series, query: str) -> pd.Series:
@@ -21,8 +21,9 @@ def phenosig(
     tags=None,
     source=None,
     format="dict",
+    reference_species="original",
 ):
-    frame = read_database(PARQUET_PATH)
+    frame = read_database(reference_species=reference_species)
 
     mask = pd.Series(True, index=frame.index)
     for column, value in (
@@ -54,19 +55,23 @@ def phenosig(
     if format == "table":
         return subset
     if format == "metadata":
-        meta = (
-            subset.groupby("signature_id", as_index=False, sort=True)
-            .agg(
-                signature_name=("signature_name", "first"),
-                source=("source", "first"),
-                species=("species", "first"),
-                cell_family=("cell_family", "first"),
-                context=("context", "first"),
-                disease=("disease", "first"),
-                tags=("tags", "first"),
-            )
-            .loc[:, ["signature_id", "signature_name", "source", "species", "cell_family", "context", "disease", "tags"]]
-        )
+        aggregations = {
+            "signature_name": ("signature_name", "first"),
+            "source": ("source", "first"),
+            "species": ("species", "first"),
+            "cell_family": ("cell_family", "first"),
+            "context": ("context", "first"),
+            "disease": ("disease", "first"),
+            "tags": ("tags", "first"),
+        }
+        if "species_original" in subset.columns:
+            aggregations["species_original"] = ("species_original", "first")
+        meta = subset.groupby("signature_id", as_index=False, sort=True).agg(**aggregations)
+        columns = ["signature_id", "signature_name", "source", "species"]
+        if "species_original" in meta.columns:
+            columns.append("species_original")
+        columns.extend(["cell_family", "context", "disease", "tags"])
+        meta = meta.loc[:, columns]
         return meta.reset_index(drop=True)
     if format == "dict":
         return {signature_id: group["gene"].tolist() for signature_id, group in subset.groupby("signature_id", sort=True)}

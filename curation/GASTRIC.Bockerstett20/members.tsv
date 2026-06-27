@@ -1,0 +1,40 @@
+signature_id	signature_name	gene
+GASTRIC.Bockerstett20.Chief1	Chief1	PGC
+GASTRIC.Bockerstett20.Chief1	Chief1	GIF
+GASTRIC.Bockerstett20.Chief2	Chief2	GIF
+GASTRIC.Bockerstett20.Chief2	Chief2	PGC
+GASTRIC.Bockerstett20.Endothelial	Endothelial	PECAM1
+GASTRIC.Bockerstett20.Foveolar1	Foveolar1	TFF1
+GASTRIC.Bockerstett20.Foveolar1	Foveolar1	MUC5AC
+GASTRIC.Bockerstett20.Foveolar1	Foveolar1	IL33
+GASTRIC.Bockerstett20.Foveolar2	Foveolar2	TFF1
+GASTRIC.Bockerstett20.Foveolar2	Foveolar2	MUC5AC
+GASTRIC.Bockerstett20.Macrophage	Macrophage	LYZ2
+GASTRIC.Bockerstett20.Macrophage	Macrophage	CSF1R
+GASTRIC.Bockerstett20.Macrophage	Macrophage	CD14
+GASTRIC.Bockerstett20.Metaplasic	Metaplasic	PGA5
+GASTRIC.Bockerstett20.Metaplasic	Metaplasic	MUC6
+GASTRIC.Bockerstett20.Metaplasic	Metaplasic	PGC
+GASTRIC.Bockerstett20.Metaplasic	Metaplasic	CLU
+GASTRIC.Bockerstett20.Metaplasic	Metaplasic	SOX9
+GASTRIC.Bockerstett20.Mucous.Neck1	Mucous Neck1	MUC6
+GASTRIC.Bockerstett20.Mucous.Neck2	Mucous Neck2	MUC6
+GASTRIC.Bockerstett20.Neuroendocrine	Neuroendocrine	CHGA
+GASTRIC.Bockerstett20.Neuroendocrine	Neuroendocrine	CHGB
+GASTRIC.Bockerstett20.Neuroendocrine	Neuroendocrine	HDC
+GASTRIC.Bockerstett20.Neuroendocrine	Neuroendocrine	SST
+GASTRIC.Bockerstett20.Parietal	Parietal	ATP4B
+GASTRIC.Bockerstett20.Parietal	Parietal	ATP4A
+GASTRIC.Bockerstett20.Proliftff2	Proliftff2	MKI67
+GASTRIC.Bockerstett20.Proliftff2	Proliftff2	CDK1
+GASTRIC.Bockerstett20.Proliftff2	Proliftff2	PCNA
+GASTRIC.Bockerstett20.Proliftff2	Proliftff2	TFF2
+GASTRIC.Bockerstett20.Smooth.muscle	Smooth muscle	ACTA2
+GASTRIC.Bockerstett20.Smooth.muscle	Smooth muscle	MYL9
+GASTRIC.Bockerstett20.Tcells-Bcells1	Tcells-Bcells1	PTPRC
+GASTRIC.Bockerstett20.Tcells-Bcells1	Tcells-Bcells1	CD3E
+GASTRIC.Bockerstett20.Tcells-Bcells1	Tcells-Bcells1	IGKC
+GASTRIC.Bockerstett20.Tcells-Bcells2	Tcells-Bcells2	TRBC2
+GASTRIC.Bockerstett20.Tcells-Bcells2	Tcells-Bcells2	CD3D
+GASTRIC.Bockerstett20.Tcells-Bcells2	Tcells-Bcells2	PTPRC
+GASTRIC.Bockerstett20.Tcells-Bcells2	Tcells-Bcells2	IGHM

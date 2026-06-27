@@ -4,6 +4,7 @@ README.md
 pyproject.toml
 phenosigdb/__init__.py
 phenosigdb/build.py
+phenosigdb/homology.py
 phenosigdb/io.py
 phenosigdb/query.py
 phenosigdb/validate.py
