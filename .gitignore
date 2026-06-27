@@ -1,7 +1,9 @@
 .DS_Store
 .agents.md
 .agents.MD
+agents.md
 __pycache__/
 *.py[cod]
 .pytest_cache/
 audit_human_empty_signatures/
+audit_new_caf_sources_20260627/

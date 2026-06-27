@@ -5,12 +5,12 @@ import pandas as pd
 from phenosigdb.build import build_database
 from phenosigdb.homology import ortholog_table, translate_reference
 from phenosigdb.io import CANONICAL_COLUMNS
-from phenosigdb.query import phenosig
+from phenosigdb.query import get_signatures, list_signatures, phenosig
 
 
 def test_parquet_readable():
     build_database()
-    table = phenosig(cell_family="fibroblast", format="table")
+    table = get_signatures(format="table")
     assert not table.empty
     assert set(table.columns) == {
         "signature_id",
@@ -32,19 +32,51 @@ def test_parquet_readable():
     }
 
 
-def test_query_api_works():
+def test_list_signatures_returns_simple_metadata_table():
     build_database()
-    as_dict = phenosig(query="Elyada", format="dict")
-    assert "CAF.Elyada19.iCAF" in as_dict
-    assert "CAF.Elyada19.myo" in as_dict
+    metadata = list_signatures(query="Elyada")
+
+    assert list(metadata["signature_id"]) == ["CAF.Elyada19.iCAF", "CAF.Elyada19.myo"]
+    assert list(metadata.columns) == [
+        "signature_id",
+        "signature_name",
+        "domain",
+        "source",
+        "source_author",
+        "source_pmid",
+        "source_doi",
+        "species",
+        "species_original",
+        "cell_family",
+        "context",
+        "disease",
+        "tags",
+        "n_genes",
+    ]
+    assert set(metadata["domain"]) == {"CAF"}
+    assert "species_original" in metadata.columns
+    assert metadata["n_genes"].gt(0).all()
+
+
+def test_get_signatures_accepts_signature_id_vector():
+    build_database()
+    metadata = list_signatures(query="Elyada")
+    selected_ids = metadata.loc[:, "signature_id"].tolist()[::-1]
+
+    as_dict = get_signatures(selected_ids)
+    assert list(as_dict) == selected_ids
     assert all(isinstance(genes, list) and genes for genes in as_dict.values())
 
+    table = get_signatures(selected_ids[:1], format="table", reference_species="original")
+    assert not table.empty
+    assert table["signature_id"].unique().tolist() == selected_ids[:1]
+
+
+def test_phenosig_wrapper_still_works():
+    build_database()
     metadata = phenosig(source="Elyada.etal;PMID:31197017", format="metadata")
     assert list(metadata["signature_id"]) == ["CAF.Elyada19.iCAF", "CAF.Elyada19.myo"]
-    assert "species_original" in metadata.columns
-
-    table = phenosig(query="CAF", format="table", reference_species="original")
-    assert not table.empty
+    assert "n_genes" in metadata.columns
 
 
 def test_translate_reference_split_and_collapse(tmp_path: Path):

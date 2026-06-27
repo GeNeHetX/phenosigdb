@@ -1,18 +1,10 @@
 # PhenoSigDB
 
-PhenoSigDB is a lightweight, versioned reference database of phenotypic transcriptomic signatures.
+PhenoSigDB is a curated reference database of transcriptomic gene-set signatures.
 
-## What this repository owns
+One row in the parquet = one gene in one signature.
 
-- The canonical data model
-- The curation layout
-- Validation rules
-- A minimal Python API
-- The distributable database artifacts
-
-## Storage model
-
-Reference artifacts:
+## Main files
 
 - `data/phenosigdb.parquet`
   - original curated species
@@ -20,14 +12,148 @@ Reference artifacts:
   - all signatures represented in human symbols
 - `data/phenosigdb_mouse.parquet`
   - all signatures represented in mouse symbols
-- `data/phenosigdb.csv.gz`
-  - debug export of the original curated species table
 - `data/phenosigdb_reference_metadata.json`
-  - build metadata, pinned homology metadata, split/collapse summary
+  - build metadata, pinned homology metadata, translation summary
 - `data/phenosigdb_human_translation_signature_stats.tsv`
 - `data/phenosigdb_mouse_translation_signature_stats.tsv`
 
-Each row represents one gene in one signature.
+## Naming
+
+```text
+signature_id = <DOMAIN>.<SourceKey>.<SignatureName>
+```
+
+Examples:
+
+- `CAF.Elyada19.iCAF`
+- `PDAC.Moffitt15.Classical`
+- `IMMUNE.Becht16.Tcells`
+
+## Build
+
+```bash
+pip install -e .
+phenosigdb-build --download-homology
+phenosigdb-validate
+```
+
+Translation rules are fixed:
+
+- `1:1` keep
+- `1:many` split
+- `many:1` collapse within signature
+- `many:many` split and collapse
+
+## Python
+
+Use two functions:
+
+- `list_signatures()`
+  - returns one row per signature
+- `get_signatures()`
+  - returns gene sets for selected `signature_id` values
+
+### Python example
+
+```python
+from phenosigdb import get_signatures, list_signatures
+
+meta = list_signatures()
+print(meta[["signature_id", "domain", "cell_family", "n_genes"]].head())
+
+caf = meta[meta["domain"] == "CAF"]
+caf_ids = caf["signature_id"]
+
+caf_sets = get_signatures(caf_ids)
+print(caf_sets["CAF.Elyada19.iCAF"][:10])
+```
+
+Minimal text search is available on the metadata table:
+
+```python
+from phenosigdb import list_signatures
+
+list_signatures(query="Elyada")
+```
+
+Return a row table instead of a dict:
+
+```python
+from phenosigdb import get_signatures, list_signatures
+
+meta = list_signatures(query="Elyada")
+table = get_signatures(meta["signature_id"], format="table")
+```
+
+Switch reference species:
+
+```python
+from phenosigdb import get_signatures
+
+original = get_signatures(["CAF.Elyada19.iCAF"], reference_species="original")
+human = get_signatures(["CAF.Elyada19.iCAF"], reference_species="human")
+mouse = get_signatures(["CAF.Elyada19.iCAF"], reference_species="mouse")
+```
+
+Arguments are intentionally small:
+
+- `list_signatures(query=None, reference_species="original", path=None)`
+- `get_signatures(signature_ids=None, format="dict", reference_species="original", path=None)`
+
+`path` can point to a parquet file if you want to read another copy explicitly.
+
+`phenosig()` is still available for backward compatibility, but the intended user API is now `list_signatures()` + `get_signatures()`.
+
+## R
+
+Source one file directly from GitHub:
+
+```r
+source(url("https://raw.githubusercontent.com/GeNeHetX/phenosigdb/v0.1.0/R/phenosigdb.R"))
+```
+
+Requirements:
+
+```r
+install.packages("arrow")
+```
+
+The R helper uses local `data/phenosigdb*.parquet` if present. If not, it downloads the matching parquet from GitHub.
+
+### R example
+
+```r
+source(url("https://raw.githubusercontent.com/GeNeHetX/phenosigdb/v0.1.0/R/phenosigdb.R"))
+
+meta <- list_signatures()
+meta[, c("signature_id", "domain", "cell_family", "n_genes")]
+
+caf_ids <- meta$signature_id[meta$domain == "CAF"]
+
+caf_sets <- get_signatures(caf_ids)
+caf_sets[["CAF.Elyada19.iCAF"]][1:10]
+```
+
+Get a row table:
+
+```r
+meta <- list_signatures(query = "Elyada")
+table <- get_signatures(meta$signature_id, format = "table")
+```
+
+Switch reference species:
+
+```r
+human_sets <- get_signatures(caf_ids[1:2], reference_species = "human")
+mouse_sets <- get_signatures(caf_ids[1:2], reference_species = "mouse")
+```
+
+R function signatures:
+
+- `list_signatures(path = NULL, reference_species = c("original", "human", "mouse"), query = NULL)`
+- `get_signatures(signature_ids = NULL, path = NULL, reference_species = c("original", "human", "mouse"), format = c("dict", "table"))`
+
+For a newer release later, replace `v0.1.0` in the source URL with another git tag.
 
 ## Canonical columns
 
@@ -48,151 +174,19 @@ Each row represents one gene in one signature.
 - `homology_relation`
 - `homology_db_class_key`
 
-Notes:
+## Curation
 
-- `species` and `gene` are the actual reference species and symbols in that parquet.
-- `species_original` and `gene_original` preserve curated provenance.
-- after many-to-one collapse, `gene_original` can contain several source genes separated by `;`.
-
-## Naming convention
-
-`signature_id` uses:
-
-```text
-<DOMAIN>.<SourceKey>.<SignatureName>
-```
-
-- `DOMAIN` is a short uppercase biological or disease domain, for example `PDAC`, `CAF`, `IMMUNE`, `GI`.
-- `SourceKey` is first-author plus year, for example `Moffitt15`, `Elyada19`.
-- `SignatureName` is the source-specific signature label with spaces normalized to dots.
-
-Examples:
-
-- `PDAC.Moffitt15.Classical`
-- `CAF.Elyada19.iCAF`
-- `IMMUNE.Becht16.Tcells`
-- `GI.Busslinger21.Stem.cells`
+- curated source folders: `curation/<DOMAIN>.<SourceKey>/`
+- source metadata: `source.yaml`
+- signature members: `members.tsv`
+- raw supplementary material and one-off intake scripts: `curation/source_material/<SourceKey>/`
 
 ## Licensing
 
-- Code in this repository is MIT licensed.
-- Curated signature data are released under CC BY 4.0.
+- code: MIT
+- curated data: CC BY 4.0
 
 See [LICENSE](LICENSE) and [LICENSE-DATA.md](LICENSE-DATA.md).
-
-## Build and validate
-
-```bash
-pip install -e .
-phenosigdb-build --download-homology
-phenosigdb-validate
-```
-
-`phenosigdb-build` always writes `data/phenosigdb.parquet`.
-
-If a tagged MGI homology file is available locally, or `--download-homology` is used, it also writes:
-
-- `data/phenosigdb_human.parquet`
-- `data/phenosigdb_mouse.parquet`
-- translation metadata and per-signature translation stats
-
-Translation rules are fixed:
-
-- `1:1` homologs are kept
-- `1:many` mappings are split
-- `many:1` mappings are collapsed within each signature
-- `many:many` mappings do both
-
-Split/collapse counts and extreme sizes are recorded in the metadata files.
-
-If a translated signature ends up with zero mapped genes, it cannot appear in the row-per-gene parquet. Those cases are tracked in the translation stats TSVs and the reference metadata JSON.
-
-## Add New Papers
-
-Raw supplementary material and one-off extraction code go in `curation/source_material/`, not in curated source folders.
-
-Put PDFs, spreadsheets, and source files in:
-
-```text
-curation/source_material/<SourceKey>/raw/
-```
-
-Keep one local build script in the source folder, for example:
-
-```text
-curation/source_material/<SourceKey>/build_curated.R
-```
-
-When ready, manually create the curated folder:
-
-```text
-curation/<DOMAIN>.<SourceKey>/
-```
-
-with:
-
-- `source.yaml`
-- `members.tsv`
-
-Then run:
-
-```bash
-phenosigdb-build --download-homology
-phenosigdb-validate
-```
-
-## Python API
-
-```python
-from phenosigdb import phenosig
-
-genes = phenosig(query="CAF", format="dict")
-table = phenosig(cell_family="fibroblast", format="table")
-meta = phenosig(source="Elyada.etal;PMID:31197017", format="metadata")
-```
-
-Reference-species options read prebuilt parquet files:
-
-```python
-from phenosigdb import phenosig
-
-original = phenosig(query="fibroblast", format="dict", reference_species="original")
-all_human = phenosig(query="fibroblast", format="dict", reference_species="human")
-all_mouse = phenosig(query="fibroblast", format="dict", reference_species="mouse")
-```
-
-- `reference_species="original"` reads `data/phenosigdb.parquet`
-- `reference_species="human"` reads `data/phenosigdb_human.parquet`
-- `reference_species="mouse"` reads `data/phenosigdb_mouse.parquet`
-
-## R Use
-
-```r
-library(arrow)
-
-db_original <- read_parquet("data/phenosigdb.parquet")
-db_human <- read_parquet("data/phenosigdb_human.parquet")
-db_mouse <- read_parquet("data/phenosigdb_mouse.parquet")
-```
-
-Downstream R code should choose the parquet it wants. No homology translation logic is required in the R package.
-
-Translation provenance lives in:
-
-- `data/phenosigdb_reference_metadata.json`
-- `data/phenosigdb_human_translation_signature_stats.tsv`
-- `data/phenosigdb_mouse_translation_signature_stats.tsv`
-
-## Curation
-
-Curated sources live under `curation/<source_name>/` with:
-
-- `source.yaml`
-- `members.tsv`
-
-`curation/` contains both canonical curated folders and `source_material/`. Raw supplementary files, notes, and one-off extraction scripts belong in `curation/source_material/`, not in canonical curated folders.
-
-`curation/example_source/` is a template example and is ignored by the build.
 
 <!-- PHENOSIGDB_SIGNATURES_START -->
 
@@ -200,7 +194,7 @@ Curated sources live under `curation/<source_name>/` with:
 
 | Domain | Signature count | Species | Cell family | Context | Disease |
 | --- | ---: | --- | --- | --- | --- |
-| `CAF` | 38 | human | fibroblast | cancer | PDAC |
+| `CAF` | 78 | human, mouse | fibroblast, pericyte, smooth_muscle | cancer | PDAC, unknown |
 | `CCA` | 7 | human | epithelial | cancer | cholangiocarcinoma |
 | `ECM` | 1 | human | stromal | cancer | PDAC |
 | `FIBROBLAST` | 31 | human, mouse | fibroblast | unknown | unknown |
