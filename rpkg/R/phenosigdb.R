@@ -78,7 +78,7 @@
     ),
     version = c(NA, NA, "2025.1.Hs", "2025.1.Hs", "2025.1.Hs", "2025.1.Hs", "current", "current"),
     public_domain = c(NA, NA, "MSIGDB", "MSIGDB", "PID", "BIOCARTA", "REACTOME", "WIKIPATHWAYS"),
-    public_source = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "Pathways", "HomoSapiens"),
+    public_source = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "Pathways", "WikiPathways"),
     public_collection = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "ReactomePathways", "WikiPathways"),
     public_source_resource = c(NA, NA, "msigdb", "msigdb", "pid", "biocarta", "reactome", "wikipathways"),
     public_context = c(NA, NA, "immunology", "cell_type", "pathway", "pathway", "pathway", "pathway"),
