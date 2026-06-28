@@ -73,7 +73,7 @@ Notes:
 
 - default reference is human (`DEFAULT_REFERENCE_SPECIES`)
 - no path argument is needed
-- core reference parquet downloads automatically on first use
+- curated reference parquet downloads automatically on first use
 - `get_signatures()` auto-installs missing optional resources
 - Query uses regex by default; set `fixed=True` for literal text matching
 - All query matching is case-insensitive

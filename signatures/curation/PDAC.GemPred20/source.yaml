@@ -1,0 +1,10 @@
+source: GemPred;DOI:10.1016/j.annonc.2020.10.601
+species: human
+cell_family: tumor
+context: cancer
+disease: PDAC
+tags: PDAC;model;continuous;gemcitabine
+source_author: GemPred
+source_pmid: null
+source_doi: 10.1016/j.annonc.2020.10.601
+

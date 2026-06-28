@@ -25,6 +25,7 @@ CANONICAL_COLUMNS = [
     "species_original",
     "gene",
     "gene_original",
+    "weight",
     "cell_family",
     "context",
     "disease",

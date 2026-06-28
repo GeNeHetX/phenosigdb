@@ -1,0 +1,501 @@
+signature_id	signature_name	gene
+CCA.Serrano23.Desert-like	Desert-like	RBM6
+CCA.Serrano23.Desert-like	Desert-like	FAM156A
+CCA.Serrano23.Desert-like	Desert-like	PNISR
+CCA.Serrano23.Desert-like	Desert-like	LOC613037
+CCA.Serrano23.Desert-like	Desert-like	FAM156B
+CCA.Serrano23.Desert-like	Desert-like	NPIPA7
+CCA.Serrano23.Desert-like	Desert-like	NPIPA8
+CCA.Serrano23.Desert-like	Desert-like	NPIPA1
+CCA.Serrano23.Desert-like	Desert-like	CDK5RAP3
+CCA.Serrano23.Desert-like	Desert-like	AHSA2
+CCA.Serrano23.Desert-like	Desert-like	HSF4
+CCA.Serrano23.Desert-like	Desert-like	NPIPB6
+CCA.Serrano23.Desert-like	Desert-like	RBM25
+CCA.Serrano23.Desert-like	Desert-like	AGAP6
+CCA.Serrano23.Desert-like	Desert-like	ZNF276
+CCA.Serrano23.Desert-like	Desert-like	PILRB
+CCA.Serrano23.Desert-like	Desert-like	TTLL3
+CCA.Serrano23.Desert-like	Desert-like	NPIPA5
+CCA.Serrano23.Desert-like	Desert-like	AGAP4
+CCA.Serrano23.Desert-like	Desert-like	PLA2G4B
+CCA.Serrano23.Desert-like	Desert-like	CCDC14
+CCA.Serrano23.Desert-like	Desert-like	NPIPA2
+CCA.Serrano23.Desert-like	Desert-like	FAM193B
+CCA.Serrano23.Desert-like	Desert-like	NPIPA3
+CCA.Serrano23.Desert-like	Desert-like	ZDHHC11
+CCA.Serrano23.Desert-like	Desert-like	AFG3L1P
+CCA.Serrano23.Desert-like	Desert-like	WASH3P
+CCA.Serrano23.Desert-like	Desert-like	ENGASE
+CCA.Serrano23.Desert-like	Desert-like	EMILIN3
+CCA.Serrano23.Desert-like	Desert-like	D2HGDH
+CCA.Serrano23.Desert-like	Desert-like	TUBGCP6
+CCA.Serrano23.Desert-like	Desert-like	MIR4750
+CCA.Serrano23.Desert-like	Desert-like	CCNL2
+CCA.Serrano23.Desert-like	Desert-like	ASMTL-AS1
+CCA.Serrano23.Desert-like	Desert-like	MAPK8IP3
+CCA.Serrano23.Desert-like	Desert-like	CROCC
+CCA.Serrano23.Desert-like	Desert-like	NPIPB5
+CCA.Serrano23.Desert-like	Desert-like	LINC01125
+CCA.Serrano23.Desert-like	Desert-like	CRYGS
+CCA.Serrano23.Desert-like	Desert-like	STAG3L5P-PVRIG2P-PILRB
+CCA.Serrano23.Desert-like	Desert-like	DNHD1
+CCA.Serrano23.Desert-like	Desert-like	MALAT1
+CCA.Serrano23.Desert-like	Desert-like	WASH7P
+CCA.Serrano23.Desert-like	Desert-like	NPIPB8
+CCA.Serrano23.Desert-like	Desert-like	PNN
+CCA.Serrano23.Desert-like	Desert-like	AGAP5
+CCA.Serrano23.Desert-like	Desert-like	TAF1C
+CCA.Serrano23.Desert-like	Desert-like	LUC7L3
+CCA.Serrano23.Desert-like	Desert-like	WDR27
+CCA.Serrano23.Desert-like	Desert-like	NPIPB3
+CCA.Serrano23.Desert-like	Desert-like	ENTHD2
+CCA.Serrano23.Desert-like	Desert-like	HERC2P9
+CCA.Serrano23.Desert-like	Desert-like	AGAP11
+CCA.Serrano23.Desert-like	Desert-like	ALS2CL
+CCA.Serrano23.Desert-like	Desert-like	NPIPB11
+CCA.Serrano23.Desert-like	Desert-like	LUC7L
+CCA.Serrano23.Desert-like	Desert-like	PDCL3P4
+CCA.Serrano23.Desert-like	Desert-like	ATP2A1
+CCA.Serrano23.Desert-like	Desert-like	CCER2
+CCA.Serrano23.Desert-like	Desert-like	FANCA
+CCA.Serrano23.Desert-like	Desert-like	AGAP9
+CCA.Serrano23.Desert-like	Desert-like	ZNF37BP
+CCA.Serrano23.Desert-like	Desert-like	PCGF3
+CCA.Serrano23.Desert-like	Desert-like	DNAH1
+CCA.Serrano23.Desert-like	Desert-like	ZASP
+CCA.Serrano23.Desert-like	Desert-like	TBC1D3F
+CCA.Serrano23.Desert-like	Desert-like	LOC150776
+CCA.Serrano23.Desert-like	Desert-like	AMY2B
+CCA.Serrano23.Desert-like	Desert-like	CTGLF12P
+CCA.Serrano23.Desert-like	Desert-like	JMJD7-PLA2G4B
+CCA.Serrano23.Desert-like	Desert-like	TBC1D3
+CCA.Serrano23.Desert-like	Desert-like	LINC01355
+CCA.Serrano23.Desert-like	Desert-like	LOC102723859
+CCA.Serrano23.Desert-like	Desert-like	LOC102724862
+CCA.Serrano23.Desert-like	Desert-like	TBC1D3K
+CCA.Serrano23.Desert-like	Desert-like	LOC101060389
+CCA.Serrano23.Desert-like	Desert-like	TBC1D3L
+CCA.Serrano23.Desert-like	Desert-like	TBC1D3C
+CCA.Serrano23.Desert-like	Desert-like	LOC401320
+CCA.Serrano23.Desert-like	Desert-like	ACAP3
+CCA.Serrano23.Desert-like	Desert-like	NKTR
+CCA.Serrano23.Desert-like	Desert-like	CFAP44
+CCA.Serrano23.Desert-like	Desert-like	LENG8
+CCA.Serrano23.Desert-like	Desert-like	TBC1D3H
+CCA.Serrano23.Desert-like	Desert-like	LOC101060321
+CCA.Serrano23.Desert-like	Desert-like	OGT
+CCA.Serrano23.Desert-like	Desert-like	MIR6859-3
+CCA.Serrano23.Desert-like	Desert-like	MIR6859-2
+CCA.Serrano23.Desert-like	Desert-like	MIR6859-4
+CCA.Serrano23.Desert-like	Desert-like	MIR6859-1
+CCA.Serrano23.Desert-like	Desert-like	ATHL1
+CCA.Serrano23.Desert-like	Desert-like	NPIPB15
+CCA.Serrano23.Desert-like	Desert-like	ACIN1
+CCA.Serrano23.Desert-like	Desert-like	MICALL2
+CCA.Serrano23.Desert-like	Desert-like	TBC1D3B
+CCA.Serrano23.Desert-like	Desert-like	WASH2P
+CCA.Serrano23.Desert-like	Desert-like	SCNN1D
+CCA.Serrano23.Desert-like	Desert-like	KIAA0895L
+CCA.Serrano23.Desert-like	Desert-like	ZNF692
+CCA.Serrano23.Desert-like	Desert-like	PKD1P6
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SLC13A1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	CERS2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SMYD2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SCD5
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	ANXA9
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LPGAT1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	HUNK
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	GMNN
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	DLK1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LOC100506688
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SV2B
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	FAIM
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	TMEM156
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	MAB21L2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	DCAF6
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	FAM150B
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	DEFB1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	PAQR5
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SMA5
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	GUSBP3
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	VEPH1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	FXYD6-FXYD2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	PDZK1P1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SMAD5
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SFRP5
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	MKKS
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	DEFB132
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	NEURL3
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SEC14L6
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	KAAG1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SNAP25-AS1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	EGLN1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	AQP1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	MAN2A1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	FXYD2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	HOMER2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	FGF12
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LOC145783
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	GALNT18
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	MBOAT4
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SFT2D2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	TRPC5OS
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	CDC20B
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	VPS41
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LOC102724084
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	RPRD1A
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	ATP1A1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	OLAH
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	S100A1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	DCDC2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	CLLU1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SNRPN
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	HN1L
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	VAT1L
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LOC647859
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SNURF
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	CHST9
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	DSEL
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SLC39A6
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	BLOC1S5
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	TSPAN6
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	FMO1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	RBPMS-AS1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	CHST4
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	C1QL4
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	PDZK1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	PIK3AP1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	MARVELD2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	GDNF
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	ATP1A1-AS1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SYNGR1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	PSG3
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	FAM135B
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	GNB5
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	MAEL
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	ANO6
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	AQP4
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SCARB2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SLC25A30
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	WARS2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	SPP1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	RIC8B
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	TMEM72
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	TACC1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	DSTYK
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	GLIS3
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	KLHDC9
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LOC101928233
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	APCDD1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	PIGC
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	ZNF669
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LRRN4
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	NUAK2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	KCNMA1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LYPD1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	AKR1C1
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	CRLF2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LINC00113
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	LAT2
+CCA.Serrano23.Hepati.Stem-like	Hepati Stem-like	TM4SF4
+CCA.Serrano23.Immune.Classical	Immune Classical	HORMAD2-AS1
+CCA.Serrano23.Immune.Classical	Immune Classical	LOC101929089
+CCA.Serrano23.Immune.Classical	Immune Classical	DCXR
+CCA.Serrano23.Immune.Classical	Immune Classical	KHK
+CCA.Serrano23.Immune.Classical	Immune Classical	APOM
+CCA.Serrano23.Immune.Classical	Immune Classical	SORD
+CCA.Serrano23.Immune.Classical	Immune Classical	ACADSB
+CCA.Serrano23.Immune.Classical	Immune Classical	APOC1
+CCA.Serrano23.Immune.Classical	Immune Classical	SLC27A5
+CCA.Serrano23.Immune.Classical	Immune Classical	TTR
+CCA.Serrano23.Immune.Classical	Immune Classical	LRG1
+CCA.Serrano23.Immune.Classical	Immune Classical	PCK2
+CCA.Serrano23.Immune.Classical	Immune Classical	RBP5
+CCA.Serrano23.Immune.Classical	Immune Classical	AMDHD1
+CCA.Serrano23.Immune.Classical	Immune Classical	NR1I3
+CCA.Serrano23.Immune.Classical	Immune Classical	AKR1C4
+CCA.Serrano23.Immune.Classical	Immune Classical	MIR4751
+CCA.Serrano23.Immune.Classical	Immune Classical	GLS2
+CCA.Serrano23.Immune.Classical	Immune Classical	KDM8
+CCA.Serrano23.Immune.Classical	Immune Classical	RCL1
+CCA.Serrano23.Immune.Classical	Immune Classical	CNDP1
+CCA.Serrano23.Immune.Classical	Immune Classical	APOC1P1
+CCA.Serrano23.Immune.Classical	Immune Classical	CFL2
+CCA.Serrano23.Immune.Classical	Immune Classical	CYP39A1
+CCA.Serrano23.Immune.Classical	Immune Classical	FOLH1B
+CCA.Serrano23.Immune.Classical	Immune Classical	LEAP2
+CCA.Serrano23.Immune.Classical	Immune Classical	GNMT
+CCA.Serrano23.Immune.Classical	Immune Classical	ACOX2
+CCA.Serrano23.Immune.Classical	Immune Classical	A1BG-AS1
+CCA.Serrano23.Immune.Classical	Immune Classical	CYP27A1
+CCA.Serrano23.Immune.Classical	Immune Classical	RDH16
+CCA.Serrano23.Immune.Classical	Immune Classical	CYB5A
+CCA.Serrano23.Immune.Classical	Immune Classical	GSTA2
+CCA.Serrano23.Immune.Classical	Immune Classical	DHODH
+CCA.Serrano23.Immune.Classical	Immune Classical	HSD17B6
+CCA.Serrano23.Immune.Classical	Immune Classical	LINC01146
+CCA.Serrano23.Immune.Classical	Immune Classical	ATF5
+CCA.Serrano23.Immune.Classical	Immune Classical	PIPOX
+CCA.Serrano23.Immune.Classical	Immune Classical	FXYD1
+CCA.Serrano23.Immune.Classical	Immune Classical	TTC36
+CCA.Serrano23.Immune.Classical	Immune Classical	APOC4-APOC2
+CCA.Serrano23.Immune.Classical	Immune Classical	PRG4
+CCA.Serrano23.Immune.Classical	Immune Classical	HAAO
+CCA.Serrano23.Immune.Classical	Immune Classical	ACSM5
+CCA.Serrano23.Immune.Classical	Immune Classical	APOC2
+CCA.Serrano23.Immune.Classical	Immune Classical	LEPR
+CCA.Serrano23.Immune.Classical	Immune Classical	GCDH
+CCA.Serrano23.Immune.Classical	Immune Classical	ABHD6
+CCA.Serrano23.Immune.Classical	Immune Classical	CYP2J2
+CCA.Serrano23.Immune.Classical	Immune Classical	ACSL1
+CCA.Serrano23.Immune.Classical	Immune Classical	SAA4
+CCA.Serrano23.Immune.Classical	Immune Classical	TDO2
+CCA.Serrano23.Immune.Classical	Immune Classical	CFHR1
+CCA.Serrano23.Immune.Classical	Immune Classical	TF
+CCA.Serrano23.Immune.Classical	Immune Classical	SRD5A2
+CCA.Serrano23.Immune.Classical	Immune Classical	ARID3C
+CCA.Serrano23.Immune.Classical	Immune Classical	C2-AS1
+CCA.Serrano23.Immune.Classical	Immune Classical	EHHADH
+CCA.Serrano23.Immune.Classical	Immune Classical	LY75-CD302
+CCA.Serrano23.Immune.Classical	Immune Classical	CETP
+CCA.Serrano23.Immune.Classical	Immune Classical	LOC100507053
+CCA.Serrano23.Immune.Classical	Immune Classical	GLTPD2
+CCA.Serrano23.Immune.Classical	Immune Classical	ZG16
+CCA.Serrano23.Immune.Classical	Immune Classical	CD302
+CCA.Serrano23.Immune.Classical	Immune Classical	HPR
+CCA.Serrano23.Immune.Classical	Immune Classical	NADK2
+CCA.Serrano23.Immune.Classical	Immune Classical	DIO1
+CCA.Serrano23.Immune.Classical	Immune Classical	GPLD1
+CCA.Serrano23.Immune.Classical	Immune Classical	PHYH
+CCA.Serrano23.Immune.Classical	Immune Classical	RGN
+CCA.Serrano23.Immune.Classical	Immune Classical	UROC1
+CCA.Serrano23.Immune.Classical	Immune Classical	CGREF1
+CCA.Serrano23.Immune.Classical	Immune Classical	CAT
+CCA.Serrano23.Immune.Classical	Immune Classical	UGT2B7
+CCA.Serrano23.Immune.Classical	Immune Classical	AHSG
+CCA.Serrano23.Immune.Classical	Immune Classical	AQP9
+CCA.Serrano23.Immune.Classical	Immune Classical	MAT1A
+CCA.Serrano23.Immune.Classical	Immune Classical	FMO3
+CCA.Serrano23.Immune.Classical	Immune Classical	SLC22A1
+CCA.Serrano23.Immune.Classical	Immune Classical	SHBG
+CCA.Serrano23.Immune.Classical	Immune Classical	MASP2
+CCA.Serrano23.Immune.Classical	Immune Classical	MT1X
+CCA.Serrano23.Immune.Classical	Immune Classical	KLKB1
+CCA.Serrano23.Immune.Classical	Immune Classical	LINC01093
+CCA.Serrano23.Immune.Classical	Immune Classical	HMGCL
+CCA.Serrano23.Immune.Classical	Immune Classical	DMGDH
+CCA.Serrano23.Immune.Classical	Immune Classical	LINC00238
+CCA.Serrano23.Immune.Classical	Immune Classical	GSTA1
+CCA.Serrano23.Immune.Classical	Immune Classical	A1BG
+CCA.Serrano23.Immune.Classical	Immune Classical	PLA2G12B
+CCA.Serrano23.Immune.Classical	Immune Classical	APOH
+CCA.Serrano23.Immune.Classical	Immune Classical	HAL
+CCA.Serrano23.Immune.Classical	Immune Classical	AZGP1
+CCA.Serrano23.Immune.Classical	Immune Classical	ALDH8A1
+CCA.Serrano23.Immune.Classical	Immune Classical	SLC51A
+CCA.Serrano23.Immune.Classical	Immune Classical	SLC38A4
+CCA.Serrano23.Immune.Classical	Immune Classical	LOC645434
+CCA.Serrano23.Immune.Classical	Immune Classical	ADI1
+CCA.Serrano23.Immune.Classical	Immune Classical	USH2A
+CCA.Serrano23.Immune.Classical	Immune Classical	NBPF13P
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CTHRC1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	POSTN
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PPAPDC3
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FAM198B
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	EMP3
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	THEMIS
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	RNASE2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	RXFP1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	ACTG2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LOX
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	WISP1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FABP2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	MSC-AS1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	TSPAN2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CLMP
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	GREM1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CLCA2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	IGFL3
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	RAB23
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PPP1R16B
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FAP
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	WDFY1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	AKAP5
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	NOX4
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	MSC
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	NTRK1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	C12ORF54
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	MEP1A
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	SLAMF8
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PI15
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	GNB4
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	C20ORF197
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	RAB31
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	EPYC
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	GPR68
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LUM
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FCER1G
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	EGFL6
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PMP22
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PLN
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LHFPL2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	GXYLT2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	TNFSF4
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FCGR2A
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CD7
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	KRT5
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	MCTP1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LRCH2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	GUCA1A
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	DES
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	IFNG
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	GLIPR1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PRR16
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CYTIP
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	POPDC3
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FCGR3A
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CAPNS2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	DOCK11
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	SERPINH1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	IL12RB1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	RIN2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LILRA6
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PDE1B
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LAX1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	COL3A1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FSTL1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LMO2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	BASP1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CCL5
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FABP4
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	BEND6
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	SLA
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PDPN
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FGFBP1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	GBP5
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CCDC102B
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	IL2RA
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	IFI30
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	GZMB
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LAPTM5
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	ASPN
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	KRT6A
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FKBP14
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	THY1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LOC101927482
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	EVI2B
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	MYO1G
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	ITGB2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	AIM2
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	LOC101926940
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	IDO1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PALLD
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	FPR3
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	DPEP1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	SH2D1B
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	PDLIM3
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	MEDAG
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	CD3E
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	TWIST1
+CCA.Serrano23.Inflammatory.Stroma	Inflammatory Stroma	MMP2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SRI
+CCA.Serrano23.Tumor.Classical	Tumor Classical	LOC102723885
+CCA.Serrano23.Tumor.Classical	Tumor Classical	WBSCR22
+CCA.Serrano23.Tumor.Classical	Tumor Classical	IL1R2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SLC25A40
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TMEM159
+CCA.Serrano23.Tumor.Classical	Tumor Classical	MET
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PINLYP
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ST7
+CCA.Serrano23.Tumor.Classical	Tumor Classical	CANT1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	CKLF
+CCA.Serrano23.Tumor.Classical	Tumor Classical	CKLF-CMTM1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TALDO1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PDIA2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	NUDT16P1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SMPD2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	BCCIP
+CCA.Serrano23.Tumor.Classical	Tumor Classical	VASP
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TSPO
+CCA.Serrano23.Tumor.Classical	Tumor Classical	GTF2E2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	NSG1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ST7-OT3
+CCA.Serrano23.Tumor.Classical	Tumor Classical	UNC50
+CCA.Serrano23.Tumor.Classical	Tumor Classical	LYZ
+CCA.Serrano23.Tumor.Classical	Tumor Classical	BSG
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TMBIM1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TMEM238
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TK1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TES
+CCA.Serrano23.Tumor.Classical	Tumor Classical	RBM48
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TRIM54
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ST7-AS1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PPARG
+CCA.Serrano23.Tumor.Classical	Tumor Classical	LOC389641
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SLC35A1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	BRI3
+CCA.Serrano23.Tumor.Classical	Tumor Classical	HN1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	RRAS
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SNX9
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ST7-AS2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	DHX32
+CCA.Serrano23.Tumor.Classical	Tumor Classical	C11ORF86
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ZNF530
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PPIL6
+CCA.Serrano23.Tumor.Classical	Tumor Classical	DHDH
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TM4SF1-AS1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	AGR2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	DNTTIP1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	OCIAD2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	KLHL35
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SRPK1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	REEP3
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ZNF816-ZNF321P
+CCA.Serrano23.Tumor.Classical	Tumor Classical	GPD2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	CHRNA5
+CCA.Serrano23.Tumor.Classical	Tumor Classical	MCU
+CCA.Serrano23.Tumor.Classical	Tumor Classical	STK39
+CCA.Serrano23.Tumor.Classical	Tumor Classical	NUPR1L
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SLC7A11
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TBC1D8B
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SPATA32
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SERPINB1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	DBF4
+CCA.Serrano23.Tumor.Classical	Tumor Classical	KCCAT333
+CCA.Serrano23.Tumor.Classical	Tumor Classical	FUNDC1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	LHPP
+CCA.Serrano23.Tumor.Classical	Tumor Classical	CAPZA2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SLMO2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PBK
+CCA.Serrano23.Tumor.Classical	Tumor Classical	LY6E
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PAK1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SMAGP
+CCA.Serrano23.Tumor.Classical	Tumor Classical	EZR-AS1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PEX7
+CCA.Serrano23.Tumor.Classical	Tumor Classical	CD24
+CCA.Serrano23.Tumor.Classical	Tumor Classical	MAP3K14-AS1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ZNF321P
+CCA.Serrano23.Tumor.Classical	Tumor Classical	MLX
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ARHGAP18
+CCA.Serrano23.Tumor.Classical	Tumor Classical	RAB22A
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TMEM54
+CCA.Serrano23.Tumor.Classical	Tumor Classical	STK26
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PYCR1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	S100A6
+CCA.Serrano23.Tumor.Classical	Tumor Classical	MAD2L1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ADPRHL1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	CEBPZOS
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TMCO3
+CCA.Serrano23.Tumor.Classical	Tumor Classical	PLAC1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	POC1A
+CCA.Serrano23.Tumor.Classical	Tumor Classical	OTUB1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TM2D1
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TMEM179B
+CCA.Serrano23.Tumor.Classical	Tumor Classical	GALNT3
+CCA.Serrano23.Tumor.Classical	Tumor Classical	SYS1-DBNDD2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TFRC
+CCA.Serrano23.Tumor.Classical	Tumor Classical	MPZL2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	TPRG1-AS2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	FKBP1A-SDCBP2
+CCA.Serrano23.Tumor.Classical	Tumor Classical	ERGIC3

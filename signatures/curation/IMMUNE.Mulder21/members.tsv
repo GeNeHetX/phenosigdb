@@ -1,0 +1,2061 @@
+signature_id	signature_name	gene
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	FCER1A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CLEC10A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CD1C
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CD1E
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DQB1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DPB1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DQA1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	GPR183
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DRB5
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DRB1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PPA1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	DUSP2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PKIB
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CD74
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DRA
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CST7
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	LGALS2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DPA1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CXCR4
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CST3
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DQB2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL4
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	IL1B
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CD83
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	EEF1B2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPLP0
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL5
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	LMNA
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	NDRG2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL10A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS7
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS5
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	EIF3L
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL3
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS8
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RGS1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	FCGR2B
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL7A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	INSIG1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PLD4
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS23
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	NR4A3
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS3
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL15
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	SLC38A1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	LITAF
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL6
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	LTB
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	GZMB
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS18
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	JUNB
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS6
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CPVL
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	NR4A2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	EEF1A1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS3A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DMA
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	NPM1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HERPUD1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS11
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	IL1R2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	ARL4C
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL30
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	REL
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS26
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL31
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL18A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	SPINT2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL19
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS19
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PAK1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	SGK1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL23A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CD69
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	MYADM
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RUNX3
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PPP1R14A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	AREG
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PHLDA2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CCND2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL9
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS4X
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL29
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HSPA8
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CKS2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	G0S2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL22
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HSPE1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS14
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL27
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PTPRE
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS20
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	EEF2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PMAIP1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	GSN
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	DUSP5
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	ARL5B
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HLA-DQA2
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS21
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS27A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS16
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL37A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL18
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL8
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	HSP90AA1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL24
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL27A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL13A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	CREM
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL11
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	BASP1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	NAP1L1
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	PPP1R15A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS15A
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPS13
+IMMUNE.Mulder21.DC2.DC3.cluster14	DC2 DC3 cluster14	RPL32
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	MT1G
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	MT1X
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	MT1E
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	MT2A
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	MT1M
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	MT1F
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	APOC1
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	CTSD
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	LGMN
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	CTSB
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	GLUL
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	CXCL1
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	SDS
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	FUCA1
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	FTL
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	LGALS3
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	GPNMB
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	ABCA1
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	HMOX1
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	IL6
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	YWHAH
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	SLC40A1
+IMMUNE.Mulder21.Macro.cluster11	Macro cluster11	PSAP
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	IGFBP7
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CXCL14
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CALD1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	SPARCL1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	MGP
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	SLPI
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	COL3A1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	COL1A2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	SPARC
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	DCN
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TIMP3
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CAV1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	COL1A1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CTGF
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	KRT8
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TM4SF1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CLU
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	KRT18
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	MYL9
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	EMP2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	RGS5
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TAGLN
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	IGFBP4
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CYR61
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	AGR2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	C1S
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	GNG11
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	ID1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TPM2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	HOPX
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	PDLIM1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	PERP
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	SPTBN1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TPM1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CTSK
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	MMP9
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	S100A16
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CNN3
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TSC22D1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	ACTA2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CRIP2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TFPI
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	EPAS1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	NNMT
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	ATP1B1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	S100A13
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	DLC1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	COL6A3
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	IFI27
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	COL4A2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	MAP1B
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CLDN5
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	C1R
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	NFIB
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CD59
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	DSTN
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	RARRES2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	PRSS23
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	SOX4
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	MDK
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	LMNA
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CRABP2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	BGN
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	AKAP12
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CRYAB
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	ID3
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CTTN
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	EMP1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	EGR1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	MT1E
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	PPIC
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TCF4
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TINAGL1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CCND1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	LCN2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	FILIP1L
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	OCIAD2
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	A2M
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	MT1M
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	PPP1R14A
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	HSPB1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	GPX3
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	CYB5A
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	IGFBP6
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	MGST1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	VCL
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	PMEPA1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	IFITM1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	PCOLCE
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	F2R
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	EPS8
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	DSP
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	DAAM1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	LMO7
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	AEBP1
+IMMUNE.Mulder21.Macro.cluster13	Macro cluster13	TNFRSF12A
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	C1QC
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	C1QB
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	APOE
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	FUCA1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	C1QA
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	DNASE1L3
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DPA1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	ACP5
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	RNASE1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DRB1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	CD74
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DQA1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	PLD3
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	CD63
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	CTSC
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DRB5
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DQA2
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	PTGDS
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DRA
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	CCL18
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	TMEM176B
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	LIPA
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	PRDX1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	SERPINF1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	FCGRT
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	ITM2B
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DPB1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DQB1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	LGALS3
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DMB
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	LGMN
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	AKR1B1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	FABP3
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	TREM2
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	APOC1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	VSIG4
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DMA
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	LGALS3BP
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	MS4A4A
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	C2
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	GPNMB
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	CTSD
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HLA-DQB2
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	NUPR1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	SERPING1
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	GRN
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	CD59
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	CD9
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	IGSF6
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	HEXA
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	MS4A6A
+IMMUNE.Mulder21.Macro.cluster16	Macro cluster16	NPC2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	HBB
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	SLC40A1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	HBA2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CCL18
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	NDUFA4
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	LGALS3
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	FTL
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CAPZB
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CALM2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	FUCA1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ATOX1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	TUBB
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	AKR1B1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	FABP5
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	STMN1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	VAMP8
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	IFI27
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	HSPA8
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	YWHAH
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	LDHB
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PEBP1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	NUPR1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	DAB2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	AIF1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	SDCBP
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	TMSB4X
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	C1QC
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CAPG
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ATP6V1F
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CLTA
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	RPL15
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	MYL12A
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	HNMT
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	SLC25A5
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	OST4
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	UBB
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	COX8A
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CHCHD10
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	COX7C
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	FN1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	AP2S1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	COX5A
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	NPL
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	RHOA
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	COX6C
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	UCP2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	AKR1A1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CYB5A
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	TXN
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	GSN
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	HSPB1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PARK7
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	SRP14
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CTSC
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	C1QA
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PSMB1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ST13
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	UFC1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ARHGDIB
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	VSIG4
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	IDH1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	NDUFB2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	SMS
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	DYNLL1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ANXA5
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ENO1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	UQCRH
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	NDUFA1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CAPZA2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	MGST3
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ECH1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	GLUL
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	C1QB
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	RGS10
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	TPI1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	UQCRQ
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	COX5B
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	NPM1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PSMA4
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PSME2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	POMP
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	MDH1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	MSR1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ARPC1B
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PPDPF
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	NPC2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	LIPA
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PFN1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	SDHB
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	GABARAP
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	RPS5
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	RPS18
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	GPX4
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	GATM
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	RPS28
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ARPC5
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	RPS2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PCBD1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	CD81
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	EIF2S2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PSMA7
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	UQCR10
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	ADI1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	HINT1
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	PTMS
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	NCF4
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	TCEAL8
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	IDH2
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	RPL36AL
+IMMUNE.Mulder21.Macro.cluster17	Macro cluster17	SKP1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SLC40A1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	RNASE1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	LGMN
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	C1QA
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	C1QB
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	STAB1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	DAB2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	F13A1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	A2M
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MAF
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HES1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FUCA1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	IGF1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	EGR1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HSPA1A
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	C1QC
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CCL3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	NR4A2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CCL4
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CTSC
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HSPA1B
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FOSB
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	RGS1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	LMNA
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ATF3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SLCO2B1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	APOE
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ARL4C
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	DNASE1L3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	PLTP
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MS4A4A
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	LIPA
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MS4A7
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CCL18
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	PDK4
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	GPNMB
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	GPR34
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CXCL12
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ZNF331
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ITM2B
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CTSB
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	DNAJB1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MS4A6A
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HSP90AA1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	PRDM1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	NRP1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	GATM
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	BTG2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	PLD3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FPR3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	IER3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	WWP1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FCGRT
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	PSAP
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CTSZ
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CD83
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HLA-DPB1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SDC3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	APOC1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CTSD
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ADAP2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	RB1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CD59
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FGL2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FRMD4B
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	NPC2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HLA-DQA1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MARCKS
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MERTK
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	RGL1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	JUN
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	RGS10
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CREG1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	NR4A3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HLA-DPA1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CXCL2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ZFP36L1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CHMP1B
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SLC7A8
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HLA-DRB1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HSPH1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HERPUD1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	LACC1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MAFB
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	AXL
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CD74
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CD81
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	EGR2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MPEG1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SGK1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	AKR1B1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ABCA1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	NR4A1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TNFAIP3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HBEGF
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TCF4
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CLTC
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	PRNP
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	RNASE6
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	GPR183
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HLA-DRA
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HLA-DMA
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	C2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ANKH
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TMEM176B
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	UBB
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TTYH3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	LPAR6
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	DNAJA4
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	LAMP1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TIPARP
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SASH1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CITED2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MFSD1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CD4
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CD14
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TMEM176A
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ENPP2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TMEM37
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	PMP22
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	NENF
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ICAM1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	IDH1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	AP1B1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	AHR
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	STMN1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TIMP2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HSPB1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	AP2A2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	VOPP1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	GLUL
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ITGB5
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CREM
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	VMO1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	PTMS
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TSPAN4
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HLA-DMB
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HSP90AB1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CXCL3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ARL6IP1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FCGR2A
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FTL
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TGFBI
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	QKI
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CYFIP1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TNFRSF21
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	BAIAP2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ARHGAP18
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	TFRC
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	IL2RA
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HSP90B1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ATP1B1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	FAM213A
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ME1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	GNPDA1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	NCF4
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	LY96
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	DAPK1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SPRED1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ZFHX3
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	MSR1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SERPINF1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	SPATS2L
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CKS2
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	HMOX1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	KCNMA1
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	ETV5
+IMMUNE.Mulder21.Macro.cluster2	Macro cluster2	CCND1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	APOC1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	APOE
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	ACP5
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	SPP1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CTSD
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	GPNMB
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	FABP5
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	LGALS3
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CTSB
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	PLA2G7
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CD63
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CD9
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	PLD3
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	LIPA
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	LGMN
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	TREM2
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	MMP9
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	SDS
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	C1QB
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CCL18
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	RNASE1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	NUPR1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	C1QC
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	FTL
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	GM2A
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	PRDX1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	C1QA
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	PSAP
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	DNASE1L3
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CAPG
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CTSZ
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	A2M
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	FUCA1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	OTOA
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CREG1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	ATP6V1F
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	TMEM176B
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	GRN
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CD59
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	ANXA2
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	PLTP
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CYP27A1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	SDC2
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	LAMP1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	ASAH1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	VAT1
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	TXN
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CALR
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	BCAP31
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	FABP3
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	PLIN2
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	MGST3
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	HEXB
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	IGSF6
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	FPR3
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	FAM20C
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CD81
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	MMP14
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	TMEM176A
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	GSN
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	NR1H3
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	NPL
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	NPC2
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	FCGRT
+IMMUNE.Mulder21.Macro.cluster3	Macro cluster3	CTSA
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CXCL10
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CXCL9
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	GBP1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	IDO1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CXCL11
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	STAT1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	IL4I1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	GBP5
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	WARS
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	MMP9
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CD40
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PPA1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	SLAMF7
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	ANKRD22
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	SOD2
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PTGDS
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	VAMP5
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	TAP1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CCL8
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	TXN
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	LAP3
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PSME2
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	GBP4
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	IRF1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-DRA
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-DQA1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	LITAF
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	ATOX1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CD74
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-DRB1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PLEK
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HAPLN3
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	BIRC3
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	TMEM176B
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	RARRES3
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-B
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	DNASE1L3
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	ATF5
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	APOL3
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	TNFSF10
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	ENPP2
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	IL7R
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	TNFSF13B
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PLA2G7
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CTSH
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	ICAM1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	TMEM176A
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CCL18
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-DPB1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-DPA1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	SERPING1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	ISG15
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	SLAMF8
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	C1QB
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-A
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CTSB
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	APOE
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CD274
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	GBP2
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PLEKHO1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	TNFAIP2
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-DQB1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	LGALS2
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CXCL1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-C
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CCL4
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PRDX1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PSMB9
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	IL32
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	UBE2L6
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PARP14
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	MTHFD2
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CD38
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	LILRB4
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CTSC
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	IL18BP
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	DRAM1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CD63
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CST7
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	NINJ1
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	C1QA
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	SNX10
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	B2M
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	ISG20
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	CTSZ
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	NR1H3
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	HLA-DRB5
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	LAMP3
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	MT2A
+IMMUNE.Mulder21.Macro.cluster6	Macro cluster6	PSMB8
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	RGS1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DPB1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DRB1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	CD74
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DQA1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DPA1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DRA
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DQB1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	CLEC10A
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HES1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DRB5
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DMA
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	GPR183
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	ZNF331
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	C1QC
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	DUSP2
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	C1QA
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HSPA1A
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	IL1B
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	CST3
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	NR4A2
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HERPUD1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	ATF3
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	C1QB
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HLA-DMB
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	CD83
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	JUNB
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HSP90AA1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HSPA8
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	LMNA
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	CPVL
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	CHMP1B
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	NR4A3
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	SGK1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	DNAJB1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	CXCR4
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	PRDM1
+IMMUNE.Mulder21.Macro.cluster7	Macro cluster7	HSP90AB1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSPA1B
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSPH1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSPA6
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	DNAJB1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSPA1A
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	BAG3
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	DNAJA4
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	ZFAND2A
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSP90AA1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSPB1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSPE1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSPD1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	IER5
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	FKBP4
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	TNFSF14
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	G0S2
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	APOBEC3A
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	CACYBP
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	NR4A1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	CHORDC1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	BCL2A1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	CLK1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	DNAJA1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	IL1RN
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	TRA2B
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	DNAJB4
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	JUN
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	PPIF
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	SLC20A1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	EREG
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	TSPYL2
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	RGS2
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	UBB
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	INHBA
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSP90AB1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	JUND
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	SERPINH1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	LDLR
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	PPP1R15A
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	AHSA1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	SOD2
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	CRYAB
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	KLF2
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	ZC3H12A
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	NEAT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	GADD45B
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	DNTTIP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	TIMP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	IL1B
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	IFI30
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	SLC2A3
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	DDIT3
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	NUDC
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	HSPA8
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	RPL39
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	MARCKSL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	STXBP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster12	Mono CD16neg cluster12	CD44
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	G0S2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CCL20
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	IL1B
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	IL1RN
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CXCL2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SOD2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	EREG
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CXCL3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TIMP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	BCL2A1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	NFKBIA
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SERPINB9
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CCL3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PTGS2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CCL2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PLAUR
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TNIP3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CCL4
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SLC2A3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	WTAP
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SOCS3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CD300E
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TNFAIP3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	NAMPT
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PPIF
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	THBS1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SRGN
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	GK
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CD44
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	OLR1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	FTH1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	INHBA
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	MALAT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	IER3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	VEGFA
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	EHD1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	AQP9
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PFKFB3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CXCL5
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	THBD
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	IVNS1ABP
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	NLRP3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PNRC1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TNFAIP6
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	HIF1A
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PLEK
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	VCAN
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ATP13A3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	MARCKSL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ACSL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PHLDA1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	H3F3B
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	IL1A
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	BIRC3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CREM
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	BTG1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SLC25A37
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	DUSP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TREM1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SPP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SAT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	NFKB1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PTX3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	LITAF
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	MMP19
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SDC2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	EMP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	OSM
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	IL23A
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	LIMS1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TNFAIP8
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	NRG1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	DSE
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	MXD1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	FNDC3B
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	IL7R
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SH3BGRL3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TNIP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	KYNU
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ATP2B1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SLC16A10
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PNP
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	UPP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	B4GALT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ATP1B3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PPP1R15A
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PDE4B
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	GLIPR2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CDKN1A
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CEBPB
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ANPEP
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ELL2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	LCP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	APOBEC3A
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TRAF1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	FOSL2
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	F3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	RNF19B
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ICAM1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ZC3H12A
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	PLSCR1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	KDM6B
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	MCL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	RNF144B
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	ADM
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SPHK1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CTNNB1
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	CFLAR
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	SLC7A5
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	MAP2K3
+IMMUNE.Mulder21.Mono.CD16neg.cluster15	Mono CD16neg cluster15	TNF
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	CXCL10
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	ISG15
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFIT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	CCL8
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFIT2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFIT3
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	RSAD2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	TNFSF10
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	ISG20
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	CCL2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFI44L
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	APOBEC3A
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFITM3
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFI6
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	GBP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	CXCL11
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	HERC5
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	LY6E
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IL1RN
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFI44
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PARP14
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	OASL
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	CMPK2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	RABGAP1L
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	OAS3
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	SAMD9L
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	EPSTI1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFI35
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFI27
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	XAF1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	STAT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	RNF213
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	VAMP5
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	OAS1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IRF7
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	USP18
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	OAS2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	EIF2AK2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	TNFSF13B
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	DDX58
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	SSB
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	WARS
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	DYNLT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFITM1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	SAMD9
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	GBP4
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	MT2A
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	LAP3
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IL4I1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	GCH1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	SP110
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	UBE2L6
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	NEXN
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	APOL6
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFIH1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	DDX60L
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFITM2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	NMI
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	TAP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	GBP5
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	ATF5
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	TIMP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	TRIM22
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IFI16
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PARP9
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PLSCR1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IDO1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	GIMAP4
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PSMB9
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PSME2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PML
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	GMPR
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	MNDA
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	BST2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	SERPING1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	ANKRD22
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	SPATS2L
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	STAT2
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	XRN1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PNPT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	BAZ1A
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	CHMP5
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	SP100
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	NUPR1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PSMA4
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	CCR1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PSMB8
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PLAC8
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	IRF1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	ZC3HAV1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	ADAR
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	RBCK1
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	CD69
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	NAPA
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	PLEK
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	GLUL
+IMMUNE.Mulder21.Mono.CD16neg.cluster4	Mono CD16neg cluster4	LGALS9
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	S100A8
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	S100A9
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	S100A12
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	VCAN
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	S100A6
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MNDA
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FOS
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CSTA
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	S100A4
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LYZ
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SELL
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	AP1S2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RBP7
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MALAT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	STXBP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL39
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CSF3R
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	H1FX
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MGST1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TSPO
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	METTL9
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ANXA1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	DUSP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	NCF1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	NEAT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TKT
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SERPINA1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CFP
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EVI2B
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CDA
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LGALS2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	NUP214
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	DUSP6
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CD37
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TXNIP
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CTSS
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	HMGB2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	GCA
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	JUND
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CD52
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	KLF6
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ASGR1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPS24
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FGR
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LTA4H
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	NRGN
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LRRK2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LIMD2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	AGTRAP
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL34
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CYP1B1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	VMP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CCNL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	GMFG
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LYST
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CDC42EP3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CNPY3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	VNN2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CD36
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LST1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RGS2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	YPEL3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SH3BGRL3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FBXL5
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PLP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RHOB
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SLC2A3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MEGF9
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CDC42
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PLBD1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ITGAM
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EIF3M
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL32
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	AHNAK
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EEF1D
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CEBPD
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	QPCT
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	DAZAP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EFHD2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TLE4
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	BST1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL36
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LCP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	NDUFB1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PFDN5
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL36A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	IER2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EVI2A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FLNA
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MYO1F
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TMEM167A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PRKCB
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LRRFIP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	NFE2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FPR1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CREB5
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	KLF2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CD44
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PSTPIP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MCL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	POU2F2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	HSD17B11
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	VAMP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MDM4
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RGS18
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EMP3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FXYD5
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	UQCRB
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	HCST
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	H3F3B
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CD55
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ZFP36L2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CKAP4
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL21
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	HEBP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CD300E
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL7
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TSC22D3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TRMT1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	OSCAR
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	IQGAP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	NRG1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SULT1A1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	GLIPR2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CD302
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CORO1A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PGD
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL38
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL37
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL26
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MSN
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EIF3E
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	IL17RA
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CCDC69
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	IRAK3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPLP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SLC11A1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL35A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CYBB
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	AGTPBP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ARHGEF40
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CCNY
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ADD3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL28
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FMNL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PTPRC
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ERICH1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TLR2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TUBA1A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RASSF2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CLEC4A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	DPYD
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	USP3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CRISPLD2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RTN3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TMEM107
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TNFSF13B
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPS15
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EIF4E3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EMB
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SLC25A37
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MTMR11
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ZEB2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SERPINB1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CDKN2D
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FAM200B
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LENG8
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CD93
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	S100A10
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	COMMD6
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ACAP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	POLE4
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TRAF3IP3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EIF2S3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	UBA52
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL18A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SORL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PLAC8
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	NUMB
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TMEM91
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL29
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CCR2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ZNF467
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPLP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TMEM71
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CARS2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LTB4R
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SSH2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CAPN2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CRTAP
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MYH9
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TREM1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	VIM
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SCAND1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LSM6
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL13
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CCND3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CLEC7A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RCSD1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MBNL1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ASGR2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	DMXL2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ENTPD1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	KCNE3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SET
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RXRA
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LGALS1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PGLS
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPS3A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPS28
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	APLP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MBOAT7
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TUBA4A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	TMEM170B
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	PABPC1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	VCL
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RASGRP2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	COX7A2L
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	WDR74
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	UBE2R2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SH3KBP1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	EIF3H
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	HIPK3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	ACTB
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CDC42SE1
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	MYO1G
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	SULF2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	LILRB2
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	GPSM3
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPS11
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPS15A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	APOBR
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPS14
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	CEBPB
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	FKBP1A
+IMMUNE.Mulder21.Mono.CD16neg.cluster8	Mono CD16neg cluster8	RPL12
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LST1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FCGR3A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	IFITM2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RHOC
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD52
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	S100A4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CDKN1C
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	IFITM3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NAP1L1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SERPINA1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	COTL1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	STXBP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LIMD2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD79B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ICAM3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	KLF2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LTB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CORO1A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD37
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	POU2F2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TCF7L2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LYN
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TESC
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LRRC25
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PTPN6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CFP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FGR
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MALAT1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PTP4A2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FAM110A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EVI2B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SPN
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LY6E
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TKT
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DRAP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MYO1G
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RAP1B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RAC2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	S100A6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPS19
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PILRA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	IFI30
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SLC2A6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LYST
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SPI1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CKB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	VASP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MTSS1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NACA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NAAA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PLAC8
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	UNC119
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD48
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MAPKAPK3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ADA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SEPT9
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BID
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SYTL1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ABI3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TSC22D3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CFD
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	AIF1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GPBAR1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TUBA1A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CX3CR1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CUX1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BIN2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LTA4H
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RGS19
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SIGLEC10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FAM89B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EVL
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TPPP3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HCK
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CSK
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ZNF703
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MYO1F
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BRI3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LILRB2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GPSM3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HHEX
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ACTB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SLC25A6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FMNL1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RASGRP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	AP2A1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PPP1CA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LYL1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RHOG
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	S1PR4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PTGES3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CCDC12
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TRAF3IP3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EEF2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	IKZF1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FKBP1A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RABGAP1L
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CTSS
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SLC11A1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CDC42EP3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CEBPB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PPM1N
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RRAS
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PTPRC
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CDC42
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CDKN2D
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GDI2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PRKCB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPS29
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PTP4A3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ITGAL
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	KLF3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ATG3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PRAM1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SLC44A2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MS4A7
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ICAM2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CDH23
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LILRA2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CYTH4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PGLS
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	APOBEC3A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CHMP4B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SP110
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PKN1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TBC1D10C
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LILRB1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BATF3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NFKBIZ
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GNB2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TNFRSF1B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	UQCRB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GMFG
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PSMB9
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	AP1S2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	IER5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ALDOA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PRELID1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ACAA1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HLA-C
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARHGDIB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	WAS
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GCH1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CYTIP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PABPC1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARPC1B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL21
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RHOB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DEDD2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NKTR
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPS27
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NEAT1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SELPLG
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GNG2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	WARS
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARHGAP30
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TNFSF10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FXYD5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SH3BGRL
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PAG1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SECTM1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EMP3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FCER1G
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TGFB1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ERICH1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CASP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD300A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TXNIP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	OAS1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CSF1R
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TBCB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TCIRG1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARHGEF1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPSA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RHOF
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL36A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	VAMP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MYD88
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	UTRN
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CCND3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	STX10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL8
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PPDPF
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	UBE2J1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MARCKSL1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARPC3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SYF2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RXRA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EEF1A1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CHST2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BTK
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SLC7A7
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RSL24D1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CAPZA1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF3E
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FGD2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARRB2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PFN1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARL6IP5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TSPO
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FKBP8
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LRRFIP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CALM3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SH3BP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PCGF5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ZBTB7A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RASSF5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ICAM4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF3L
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MAFB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RAB8A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PNISR
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GRK6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DOK2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PYCARD
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HCLS1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SH3BGRL3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SNX18
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LGALS9
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARPC4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SUPT4H1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CPPED1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	N4BP2L2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ITGA4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RELT
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CYFIP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MTHFS
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RALB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CNIH4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CEBPA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	H1FX
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ZFAND5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CAMK1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TBXAS1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CCDC88C
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PIK3AP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARPC2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SNRPB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TMEM134
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	OAZ1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL14
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PHF19
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD47
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	APOBEC3C
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RALY
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CDA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RASAL3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	JUNB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PRR13
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SH3BP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MSN
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ACTR3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SLC31A2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SH2D3C
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MAP2K3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TMC6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GNAI2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FLNA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	STK10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PDLIM2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HIGD2A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HMGN2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SCIMP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SHKBP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF3H
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PSMA4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BCL2A1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	UNC93B1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SLC24A4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARRDC1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CIRBP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TMPO
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NCF2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PSMB10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MTMR11
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CAP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PTPN18
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RARA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CALHM2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TADA3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CASP4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TMEM154
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MKRN1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SSNA1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CCM2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SSBP4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PLAGL2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GSTK1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL26
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	VMP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HLA-E
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SNX10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HRH2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ZRSR2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	AMPD2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TLE4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LYPLA1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DOCK5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GIMAP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ANKRD13D
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SSH2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL30
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DBNL
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ABHD3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PAIP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DOCK8
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PSME1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF3F
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARPC5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ANP32B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL31
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RAB24
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	KRAS
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TPM3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DPEP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SSR2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PSMD4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CCZ1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF4E2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD55
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF4A2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	S100A11
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RNF144B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CCNI
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF3D
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LSM6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD300C
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	OXA1L
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HSD17B11
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PPM1G
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CCDC57
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MRPS35
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PPCDC
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CNN2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	AIP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MYL6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	AGTRAP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL11
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RNH1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TUBA4A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NOL7
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SEPT6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARRB1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DUSP6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LSM10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL27A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HAGH
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RBCK1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL18A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HMOX1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RBM3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SNX20
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF3K
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RGS18
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FLI1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PABPC4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	WDR11
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL35A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LMO2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARAP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	STK17B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CCDC115
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LCP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MBD2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GLIPR1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GAPT
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SLC43A2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ERGIC1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ROGDI
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RSL1D1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MAP3K1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SUN2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BLOC1S1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CRBN
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GBP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FAM32A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FYN
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NADK
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARHGAP4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	UBE2I
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CAPZB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SERP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SIRT7
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	FOXP1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SF1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	IDH3G
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GIMAP7
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TSC22D4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL10A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NAA10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RIN3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SEC11A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL10
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARID3A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MXD3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD300E
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CFL1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CAPZA2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TMEM9B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPS4X
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	HADHA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CLEC7A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BTG1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LEPROTL1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SRSF5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	COMMD7
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DUSP5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	COX7A2L
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SVIL
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	IMPDH1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NUDT16
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CAPNS1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TRAPPC1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SNAP23
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	VPS28
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TERF2IP
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	OTUB1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	GYG1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPS15A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	EIF2S3
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CXCL16
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SOX4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	SHISA5
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ZDHHC1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	OXR1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ATG16L2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	BLVRA
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NUMB
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CSNK2B
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ZNF580
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DAZAP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	DIAPH1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	LFNG
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RPL23A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	CD68
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	MED4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	RGL4
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	COX6A1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	NR1H2
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PPP1R12A
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	ARHGAP27
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PGK1
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	TNFRSF14
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PFDN6
+IMMUNE.Mulder21.Mono.CD16pos.cluster1	Mono CD16pos cluster1	PGAM1
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	CD52
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	S100A4
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	PLAC8
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	S100A6
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	CFP
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	LST1
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	SERPINA1
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	SH3BGRL3
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	CORO1A
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	AP1S2
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	LIMD2
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	COTL1
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	IFITM2
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	STXBP2
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	EMP3
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	TSPO
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	KLF2
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	IFITM3
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	IFI30
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	TXNIP
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	PRELID1
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	LTA4H
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	RPL18A
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	FKBP1A
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	POU2F2
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	S100A10
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	RHOC
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	FGR
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	CD300E
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	PTP4A2
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	CD37
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	PTPN6
+IMMUNE.Mulder21.Mono.CD16pos.cluster5	Mono CD16pos cluster5	APOBEC3A
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	STMN1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HIST1H4C
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TUBB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	H2AFZ
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	UBE2C
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TUBA1B
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TOP2A
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HMGB2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TK1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HMGN2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PTTG1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDK1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MKI67
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TYMS
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HMGB1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PCNA
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RRM2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	BIRC5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DUT
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NUSAP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CENPF
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	KPNA2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CENPM
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NUCKS1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	H2AFV
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DEK
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RPA3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SMC4
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MCM7
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDKN3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CKS2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TMEM106C
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DTYMK
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RAN
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TPX2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PRC1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RANBP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SIVA1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ZWINT
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	GGH
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CENPW
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TUBB4B
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	IDH2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CCNB2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PARP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	AURKB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SMC2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CCNB1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TUBA1C
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HMMR
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ANP32B
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDC20
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HMGB3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SNRNP25
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MZT2B
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ARL6IP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TMPO
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	LSM4
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DNMT1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RAD51AP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	C1QB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	UBE2S
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	H2AFX
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DHFR
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SLC25A5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ANAPC11
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PTMA
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	GMNN
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	YWHAH
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MZT2A
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	LDHB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MCM3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CARHSP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NASP
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CLSPN
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CENPE
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	C1QC
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CCNA2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ALOX5AP
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ANLN
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SNRPD1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RRM1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DNAJC9
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MCM5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HELLS
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TACC3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SPP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	FEN1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PPIA
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ANP32E
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DDX39A
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	UBE2T
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ATAD2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CEP55
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	GINS2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MAD2L1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ASPM
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PLK1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CENPN
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ASF1B
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SNRPB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDKN2C
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SKA2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CENPK
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CKAP2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	USP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MCM4
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DNASE1L3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	LMNB1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RAD21
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	C1QA
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	UBB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RNASEH2A
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RACGAP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HLA-DRB5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PHF19
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NUDT1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MRPL51
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	FAM111A
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CACYBP
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MYBL2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CKLF
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MCM6
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RPL39L
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CCDC34
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	LSM5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	KIF22
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HINT1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CHCHD2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CTSD
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TROAP
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	GGCT
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	COMMD4
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HNRNPAB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDT1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SHCBP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CBX5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HSP90AA1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SPC25
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDK4
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PTMS
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	VDAC3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RHEB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NME4
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SMC1A
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	KIF20B
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	LSM2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ENO1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RGS1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	FAM111B
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MGST3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	UQCRQ
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SVIP
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	RBBP7
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PA2G4
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	KIF11
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TMEM109
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ZDHHC12
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NENF
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDCA8
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NCAPH
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SNRPF
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ORC6
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	DLGAP5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	BUB3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	GALM
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NUF2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	LIG1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDCA3
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NCAPG
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NOP56
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	FOXM1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SNRPG
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MELK
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NPM1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SSRP1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	AURKA
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	COX8A
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	WDR34
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	EZH2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TPRKB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	HSPE1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	GAPDH
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	BRCA2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TCF19
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SLBP
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PSME2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CTSB
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	BRCA1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SAE1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MCM2
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	KPNB1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	TMEM14C
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NDC80
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	MRPL17
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CKAP5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PKMYT1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	KIFC1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	ICMT
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	PAICS
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	NME1
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	CDCA5
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	KIF23
+IMMUNE.Mulder21.Prolif.cluster10	Prolif cluster10	SMC3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CCL5
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	IL32
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	NKG7
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	GNLY
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	KLRB1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD3D
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	GZMA
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD7
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD3E
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	GZMB
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	LTB
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CST7
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD69
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PRF1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	IL7R
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	GZMH
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	KLRD1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD3G
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CTSW
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CXCL13
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	LCK
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	GZMM
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ETS1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	FYN
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD8A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SPOCK2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD247
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ACAP1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RORA
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ITM2A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD27
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CCL4
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RUNX3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CXCR4
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	IFITM1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ISG20
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	TNFRSF18
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	EVL
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	IL2RB
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CMC1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	BCL11B
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	HOPX
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SLC38A1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	IKZF3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ZFP36L2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PPP2R5C
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	TIGIT
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	STK17A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD8B
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CLEC2D
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SYNE2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	DUSP4
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD96
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RAC2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	BTG1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RHOH
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	BATF
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PRKCH
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	TNFRSF4
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	MALAT1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	TUBA4A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	LBH
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	TSC22D3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RPS27
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	FGFBP2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SEPT1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SH2D2A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PYHIN1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CNOT6L
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SH2D1A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PRDM1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	XCL1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	IL2RG
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ICOS
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	LAT
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	OCIAD2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	STK4
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PCSK7
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CCND2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PIM2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PTPN7
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	KLRG1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	AKNA
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	STAT4
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CORO1A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PIK3IP1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD6
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RASGRP1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RPS15A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RARRES3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CYTIP
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RNF19A
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	GPR171
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ZAP70
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CD52
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	LAG3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SYTL3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ODF2L
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SLFN5
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RPS3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	ARL4C
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	KLRF1
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CLIC3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PNISR
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	GIMAP7
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	RNF125
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	CHST12
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	DUSP2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	PDCD4
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	MIAT
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	GNG2
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	FKBP11
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	BIRC3
+IMMUNE.Mulder21.T.cell.doublets.cluster9	T cell doublets cluster9	SIT1

@@ -30,6 +30,7 @@ from .io import (
     translation_signature_stats_path,
     write_database,
 )
+from .optional_resources import OPTIONAL_RESOURCES
 from .validate import validate_database
 
 README_START = "<!-- PHENOSIGDB_SIGNATURES_START -->"
@@ -71,10 +72,10 @@ def _merge_record(defaults: dict[str, Any], member: dict[str, Any]) -> dict[str,
     record: dict[str, Any] = {}
     for field in CANONICAL_COLUMNS:
         record[field] = None
-    for field in ("signature_id", "signature_name", "source", "source_author", "source_pmid", "source_doi", "species", "gene", "cell_family", "context", "disease", "tags"):
+    for field in ("signature_id", "signature_name", "source", "source_author", "source_pmid", "source_doi", "species", "gene", "weight", "cell_family", "context", "disease", "tags"):
         record[field] = normalize_blank(defaults.get(field))
 
-    for key in ("signature_id", "signature_name", "gene", "species", "cell_family", "context", "disease", "tags"):
+    for key in ("signature_id", "signature_name", "gene", "weight", "species", "cell_family", "context", "disease", "tags"):
         value = normalize_blank(member.get(key))
         if value is not None:
             record[key] = value
@@ -118,6 +119,9 @@ def _clean_record(record: dict[str, Any]) -> dict[str, Any]:
     else:
         record["gene"] = gene
 
+    weight = normalize_blank(record.get("weight"))
+    record["weight"] = None if weight is None else float(weight)
+
     record["tags"] = normalize_tags(record.get("tags"))
     for key in ("signature_id", "signature_name", "source", "disease"):
         record[key] = normalize_blank(record.get(key))
@@ -137,6 +141,11 @@ def _family_from_signature(signature_id: str) -> str:
     return signature_id.split(".", 1)[0]
 
 
+def _source_key_from_signature(signature_id: str) -> str:
+    parts = signature_id.split(".", 2)
+    return parts[1] if len(parts) >= 2 else "unknown"
+
+
 def _family_summary(df: pd.DataFrame) -> pd.DataFrame:
     meta = (
         df.groupby("signature_id", as_index=False, sort=True)
@@ -151,6 +160,18 @@ def _family_summary(df: pd.DataFrame) -> pd.DataFrame:
         )
     )
     meta["signature_family"] = meta["signature_id"].map(_family_from_signature)
+    meta["source_key"] = meta["signature_id"].map(_source_key_from_signature)
+    if "weight" in df.columns:
+        formats = (
+            df.assign(__has_weight=df["weight"].notna())
+            .groupby("signature_id", as_index=False, sort=True)["__has_weight"]
+            .any()
+            .rename(columns={"__has_weight": "signature_format"})
+        )
+        formats["signature_format"] = formats["signature_format"].map(lambda value: "continuous" if value else "binary")
+        meta = meta.merge(formats, on="signature_id", how="left", sort=False)
+    else:
+        meta["signature_format"] = "binary"
     return meta
 
 
@@ -172,6 +193,55 @@ def _write_summary_files(meta: pd.DataFrame, output_dir: Path) -> None:
     summary_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def _source_summary(meta: pd.DataFrame) -> pd.DataFrame:
+    grouped = (
+        meta.groupby(["signature_family", "source_key"], as_index=False, sort=True)
+        .agg(
+            signature_count=("signature_id", "nunique"),
+            signature_format=("signature_format", lambda values: ", ".join(sorted(set(values)))),
+            species=("species", lambda values: ", ".join(sorted(set(values)))),
+            context=("context", lambda values: ", ".join(sorted(set(values)))),
+            disease=("disease", lambda values: ", ".join(sorted(set(pd.Series(values).fillna("unknown"))))),
+        )
+    )
+    grouped.rename(columns={"signature_family": "domain"}, inplace=True)
+    return grouped
+
+
+def _render_readme_signature_section(meta: pd.DataFrame) -> list[str]:
+    core_summary = _source_summary(meta)
+    lines = [
+        README_START,
+        "",
+        "## Available Signatures",
+        "",
+        f"Core curated signatures: **{int(meta['signature_id'].nunique())}** across **{int(len(core_summary))}** curated source keys.",
+        "",
+        "| Domain | SourceKey | Signatures | Format | Species | Context | Disease |",
+        "| --- | --- | ---: | --- | --- | --- | --- |",
+    ]
+    for row in core_summary.itertuples(index=False):
+        lines.append(
+            f"| `{row.domain}` | `{row.source_key}` | {int(row.signature_count)} | {row.signature_format} | {row.species} | {row.context} | {row.disease} |"
+        )
+
+    lines.extend(
+        [
+            "",
+            f"Optional downloadable references available through `phenosigdb_resources()`: **{len(OPTIONAL_RESOURCES)}**.",
+            "",
+            "| Resource | Source Resource | Collection | Prefix | Format | Context |",
+            "| --- | --- | --- | --- | --- | --- |",
+        ]
+    )
+    for resource in OPTIONAL_RESOURCES:
+        lines.append(
+            f"| `{resource['resource']}` | `{resource['source_resource']}` | `{resource['collection']}` | `{resource['prefix']}` | {resource['signature_format']} | {resource['context']} |"
+        )
+    lines.extend(["", README_END])
+    return lines
+
+
 def _update_readme_signature_section(meta: pd.DataFrame) -> None:
     readme = Path(__file__).resolve().parents[1] / "README.md"
     if not readme.exists():
@@ -179,25 +249,13 @@ def _update_readme_signature_section(meta: pd.DataFrame) -> None:
     content = readme.read_text(encoding="utf-8").splitlines()
     start = next((i for i, line in enumerate(content) if line.strip() == README_START), None)
     end = next((i for i, line in enumerate(content) if line.strip() == README_END), None)
+    section = _render_readme_signature_section(meta)
     if start is None or end is None or end <= start:
-        return
-
-    section = [
-        README_START,
-        "",
-        "## Available Signatures",
-        "",
-        "| Domain | Signature count | Species | Cell family | Context | Disease |",
-        "| --- | ---: | --- | --- | --- | --- |",
-    ]
-    for family, group in meta.groupby("signature_family", sort=True):
-        species = ", ".join(sorted(set(group["species"].tolist())))
-        cell_family = ", ".join(sorted(set(group["cell_family"].tolist())))
-        context = ", ".join(sorted(set(group["context"].tolist())))
-        disease = ", ".join(sorted(set(group["disease"].fillna("unknown").tolist())))
-        section.append(f"| `{family}` | {len(group)} | {species} | {cell_family} | {context} | {disease} |")
-    section.extend(["", README_END])
-    new_content = content[:start] + section + content[end + 1 :]
+        if content and content[-1] != "":
+            content.append("")
+        new_content = content + section
+    else:
+        new_content = content[:start] + section + content[end + 1 :]
     readme.write_text("\n".join(new_content) + "\n", encoding="utf-8")
 
 

@@ -65,7 +65,7 @@ Notes:
 
 - default reference is human
 - no path argument is needed
-- core reference parquet downloads automatically on first use
+- curated reference parquet downloads automatically on first use
 - `get_signatures()` auto-installs missing optional resources
 - Query uses regex by default; set `fixed = TRUE` for literal text matching
 - All query matching is case-insensitive

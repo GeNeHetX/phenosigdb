@@ -1,0 +1,336 @@
+signature_id	signature_name	gene
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.non.malignant.D1	Diffuse Gastric Cancer non malignant.D1	GAST
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.non.malignant.D1	Diffuse Gastric Cancer non malignant.D1	LCN2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.non.malignant.D1	Diffuse Gastric Cancer non malignant.D1	PRSS1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.non.malignant.D1	Diffuse Gastric Cancer non malignant.D1	PRSS3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.non.malignant.D1	Diffuse Gastric Cancer non malignant.D1	TFF2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.non.malignant.D1	Diffuse Gastric Cancer non malignant.D1	FAM3D
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	ANPEP
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	ANXA1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	ANXA2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	KRT18
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	KRT19
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	KRT20
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	S100P
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	SDCBP2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	SH3BGRL3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	ALDOB
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	APOA1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	APOA4
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	APOC3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	C15ORF48
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	CEACAM5
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	CEACAM6
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	CLDN7
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	CRIP1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	DPCR1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	FABP1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	FABP2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	FXYD3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	GKN1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	GKN2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	HN1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	IFI27
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	IL32
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	KLK10
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	KRT7
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	KRT8
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	LGALS3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	MTTP
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	NEAT1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	PCK1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	PHGR1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	PI3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	PLAC8
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	PRAP1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	PSCA
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	RBP2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	REG4
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	S100A10
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	S100A11
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	S100A14
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	S100A16
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	S100A6
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	TM4SF1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	TM4SF20
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	TM4SF4
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	TMPRSS15
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	TSPAN8
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.premalignant.D2	Diffuse Gastric Cancer premalignant.D2	LGALS4
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	EZR
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	PERP
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	RAC1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	AKR1C3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	ARPC1B
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	CALR
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	COX6A1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	GSTA1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	CRYL1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	CYBRD1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	FAM3C
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	HIGD1A
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	HSD17B2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	MALL
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	MISP
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	OAT
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	HSP90B1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	MMP7
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	NDUFA1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	SPRR1B
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	TCEB2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	UQCR11
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	USMG5
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	YWHAZ
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	PCK2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Intestinal.like.D3	Diffuse Gastric Cancer Intestinal like.D3	SULT1A1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	CHN1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	CNN3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL15A1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL18A1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL1A1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL1A2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL3A1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL4A1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	GADD45B
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	GPX3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	IFITM2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	IGFBP7
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	ITGB1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	JUNB
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	LGALS1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	LMNA
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	PTRF
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	RERGL
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	RGS16
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	RGS5
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	S100A4
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	SDC2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	SELM
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	SERPINH1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	CALD1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	CAV1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	CD36
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	EMP3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	FN1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	FRZB
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	PPP1R14A
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	PRKCDBP
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL4A2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL5A2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL6A1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	COL6A2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	CRIP2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	CSRP2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	CTSC
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	DCN
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	DSTN
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	EID1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	LUM
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	MFGE8
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	MGP
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	MYH11
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	MYL9
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	MYLK
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	NDUFA4L2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	PI15
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	PLN
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	POSTN
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	SOD3
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	SPARC
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	SPARCL1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	SPON2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	TAGLN
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	TFPI
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	THY1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	TIMP1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	TPM1
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	TPM2
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	PRSS23
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	TUBA1A
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	VIM
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	ARHGDIB
+GASTRIC_CANCER.Kim22.Diffuse.Gastric.Cancer.Diffuse.like.D4	Diffuse Gastric Cancer Diffuse like.D4	BGN
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	C16ORF89
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	C6ORF58
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	CLU
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	CST3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	LIPF
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	MUC6
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	PGC
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	REG3A
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	LTF
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	LYZ
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	PRR4
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	REG1A
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	ZG16B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	BPIFB1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	MSMB
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.non.malignant.I1	Intestinal Gastric Cancer non malignant.I1	OLFM4
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PTMA
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	SNRPG
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TMSB10
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ATP5G3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	CYCS
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	EIF4A1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ENO1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	GAPDH
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	H2AFZ
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HMGB1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HMGN2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HSP90AA1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HSPE1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PFN1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PPIA
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PRDX1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PSMA7
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	RAN
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TPI1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TUBA1B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	UBA52
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	UQCRH
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ATP5B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	CDKN2A
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	IFITM3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	LY6E
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	MT1G
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	MT1H
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	MT2A
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	NACA
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PTGES3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TFF3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	UBE2C
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ALDOA
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	CALM2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	COX4I1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	COX6B1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	DYNLL1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	GSTP1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	NDUFA4
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	RPL36AL
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TAGLN2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TXN
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	UQCRQ
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ATP5E
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ATP5G1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ATP5I
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ATP5J2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ATP5L
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	BTF3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	C14ORF2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	COX7B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	COX7C
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	COX8A
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	DBI
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	EEF1A1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	EEF1B2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	EEF1D
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	EIF1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	FABP5
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	FAU
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	GNB2L1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	GPX2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	H3F3A
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	H3F3B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HINT1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HIST1H4C
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HNRNPA2B1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HSP90AB1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	HSPA8
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	LDHA
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	MT1E
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	NPM1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	OAZ1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PKM
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PPIB
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	SERF2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	SLIRP
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	SPINK1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TMA7
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TPT1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TSPO
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TUBB
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TUBB4B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	UBB
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	UQCR10
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	UQCRB
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	YBX1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	AKR1B10
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	ANXA10
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	CLIC1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	CLTB
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	CTSE
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	MUC5AC
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	NQO1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	OCIAD2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	PSME2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TFF1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	TMSB4X
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	AGR2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	CA2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	CYSTM1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.premalignant.I2	Intestinal Gastric Cancer premalignant.I2	SEC61G
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CES2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CFL1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CLDN18
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	MAL2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	MALAT1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	MGST3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	TSPAN1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	TXNDC17
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	VAMP8
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	AGPAT2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	AGR3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	ATP5J
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	B2M
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	C19ORF33
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	C19ORF77
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CALM1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CBR1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CD55
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CD59
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CD63
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CD9
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CLDN3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CLDN4
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	COX5B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	COX6C
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	COX7A2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	CSTB
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	EDF1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	EPCAM
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	FTH1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	FTL
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	HLA-A
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	HLA-B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	HLA-C
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	HPGD
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	HRASLS2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	HSPB1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	ISG15
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	ISG20
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	MUC13
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	MYL12A
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	MYL12B
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	MYL6
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	PHLDA2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	POLD4
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	POMP
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	PRR13
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	RARRES3
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	RHOC
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	SEPP1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	SERPINB6
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	SFN
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	SLPI
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	SMIM22
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	SRI
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	TACSTD2
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	TMEM54
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	GLRX
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	PEPD
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	PLS1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	DGAT1
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	DHRS11
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	FUOM
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	KHK
+GASTRIC_CANCER.Kim22.Intestinal.Gastric.Cancer.Intestinal.like.I3	Intestinal Gastric Cancer Intestinal like.I3	TM4SF5

@@ -1,4 +1,4 @@
-.phenosigdb_package_version <- "0.1.2"
+.phenosigdb_package_version <- "0.1.3"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
@@ -54,10 +54,10 @@
       "CELLMARKER.",
       "MSIGDB.C7.",
       "MSIGDB.C8.",
-      "MSIGDB.PID.",
-      "MSIGDB.BIOCARTA.",
+      "PID.",
+      "BIOCARTA.",
       "REACTOME.PATHWAYS.",
-      "WIKIPATHWAYS.HOMOSAPIENS."
+      "WIKIPATHWAYS."
     ),
     signature_format = c("continuous", "binary", "binary", "binary", "binary", "binary", "binary", "binary"),
     install_kind = c("archive", "archive", "gmt", "gmt", "gmt", "gmt", "zip_gmt", "wikipathways_current_gmt"),
@@ -77,10 +77,10 @@
       "https://data.wikipathways.org/current/gmt/"
     ),
     version = c(NA, NA, "2025.1.Hs", "2025.1.Hs", "2025.1.Hs", "2025.1.Hs", "current", "current"),
-    public_domain = c(NA, NA, "MSIGDB", "MSIGDB", "MSIGDB", "MSIGDB", "REACTOME", "WIKIPATHWAYS"),
+    public_domain = c(NA, NA, "MSIGDB", "MSIGDB", "PID", "BIOCARTA", "REACTOME", "WIKIPATHWAYS"),
     public_source = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "Pathways", "HomoSapiens"),
     public_collection = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "ReactomePathways", "WikiPathways"),
-    public_source_resource = c(NA, NA, "msigdb", "msigdb", "msigdb", "msigdb", "reactome", "wikipathways"),
+    public_source_resource = c(NA, NA, "msigdb", "msigdb", "pid", "biocarta", "reactome", "wikipathways"),
     public_context = c(NA, NA, "immunology", "cell_type", "pathway", "pathway", "pathway", "pathway"),
     public_tags = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "Reactome", "WikiPathways"),
     public_species = c(NA, NA, "human", "human", "human", "human", "human", "human"),

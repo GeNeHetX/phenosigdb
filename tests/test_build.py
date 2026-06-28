@@ -13,6 +13,12 @@ def test_build_succeeds():
     assert PARQUET_PATH.exists()
     assert not pd.read_parquet(PARQUET_PATH).empty
     assert frame["signature_id"].nunique() >= 500
+    readme = Path("README.md").read_text(encoding="utf-8")
+    assert "<!-- PHENOSIGDB_SIGNATURES_START -->" in readme
+    assert "`PAMG20`" in readme
+    assert "`GemPred20`" in readme
+    assert "`celltypist`" in readme
+    assert "`wikipathways`" in readme
 
 
 def test_build_writes_translated_references_with_homology(tmp_path: Path):

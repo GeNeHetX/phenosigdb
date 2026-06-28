@@ -66,6 +66,23 @@ def validate_database(data: str | Path | pd.DataFrame | None = None, reference_s
             count = int(empty.sum())
             raise ValueError(f"Column '{column}' contains {count} missing or empty values")
 
+    if "weight" in frame.columns:
+        numeric_weight = pd.to_numeric(frame["weight"], errors="coerce")
+        invalid_weight = frame["weight"].notna() & numeric_weight.isna()
+        if invalid_weight.any():
+            count = int(invalid_weight.sum())
+            raise ValueError(f"Column 'weight' contains {count} non-numeric values")
+        if frame["signature_id"].nunique():
+            format_flags = (
+                frame.assign(__has_weight=numeric_weight.notna())
+                .groupby("signature_id", sort=True)["__has_weight"]
+                .agg(["any", "all"])
+            )
+            mixed = format_flags.loc[format_flags["any"] & ~format_flags["all"]]
+            if not mixed.empty:
+                bad = ", ".join(mixed.index[:5].tolist())
+                raise ValueError(f"Weighted and unweighted rows are mixed within signatures: {bad}")
+
     if reference_species in {"human", "mouse"}:
         species_values = {value for value in frame["species"].map(normalize_blank) if value is not None}
         invalid = sorted(species_values.difference({reference_species}))

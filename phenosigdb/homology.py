@@ -169,6 +169,13 @@ def _first(series: pd.Series):
     return None
 
 
+def _sum_or_none(series: pd.Series):
+    values = pd.to_numeric(series, errors="coerce").dropna()
+    if values.empty:
+        return None
+    return float(values.sum())
+
+
 def _gene_key(series: pd.Series) -> pd.Series:
     return series.fillna("").astype(str).str.upper()
 
@@ -287,6 +294,7 @@ def translate_reference(
             species=("species", _first),
             species_original=("species_original", _collapse_join),
             gene_original=("gene_original", _collapse_join),
+            weight=("weight", _sum_or_none),
             cell_family=("cell_family", _first),
             context=("context", _first),
             disease=("disease", _first),

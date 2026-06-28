@@ -1,0 +1,68 @@
+from __future__ import annotations
+
+OPTIONAL_RESOURCES = [
+    {
+        "resource": "celltypist",
+        "prefix": "CELLTYPIST.*",
+        "source_resource": "celltypist",
+        "collection": "reference_models",
+        "signature_format": "continuous",
+        "context": "cell_type",
+    },
+    {
+        "resource": "cellmarker",
+        "prefix": "CELLMARKER.*",
+        "source_resource": "cellmarker",
+        "collection": "cell_markers",
+        "signature_format": "binary",
+        "context": "cell_type",
+    },
+    {
+        "resource": "msigdb_c7immune",
+        "prefix": "MSIGDB.C7.*",
+        "source_resource": "msigdb",
+        "collection": "C7",
+        "signature_format": "binary",
+        "context": "immunology",
+    },
+    {
+        "resource": "msigdb_c8celltype",
+        "prefix": "MSIGDB.C8.*",
+        "source_resource": "msigdb",
+        "collection": "C8",
+        "signature_format": "binary",
+        "context": "cell_type",
+    },
+    {
+        "resource": "pid",
+        "prefix": "PID.*",
+        "source_resource": "pid",
+        "collection": "PID",
+        "signature_format": "binary",
+        "context": "pathway",
+    },
+    {
+        "resource": "biocarta",
+        "prefix": "BIOCARTA.*",
+        "source_resource": "biocarta",
+        "collection": "BIOCARTA",
+        "signature_format": "binary",
+        "context": "pathway",
+    },
+    {
+        "resource": "reactome",
+        "prefix": "REACTOME.PATHWAYS.*",
+        "source_resource": "reactome",
+        "collection": "ReactomePathways",
+        "signature_format": "binary",
+        "context": "pathway",
+    },
+    {
+        "resource": "wikipathways",
+        "prefix": "WIKIPATHWAYS.*",
+        "source_resource": "wikipathways",
+        "collection": "WikiPathways",
+        "signature_format": "binary",
+        "context": "pathway",
+    },
+]

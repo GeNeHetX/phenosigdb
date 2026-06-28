@@ -23,6 +23,7 @@ def test_parquet_readable():
         "species_original",
         "gene",
         "gene_original",
+        "weight",
         "cell_family",
         "context",
         "disease",
@@ -92,9 +93,9 @@ def test_translate_reference_split_and_collapse(tmp_path: Path):
     )
     frame = pd.DataFrame(
         [
-            ["S1", "S1", "x", "x", "", "", "human", "human", "COL1A1", "COL1A1", "fibroblast", "cancer", "PDAC", "CAF", "same_species", ""],
-            ["S1", "S1", "x", "x", "", "", "human", "human", "HSD3B1", "HSD3B1", "fibroblast", "cancer", "PDAC", "CAF", "same_species", ""],
-            ["S1", "S1", "x", "x", "", "", "human", "human", "HSD3B2", "HSD3B2", "fibroblast", "cancer", "PDAC", "CAF", "same_species", ""],
+            ["S1", "S1", "x", "x", "", "", "human", "human", "COL1A1", "COL1A1", None, "fibroblast", "cancer", "PDAC", "CAF", "same_species", ""],
+            ["S1", "S1", "x", "x", "", "", "human", "human", "HSD3B1", "HSD3B1", 1.0, "fibroblast", "cancer", "PDAC", "CAF", "same_species", ""],
+            ["S1", "S1", "x", "x", "", "", "human", "human", "HSD3B2", "HSD3B2", 2.0, "fibroblast", "cancer", "PDAC", "CAF", "same_species", ""],
         ],
         columns=CANONICAL_COLUMNS,
     )
@@ -103,6 +104,7 @@ def test_translate_reference_split_and_collapse(tmp_path: Path):
     assert set(translated["gene"]) == {"Col1a1", "Hsd3b8"}
     collapsed = translated.loc[translated["gene"] == "Hsd3b8"].iloc[0]
     assert collapsed["gene_original"] == "HSD3B1;HSD3B2"
+    assert collapsed["weight"] == 3.0
     assert summary["collapse_removed_rows"] == 1
     assert summary["collapse_output_rows"] == 1
     assert int(stats.loc[stats["signature_id"] == "S1", "max_collapse_size"].iloc[0]) == 2
