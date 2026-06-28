@@ -1,213 +1,220 @@
 # PhenoSigDB
 
-PhenoSigDB is a curated reference database of transcriptomic gene-set signatures.
+PhenoSigDB is a signature database and access library for Python and R, providing gene sets (signatures) for cancer, immune, stromal, and other biological contexts.
 
-One row in the parquet = one gene in one signature.
+## Quick Start
 
-## Main files
-
-- `data/phenosigdb.parquet`
-  - original curated species
-- `data/phenosigdb_human.parquet`
-  - all signatures represented in human symbols
-- `data/phenosigdb_mouse.parquet`
-  - all signatures represented in mouse symbols
-- `data/phenosigdb_reference_metadata.json`
-  - build metadata, pinned homology metadata, translation summary
-- `data/phenosigdb_human_translation_signature_stats.tsv`
-- `data/phenosigdb_mouse_translation_signature_stats.tsv`
-
-## Naming
-
-```text
-signature_id = <DOMAIN>.<SourceKey>.<SignatureName>
-```
-
-Examples:
-
-- `CAF.Elyada19.iCAF`
-- `PDAC.Moffitt15.Classical`
-- `IMMUNE.Becht16.Tcells`
-
-## Build
+### Python
 
 ```bash
-pip install -e .
-phenosigdb-build --download-homology
-phenosigdb-validate
+# Install
+pip install git+https://github.com/GeNeHetX/phenosigdb.git#subdirectory=python
 ```
 
-Translation rules are fixed:
-
-- `1:1` keep
-- `1:many` split
-- `many:1` collapse within signature
-- `many:many` split and collapse
-
-## Python
-
-Use two functions:
-
-- `list_signatures()`
-  - returns one row per signature
-- `get_signatures()`
-  - returns gene sets for selected `signature_id` values
-
-### Python example
-
 ```python
-from phenosigdb import get_signatures, list_signatures
+from phenosigdb import list_signatures, get_signatures, phenosigdb_resources
 
+# List all available signatures
 meta = list_signatures()
-print(meta[["signature_id", "domain", "cell_family", "n_genes"]].head())
 
-caf = meta[meta["domain"] == "CAF"]
-caf_ids = caf["signature_id"]
+# Search signatures (regex by default, case-insensitive)
+caf_signatures = list_signatures("CAF")
+pathway_signatures = list_signatures("pathway", fixed=False)
 
-caf_sets = get_signatures(caf_ids)
-print(caf_sets["CAF.Elyada19.iCAF"][:10])
+# Get a specific signature
+sig = get_signatures("CAF.Elyada19.iCAF")
+
+# Install optional resources
+phenosigdb_resources("list")
+phenosigdb_resources("install", "pid")
 ```
 
-Minimal text search is available on the metadata table:
-
-```python
-from phenosigdb import list_signatures
-
-list_signatures(query="Elyada")
-```
-
-Return a row table instead of a dict:
-
-```python
-from phenosigdb import get_signatures, list_signatures
-
-meta = list_signatures(query="Elyada")
-table = get_signatures(meta["signature_id"], format="table")
-```
-
-Switch reference species:
-
-```python
-from phenosigdb import get_signatures
-
-original = get_signatures(["CAF.Elyada19.iCAF"], reference_species="original")
-human = get_signatures(["CAF.Elyada19.iCAF"], reference_species="human")
-mouse = get_signatures(["CAF.Elyada19.iCAF"], reference_species="mouse")
-```
-
-Arguments are intentionally small:
-
-- `list_signatures(query=None, reference_species="original", path=None)`
-- `get_signatures(signature_ids=None, format="dict", reference_species="original", path=None)`
-
-`path` can point to a parquet file if you want to read another copy explicitly.
-
-`phenosig()` is still available for backward compatibility, but the intended user API is now `list_signatures()` + `get_signatures()`.
-
-## R
-
-Source one file directly from GitHub:
+### R
 
 ```r
-source(url("https://raw.githubusercontent.com/GeNeHetX/phenosigdb/v0.1.0/R/phenosigdb.R"))
+# Install
+remotes::install_github("GeNeHetX/phenosigdb", subdir = "rpkg")
 ```
 
-Requirements:
-
 ```r
-install.packages("arrow")
-```
+library(phenosigdb)
 
-The R helper uses local `data/phenosigdb*.parquet` if present. If not, it downloads the matching parquet from GitHub.
-
-### R example
-
-```r
-source(url("https://raw.githubusercontent.com/GeNeHetX/phenosigdb/v0.1.0/R/phenosigdb.R"))
-
+# List all available signatures
 meta <- list_signatures()
-meta[, c("signature_id", "domain", "cell_family", "n_genes")]
 
-caf_ids <- meta$signature_id[meta$domain == "CAF"]
+# Search signatures (regex by default, case-insensitive)
+caf_signatures <- list_signatures("CAF")
+pathway_signatures <- list_signatures("pathway", fixed = FALSE)
 
-caf_sets <- get_signatures(caf_ids)
-caf_sets[["CAF.Elyada19.iCAF"]][1:10]
+# Get a specific signature
+sig <- get_signatures("CAF.Elyada19.iCAF")
+
+# Install optional resources
+phenosigdb_resources("list")
+phenosigdb_resources("install", "pid")
 ```
 
-Get a row table:
+---
+
+## Public API
+
+Both Python and R provide the same three core functions:
+
+### `list_signatures(query=None, reference_species="human", fixed=False)`
+
+List available signatures with metadata.
+
+**Parameters:**
+- `query`: Optional search string (regex by default, case-insensitive). Use `fixed=True` for literal text matching.
+- `reference_species`: One of `"human"`, `"mouse"`, `"original"`. Selects gene identifier space.
+- `fixed`: If `True`, treat query as literal text. If `False` (default), treat as regex.
+
+**Returns:** DataFrame (Python) or data.frame (R) with columns:
+- `signature_id`, `signature_name`, `domain`, `source`, `collection`, `source_resource`, `signature_format`, `species`, `cell_family`, `context`, `disease`, `n_genes`
+
+### `get_signatures(signature_ids=None, reference_species="human")`
+
+Retrieve signature gene sets by ID.
+
+**Parameters:**
+- `signature_ids`: Signature ID or list of IDs. If `None`, returns all signatures.
+- `reference_species`: One of `"human"`, `"mouse"`, `"original"`.
+
+**Returns:**
+- Binary signatures: `list[str]` (Python) or `character` vector (R) of gene symbols
+- Continuous signatures: `dict[str, float]` (Python) or named `numeric` vector (R) of gene->weight
+
+### `phenosigdb_resources(action="list", resource=None, force=False, verbose=True)`
+
+Manage optional resources.
+
+**Parameters:**
+- `action`: One of `"list"`, `"install"`, `"remove"`, `"update"`, `"path"`
+- `resource`: Resource name (see below). If `None` with `action="install"`, installs all missing.
+- `force`: If `True`, reinstall existing resources.
+- `verbose`: If `True`, print progress messages.
+
+**Returns:** Path string for `"path"`, DataFrame/data.frame for other actions.
+
+---
+
+## Metadata Columns
+
+| Column | Description |
+|--------|-------------|
+| `signature_id` | Unique identifier (e.g., `CAF.Elyada19.iCAF`) |
+| `signature_name` | Human-readable name (e.g., `iCAF`) |
+| `domain` | Broad category (e.g., `CAF`, `PDAC`, `IMMUNE`) |
+| `source` | Source paper/key (e.g., `Elyada19`) |
+| `collection` | Subgroup (e.g., `curated`) |
+| `source_resource` | Data origin: `curated`, `celltypist`, `cellmarker`, `msigdb`, `reactome`, `wikipathways` |
+| `signature_format` | `binary` (gene set) or `continuous` (weighted) |
+| `species` | Species (human/mouse) |
+| `cell_family` | Cell type family (e.g., `fibroblast`, `tumor`) |
+| `context` | Biological context (e.g., `cancer`, `pathway`) |
+| `disease` | Disease association (e.g., `PDAC`, `HCC`) |
+| `n_genes` | Number of genes in signature |
+
+---
+
+## Curated Signatures (Core)
+
+The core curated signatures are organized by domain. The curated collection (`source_resource = "curated"`) includes:
+
+### CAF (Cancer-Associated Fibroblast) Signatures
+- Multiple PDAC CAF subtypes (iCAF, myoCAF, etc.) from Elyada19, Dominguez20, Kieffer20, and others
+
+### PDAC (Pancreatic Ductal Adenocarcinoma) Signatures
+- Tumor, stromal, immune signatures from Bailey16, Moffitt15, Collisson11, Puleo18, and others
+- Molecular subtypes and gene expression models
+
+### Immune Signatures
+- Immune cell type signatures from Becht16, Chu23, Mulder21, Rodrigues18, Wu24
+
+### Other Cancer Types
+- GASTRIC, GASTRIC_CANCER, HCC, PANCREAS, PAN_CANCER, ORGANOID, CCA, GI, SINET, ECM
+
+### Additional
+- CANCERSEA signatures
+- Fibroblast signatures from Patrick24, Gao24
+
+For a complete list, run `list_signatures()` and filter by `source_resource == "curated"`.
+
+---
+
+## Optional Resources
+
+Optional resources provide additional signature collections. Each can be installed on-demand:
+
+| Resource | ID Prefix | Format | Description |
+|----------|-----------|--------|-------------|
+| `celltypist` | `CELLTYPIST.*` | continuous | Cell type signatures from CellTypist |
+| `cellmarker` | `CELLMARKER.*` | binary | Cell marker gene sets |
+| `msigdb_c7immune` | `MSIGDB.C7.*` | binary | MSigDB C7: Immunology gene sets |
+| `msigdb_c8celltype` | `MSIGDB.C8.*` | binary | MSigDB C8: Cell type gene sets |
+| `pid` | `MSIGDB.PID.*` | binary | MSigDB PID: Pathway gene sets |
+| `biocarta` | `MSIGDB.BIOCARTA.*` | binary | MSigDB BioCarta: Pathway gene sets |
+| `reactome` | `REACTOME.PATHWAYS.*` | binary | Reactome pathway gene sets |
+| `wikipathways` | `WIKIPATHWAYS.HOMOSAPIENS.*` | binary | WikiPathways human pathway gene sets |
+
+**Installation:**
+```python
+# Python
+phenosigdb_resources("install", "pid")  # Install single resource
+phenosigdb_resources("install")        # Install all missing
+```
 
 ```r
-meta <- list_signatures(query = "Elyada")
-table <- get_signatures(meta$signature_id, format = "table")
+# R
+phenosigdb_resources("install", "pid")  # Install single resource
+phenosigdb_resources("install")        # Install all missing
 ```
 
-Switch reference species:
+**Auto-install:** `get_signatures()` automatically installs any optional resource needed to fulfill the requested signature IDs.
+
+---
+
+## Query Behavior
+
+- **Default**: Regex search (case-insensitive)
+- **Literal text**: Set `fixed=True` (Python) or `fixed=TRUE` (R)
+- **Searched columns**: All metadata columns except `n_genes`
+- **Examples**:
+  - `list_signatures("^CAF\.")` - All CAF signatures
+  - `list_signatures("PDAC.*pathway")` - PDAC pathway signatures
+  - `list_signatures("immune", fixed=True)` - Exact match on "immune"
+
+---
+
+## Versioning
+
+- Core curated signatures: Versioned with repository releases
+- Optional resources: Pinned to specific versions (MSigDB 2025.1.Hs, Reactome current, WikiPathways current)
+- Installed resources: Local manifests record version, install time, and checksum
+
+```python
+# Python
+from phenosigdb import phenosigdb_version
+print(phenosigdb_version())  # e.g., "0.1.0"
+```
 
 ```r
-human_sets <- get_signatures(caf_ids[1:2], reference_species = "human")
-mouse_sets <- get_signatures(caf_ids[1:2], reference_species = "mouse")
+# R
+phenosigdb_version()  # e.g., "0.1.0"
 ```
 
-R function signatures:
+---
 
-- `list_signatures(path = NULL, reference_species = c("original", "human", "mouse"), query = NULL)`
-- `get_signatures(signature_ids = NULL, path = NULL, reference_species = c("original", "human", "mouse"), format = c("dict", "table"))`
+## Repository Layout
 
-For a newer release later, replace `v0.1.0` in the source URL with another git tag.
+- `python/`: Python library
+- `rpkg/`: R package
+- `signatures/`: Maintainer tools, curation, build system, and reference data
 
-## Canonical columns
+Maintainer documentation: [signatures/README.md](signatures/README.md)
 
-- `signature_id`
-- `signature_name`
-- `source`
-- `source_author`
-- `source_pmid`
-- `source_doi`
-- `species`
-- `species_original`
-- `gene`
-- `gene_original`
-- `cell_family`
-- `context`
-- `disease`
-- `tags`
-- `homology_relation`
-- `homology_db_class_key`
+---
 
-## Curation
+## License
 
-- curated source folders: `curation/<DOMAIN>.<SourceKey>/`
-- source metadata: `source.yaml`
-- signature members: `members.tsv`
-- raw supplementary material and one-off intake scripts: `curation/source_material/<SourceKey>/`
-
-## Licensing
-
-- code: MIT
-- curated data: CC BY 4.0
-
-See [LICENSE](LICENSE) and [LICENSE-DATA.md](LICENSE-DATA.md).
-
-<!-- PHENOSIGDB_SIGNATURES_START -->
-
-## Available Signatures
-
-| Domain | Signature count | Species | Cell family | Context | Disease |
-| --- | ---: | --- | --- | --- | --- |
-| `CAF` | 78 | human, mouse | fibroblast, pericyte, smooth_muscle | cancer | PDAC, unknown |
-| `CCA` | 7 | human | epithelial | cancer | cholangiocarcinoma |
-| `ECM` | 1 | human | stromal | cancer | PDAC |
-| `FIBROBLAST` | 31 | human, mouse | fibroblast | unknown | unknown |
-| `GASTRIC` | 26 | human, mouse | epithelial | physiology | normal |
-| `GASTRIC_CANCER` | 10 | human | tumor | cancer | gastric_cancer |
-| `GI` | 35 | human | epithelial | physiology | normal |
-| `HCC` | 73 | human | tumor | cancer | HCC |
-| `IBD` | 96 | human | immune | inflammation | IBD |
-| `IMMUNE` | 47 | human | T_cell, immune, macrophage, neutrophil | unknown | unknown |
-| `ORGANOID` | 48 | human | epithelial | organoid | unknown |
-| `PANCREAS` | 37 | mouse | epithelial | physiology | normal |
-| `PAN_CANCER` | 41 | human | tumor | cancer | cancer |
-| `PDAC` | 67 | human | stromal, tumor | cancer | PDAC |
-| `SINET` | 4 | human | tumor | cancer | siNETs |
-
-<!-- PHENOSIGDB_SIGNATURES_END -->
+MIT License. See [LICENSE](LICENSE) for details.

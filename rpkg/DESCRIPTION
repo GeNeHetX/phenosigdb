@@ -1,0 +1,16 @@
+Package: phenosigdb
+Type: Package
+Title: R Access to PhenoSigDB Signatures
+Version: 0.1.2
+Authors@R: person("Remy", "Nicolle", email = "remy.nicolle@example.org", role = c("aut", "cre"))
+Description: Simple access to PhenoSigDB signature metadata, core gene sets,
+    and optional cached resources.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Imports:
+    arrow,
+    jsonlite
+Suggests:
+    rappdirs,
+    testthat

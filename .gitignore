@@ -5,5 +5,14 @@ agents.md
 __pycache__/
 *.py[cod]
 .pytest_cache/
+python/.pytest_cache/
+signatures/.pytest_cache/
+python/phenosigdb.egg-info/
+phenosigdb_*.tar.gz
+.Rhistory
+.RData
+.Ruserdata
+r-package/.Rproj.user/
 audit_human_empty_signatures/
 audit_new_caf_sources_20260627/
+signatures/data/external_imports/
