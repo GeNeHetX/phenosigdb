@@ -1,4 +1,4 @@
-.phenosigdb_package_version <- "0.1.8"
+.phenosigdb_package_version <- "0.1.9"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
@@ -713,7 +713,7 @@
   meta$domain <- sub("\\..*$", "", meta$signature_id)
   meta$source <- sub("^[^.]+\\.([^.]+)\\..*$", "\\1", meta$signature_id)
   meta$collection <- "curated"
-  meta$source_resource <- "curated"
+  meta$source_resource <- "core"
   if ("weight" %in% names(db)) {
     weight_present <- tapply(!is.na(db$weight), db$signature_id, any)
     meta$signature_format <- ifelse(weight_present[meta$signature_id], "continuous", "binary")

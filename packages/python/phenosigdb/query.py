@@ -95,7 +95,7 @@ def _core_signature_metadata(frame: pd.DataFrame) -> pd.DataFrame:
     meta.insert(2, "domain", id_parts[0])
     meta.insert(3, "source", id_parts[1])
     meta.insert(4, "collection", "curated")
-    meta.insert(5, "source_resource", "curated")
+    meta.insert(5, "source_resource", "core")
     if "species_original" in meta.columns:
         meta["species"] = meta["species_original"].fillna(meta["species"])
     columns = [column for column in SIGNATURE_METADATA_COLUMNS if column in meta.columns]

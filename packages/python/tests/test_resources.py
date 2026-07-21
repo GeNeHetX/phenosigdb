@@ -274,7 +274,7 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
     monkeypatch.setenv("PHENOSIGDB_RESOURCE_URL_CELLMARKER", str(_resource_archive(tmp_path / "cm", "cellmarker", cm_meta, cm_values)))
 
     human_meta = list_signatures(reference_species="human")
-    assert set(human_meta["source_resource"]) == {"curated"}
+    assert set(human_meta["source_resource"]) == {"core"}
 
     mixed = get_signatures(
         [
@@ -291,7 +291,7 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
     assert (cache_dir / "cellmarker" / "binary.parquet").exists()
 
     human_meta = list_signatures(reference_species="human")
-    assert set(human_meta["source_resource"]) == {"curated", "celltypist"}
+    assert set(human_meta["source_resource"]) == {"core", "celltypist"}
     assert "signature_format" in human_meta.columns
 
     mouse_meta = list_signatures(reference_species="mouse")

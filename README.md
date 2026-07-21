@@ -99,7 +99,7 @@ Return package version string.
 | `domain` | Broad category (e.g., `CAF`, `PDAC`, `IMMUNE`) |
 | `source` | Source paper/key (e.g., `Elyada19`) |
 | `collection` | Subgroup (e.g., `curated`) |
-| `source_resource` | Data origin: `curated`, `celltypist`, `cellmarker`, `msigdb`, `pid`, `biocarta`, `reactome`, `wikipathways` |
+| `source_resource` | Runtime origin: `core`, `celltypist`, `cellmarker`, `msigdb`, `pid`, `biocarta`, `reactome`, `wikipathways` |
 | `signature_format` | `binary` (gene set) or `continuous` (weighted) |
 | `species` | Species (human/mouse) |
 | `cell_family` | Cell type family (e.g., `fibroblast`, `tumor`) |
@@ -117,14 +117,14 @@ Return package version string.
 
 ## Curated Signatures
 
-Organized by domain. All have `source_resource = "curated"`.
+Organized by domain. Bundled signatures have `source_resource = "core"` and `collection = "curated"`.
 
 - **CAF**: Multiple PDAC CAF subtypes (iCAF, myoCAF, etc.) from Elyada19, Dominguez20, Kieffer20, etc.
 - **PDAC**: Tumor, stromal, immune signatures from Bailey16, Moffitt15, Collisson11, etc.
 - **IMMUNE**: Immune cell type signatures from Becht16, Chu23, Mulder21, Rodrigues18, Wu24
 - **Other**: GASTRIC, HCC, ORGANOID, CCA, etc.
 
-For complete list: `list_signatures()` then filter by `source_resource == "curated"`.
+For bundled signatures: `list_signatures()` then filter by `source_resource == "core"` or `collection == "curated"`.
 
 ## Optional Resources
 
