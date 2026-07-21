@@ -68,7 +68,7 @@ List signatures with metadata. **Default: regex search, case-insensitive.** Use 
 **Returns:** DataFrame with signature metadata.
 
 ### `get_signatures(signature_ids=None, reference_species="human")`
-Retrieve signature gene sets. **Auto-installs missing optional resources.**
+Retrieve signature gene sets. If an ID belongs to an optional resource that is not installed, that resource is downloaded automatically.
 
 **Parameters:**
 - `signature_ids`: Signature ID, list of IDs, or `None` (all signatures)
@@ -128,7 +128,29 @@ For bundled signatures: `list_signatures()` then filter by `source_resource == "
 
 ## Optional Resources
 
-Install on-demand. `get_signatures()` auto-installs as needed.
+Optional resources are separate downloads stored in your user cache, not inside the package.
+
+- Install each resource once per computer.
+- Package upgrades do not remove or reinstall cached resources.
+- `list_signatures()` never downloads optional resources.
+- `get_signatures()` downloads only the missing resource required by the requested ID.
+- `phenosigdb_resources("install")` installs all missing optional resources.
+- `phenosigdb_resources("update")` explicitly refreshes installed resources.
+- Resource versions are independent from the PhenoSigDB package version.
+
+Check what is installed:
+
+```r
+phenosigdb_resources("list")
+```
+
+Install everything missing:
+
+```r
+phenosigdb_resources("install")
+```
+
+After that, package upgrades require no optional-resource action.
 
 | Resource | ID Prefix | Format | Description |
 |----------|-----------|--------|-------------|
@@ -146,6 +168,7 @@ Install on-demand. `get_signatures()` auto-installs as needed.
 - Curated signatures: Versioned with repository releases
 - Optional resources: Pinned to specific versions
 - Installed resources: Local manifests record version, install time, checksum
+- Optional-resource archives use a separate release reference from the package release
 
 ```python
 from phenosigdb import phenosigdb_version

@@ -1,4 +1,6 @@
 .phenosigdb_package_version <- "0.1.9"
+# Optional archives have their own release cadence.
+.phenosigdb_resource_release <- "v0.1.9"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
@@ -252,7 +254,7 @@
     if (nzchar(base)) {
       return(paste0(sub("/+$", "", base), "/", info$archive_name[[1]]))
     }
-    release_ref <- Sys.getenv("PHENOSIGDB_RESOURCES_RELEASE", unset = paste0("v", .phenosigdb_package_version))
+    release_ref <- Sys.getenv("PHENOSIGDB_RESOURCES_RELEASE", unset = .phenosigdb_resource_release)
     return(paste0("https://github.com/GeNeHetX/phenosigdb/releases/download/", release_ref, "/", info$archive_name[[1]]))
   }
   info$download_url[[1]]

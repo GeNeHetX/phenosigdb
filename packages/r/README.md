@@ -71,7 +71,9 @@ Notes:
 - default reference is human
 - no path argument is needed
 - curated reference parquet downloads automatically on first use
-- `get_signatures()` auto-installs missing optional resources
+- `get_signatures()` downloads only the missing optional resource required by a requested ID
+- Optional resources persist in the user cache across package upgrades
+- `phenosigdb_resources("update")` explicitly refreshes installed resources
 - Query uses regex by default; set `fixed = TRUE` for literal text matching
 - All query matching is case-insensitive
 

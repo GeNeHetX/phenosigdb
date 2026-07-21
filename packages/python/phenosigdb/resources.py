@@ -74,6 +74,9 @@ CONTINUOUS_TABLE_COLUMNS = ["signature_id", "gene", "weight"]
 
 ALLOWED_REFERENCE_SPECIES = {"original", "human", "mouse"}
 DEFAULT_GITHUB_RELEASE_REPOSITORY = "GeNeHetX/phenosigdb"
+# Optional archives have their own release cadence. Change this only when
+# the published optional-resource artifacts are rebuilt.
+DEFAULT_RESOURCE_RELEASE = "v0.1.9"
 
 
 @dataclass(frozen=True)
@@ -327,7 +330,7 @@ def _default_resource_source(spec: RuntimeResourceSpec) -> str:
         base = os.getenv("PHENOSIGDB_RESOURCES_BASE_URL")
         if base:
             return base.rstrip("/") + "/" + str(spec.archive_name)
-        release_ref = os.getenv("PHENOSIGDB_RESOURCES_RELEASE", f"v{__version__}")
+        release_ref = os.getenv("PHENOSIGDB_RESOURCES_RELEASE", DEFAULT_RESOURCE_RELEASE)
         return f"https://github.com/{DEFAULT_GITHUB_RELEASE_REPOSITORY}/releases/download/{release_ref}/{spec.archive_name}"
     if spec.download_url is None:
         raise ValueError(f"Resource {spec.resource} is missing a download_url")
