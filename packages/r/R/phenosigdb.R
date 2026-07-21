@@ -1,4 +1,4 @@
-.phenosigdb_package_version <- "0.1.9"
+.phenosigdb_package_version <- "0.1.10"
 # Optional archives have their own release cadence.
 .phenosigdb_resource_release <- "v0.1.9"
 .phenosigdb_public_metadata_columns <- c(

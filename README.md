@@ -128,47 +128,32 @@ For bundled signatures: `list_signatures()` then filter by `source_resource == "
 
 ## Optional Resources
 
-Optional resources are separate downloads stored in your user cache, not inside the package.
+Optional resources are downloaded only when needed and stored in your user cache. Install them once; they remain available after package upgrades.
 
-- Install each resource once per computer.
-- Package upgrades do not remove or reinstall cached resources.
-- `list_signatures()` never downloads optional resources.
-- `get_signatures()` downloads only the missing resource required by the requested ID.
-- `phenosigdb_resources("install")` installs all missing optional resources.
-- `phenosigdb_resources("update")` explicitly refreshes installed resources.
-- Resource versions are independent from the PhenoSigDB package version.
-
-Check what is installed:
+Install one resource:
 
 ```r
-phenosigdb_resources("list")
+phenosigdb_resources("install", "celltypist")
 ```
 
-Install everything missing:
+Install all available optional resources:
 
 ```r
 phenosigdb_resources("install")
 ```
 
-After that, package upgrades require no optional-resource action.
+Use `get_signatures()` with an optional ID and the needed resource is installed automatically if missing. Refresh installed resources only when wanted:
 
-| Resource | ID Prefix | Format | Description |
-|----------|-----------|--------|-------------|
-| `celltypist` | `CELLTYPIST.*` | continuous | Cell type signatures from CellTypist |
-| `cellmarker` | `CELLMARKER.*` | binary | Cell marker gene sets |
-| `msigdb_c7immune` | `MSIGDB.C7.*` | binary | MSigDB C7: Immunology gene sets |
-| `msigdb_c8celltype` | `MSIGDB.C8.*` | binary | MSigDB C8: Cell type gene sets |
-| `pid` | `PID.*` | binary | PID pathway gene sets |
-| `biocarta` | `BIOCARTA.*` | binary | BioCarta pathway gene sets |
-| `reactome` | `REACTOME.PATHWAYS.*` | binary | Reactome pathway gene sets |
-| `wikipathways` | `WIKIPATHWAYS.*` | binary | WikiPathways pathway gene sets |
+```r
+phenosigdb_resources("update")
+```
+
+Available names: `celltypist`, `cellmarker`, `msigdb_c7immune`, `msigdb_c8celltype`, `pid`, `biocarta`, `reactome`, `wikipathways`.
 
 ## Versioning
 
 - Curated signatures: Versioned with repository releases
-- Optional resources: Pinned to specific versions
-- Installed resources: Local manifests record version, install time, checksum
-- Optional-resource archives use a separate release reference from the package release
+- Optional resources have independent versions and persist across package upgrades
 
 ```python
 from phenosigdb import phenosigdb_version
