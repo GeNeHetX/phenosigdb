@@ -2,47 +2,47 @@
 
 Maintainer area only.
 
-Repo split:
+Repository layout:
 
-- `python/`
-  - Python user library
-- `r-package/`
-  - R user package
-- `signatures/`
-  - curation, build tooling, built reference artifacts, optional-resource staging
+- `signatures/curated/`: build-ready YAML/TSV signature inputs
+- `signatures/source_material/`: raw files and one-off parsers
+- `data/`: generated core artifacts and homology references
+- `tools/`: maintainer code and commands
+- `packages/python/`: Python user package
+- `packages/r/`: R user package
 
 ## Main Commands
 
 ```bash
-pip install -e python
-./signatures/phenosigdb-build
-./signatures/phenosigdb-build --download-homology
-./signatures/phenosigdb-validate
-pytest -q signatures/tests
+pip install -e packages/python
+./tools/phenosigdb-build
+./tools/phenosigdb-build --download-homology
+./tools/phenosigdb-validate
+pytest -q tests/maintainer
 ```
 
 ## Outputs
 
-- `signatures/data/phenosigdb.parquet`
-- `signatures/data/phenosigdb_human.parquet`
-- `signatures/data/phenosigdb_mouse.parquet`
-- `signatures/data/phenosigdb_reference_metadata.json`
-- `signatures/data/phenosigdb_human_translation_signature_stats.tsv`
-- `signatures/data/phenosigdb_mouse_translation_signature_stats.tsv`
+- `data/phenosigdb.parquet`
+- `data/phenosigdb_human.parquet`
+- `data/phenosigdb_mouse.parquet`
+- `data/phenosigdb_reference_metadata.json`
+- `data/phenosigdb_human_translation_signature_stats.tsv`
+- `data/phenosigdb_mouse_translation_signature_stats.tsv`
 
 ## Optional Resource Staging
 
 Use `external_imports` only for optional cached runtime resources.
-Core curated signatures belong in `curation/` and are built by `phenosigdb-build`.
+Core curated signatures belong in `signatures/curated/` and are built by `phenosigdb-build`.
 
 ```bash
-./signatures/phenosigdb-external-imports list
-./signatures/phenosigdb-external-imports run celltypist cellmarker
-./signatures/phenosigdb-external-imports runtime-package celltypist <archive.tar.gz>
-./signatures/phenosigdb-external-imports runtime-package cellmarker <archive.tar.gz>
+./tools/phenosigdb-external-imports list
+./tools/phenosigdb-external-imports run celltypist cellmarker
+./tools/phenosigdb-external-imports runtime-package celltypist <archive.tar.gz>
+./tools/phenosigdb-external-imports runtime-package cellmarker <archive.tar.gz>
 ```
 
-Generated staging outputs under `signatures/data/external_imports/` are maintainer-only and should stay out of git.
+Generated staging outputs under `data/external_imports/` are maintainer-only and should stay out of git.
 
 ## Versioning
 
@@ -52,4 +52,4 @@ Generated staging outputs under `signatures/data/external_imports/` are maintain
 - WikiPathways resolves the current Homo sapiens GMT file and records the resolved version in the installed manifest
 - Reactome is fetched from the official current GMT zip and recorded with install metadata and checksum
 
-More curation rules live in [signatures/curation/README.md](/Users/remy.nicolle/Workspace/DEV/phenosigdb/signatures/curation/README.md).
+More curation rules live in [signatures/curated/README.md](/Users/remy.nicolle/Workspace/DEV/phenosigdb/signatures/curated/README.md).

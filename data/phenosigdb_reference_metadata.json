@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-06-28T13:55:10.290739+00:00",
+  "generated_at_utc": "2026-07-21T11:14:15.359214+00:00",
   "artifacts": {
     "original": {
       "parquet": "data/phenosigdb.parquet",
       "csv_gz": "data/phenosigdb.csv.gz",
-      "gene_rows": 217263,
-      "signature_count": 606,
+      "gene_rows": 219583,
+      "signature_count": 783,
       "species": [
         "human",
         "mouse"
@@ -14,56 +14,56 @@
     "human": {
       "parquet": "data/phenosigdb_human.parquet",
       "csv_gz": null,
-      "gene_rows": 217019,
-      "signature_count": 606,
+      "gene_rows": 219326,
+      "signature_count": 775,
       "species": [
         "human"
       ],
       "translation_signature_stats_tsv": "data/phenosigdb_human_translation_signature_stats.tsv",
       "translation_summary": {
         "target_species": "human",
-        "source_gene_rows": 217263,
-        "output_gene_rows": 217019,
-        "same_species_rows": 203532,
-        "needs_translation_rows": 13731,
-        "unmapped_rows": 943,
-        "split_source_rows": 623,
-        "split_added_rows": 1005,
+        "source_gene_rows": 219583,
+        "output_gene_rows": 219326,
+        "same_species_rows": 205450,
+        "needs_translation_rows": 14133,
+        "unmapped_rows": 1063,
+        "split_source_rows": 717,
+        "split_added_rows": 1174,
         "max_split_size": 9,
-        "collapse_output_rows": 162,
-        "collapse_removed_rows": 306,
+        "collapse_output_rows": 210,
+        "collapse_removed_rows": 368,
         "max_collapse_size": 6,
         "relation_source_rows": {
-          "one_to_one": 12165,
-          "one_to_many": 623
+          "one_to_one": 12353,
+          "one_to_many": 717
         }
       }
     },
     "mouse": {
       "parquet": "data/phenosigdb_mouse.parquet",
       "csv_gz": null,
-      "gene_rows": 190874,
-      "signature_count": 606,
+      "gene_rows": 193401,
+      "signature_count": 776,
       "species": [
         "mouse"
       ],
       "translation_signature_stats_tsv": "data/phenosigdb_mouse_translation_signature_stats.tsv",
       "translation_summary": {
         "target_species": "mouse",
-        "source_gene_rows": 217263,
-        "output_gene_rows": 190874,
-        "same_species_rows": 13731,
-        "needs_translation_rows": 203532,
-        "unmapped_rows": 39937,
-        "split_source_rows": 7394,
-        "split_added_rows": 23145,
+        "source_gene_rows": 219583,
+        "output_gene_rows": 193401,
+        "same_species_rows": 14133,
+        "needs_translation_rows": 205450,
+        "unmapped_rows": 40060,
+        "split_source_rows": 7540,
+        "split_added_rows": 23589,
         "max_split_size": 75,
-        "collapse_output_rows": 5199,
-        "collapse_removed_rows": 9597,
+        "collapse_output_rows": 5290,
+        "collapse_removed_rows": 9711,
         "max_collapse_size": 20,
         "relation_source_rows": {
-          "one_to_one": 153966,
-          "many_to_one": 9629
+          "one_to_one": 155585,
+          "many_to_one": 9805
         }
       }
     }

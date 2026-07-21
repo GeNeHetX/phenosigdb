@@ -1,0 +1,60 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  verify-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check tag version
+        run: test "$(cat VERSION)" = "${GITHUB_REF_NAME#v}"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: python -m pip install -e packages/python pytest pandas pyarrow PyYAML
+
+      - name: Build and validate core data
+        run: |
+          ./tools/phenosigdb-build
+          ./tools/phenosigdb-validate
+
+      - name: Run Python tests
+        run: pytest -q packages/python/tests
+
+      - name: Run maintainer tests
+        run: pytest -q tests/maintainer
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+
+      - name: Install R dependencies
+        run: Rscript -e 'install.packages(c("arrow", "jsonlite", "rappdirs", "testthat"), repos = "https://cloud.r-project.org")'
+
+      - name: Build R package
+        run: |
+          mkdir -p dist
+          R CMD build packages/r
+          mv phenosigdb_*.tar.gz dist/
+          cp dist/phenosigdb_*.tar.gz dist/phenosigdb-r.tar.gz
+
+      - name: Check R package
+        run: R CMD check --no-manual dist/phenosigdb_*.tar.gz
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" --verify-tag --generate-notes || true
+          gh release upload "$GITHUB_REF_NAME" dist/phenosigdb_*.tar.gz dist/phenosigdb-r.tar.gz --clobber

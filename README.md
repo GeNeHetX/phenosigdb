@@ -6,12 +6,17 @@ PhenoSigDB is a signature database and access library for Python and R, providin
 
 ### Python
 ```bash
-pip install git+https://github.com/GeNeHetX/phenosigdb.git#subdirectory=python
+pip install git+https://github.com/GeNeHetX/phenosigdb.git#subdirectory=packages/python
 ```
 
 ### R
 ```r
-remotes::install_github("GeNeHetX/phenosigdb", subdir = "rpkg")
+remotes::install_url(
+  "https://github.com/GeNeHetX/phenosigdb/releases/latest/download/phenosigdb-r.tar.gz"
+)
+
+# Reproducible release:
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.5/phenosigdb_0.1.5.tar.gz")
 ```
 
 ## Quick Start
@@ -24,7 +29,7 @@ from phenosigdb import list_signatures, get_signatures, phenosigdb_resources
 meta = list_signatures()
 
 # Search signatures (regex by default, case-insensitive)
-caf_signatures = list_signatures("CAF")
+caf_signatures = list_signatures("CAF|FIBRO")
 
 # Get a specific signature
 sig = get_signatures("CAF.Elyada19.iCAF")
@@ -153,9 +158,11 @@ phenosigdb_version()
 
 ## Repository Layout
 
-- `python/`: Python library
-- `rpkg/`: R package  
-- `signatures/`: Maintainer tools and reference data
+- `packages/python/`: Python library
+- `packages/r/`: R package
+- `signatures/`: curated inputs and raw source material
+- `data/`: generated core parquet files
+- `tools/`: maintainer build, validation, and release commands
 
 Maintainer documentation: [signatures/README.md](signatures/README.md)
 
@@ -169,7 +176,7 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Available Signatures
 
-Core curated signatures: **606** across **45** curated source keys.
+Core curated signatures: **783** across **47** curated source keys.
 
 | Domain | SourceKey | Signatures | Format | Species | Context | Disease |
 | --- | --- | ---: | --- | --- | --- | --- |
@@ -185,8 +192,10 @@ Core curated signatures: **606** across **45** curated source keys.
 | `CAF` | `Wang21` | 6 | binary | human | cancer | unknown |
 | `CAF` | `Xing21` | 4 | binary | human | cancer | unknown |
 | `CAF` | `Zhang23` | 8 | binary | human | cancer | PDAC |
+| `CANCERSEA` | `Yuan18` | 14 | binary | human | cancer | cancer |
 | `CCA` | `Serrano23` | 5 | binary | human | cancer | cholangiocarcinoma |
 | `CCA` | `Sia13` | 2 | binary | human | cancer | cholangiocarcinoma |
+| `CELL` | `PanglaoDB2020` | 163 | binary | human, mouse | physiology | unknown |
 | `ECM` | `Helms22` | 1 | binary | human | cancer | PDAC |
 | `FIBROBLAST` | `Gao24` | 20 | binary | human | unknown | unknown |
 | `FIBROBLAST` | `Patrick24` | 11 | binary | mouse | unknown | unknown |
