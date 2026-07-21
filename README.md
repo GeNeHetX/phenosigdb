@@ -176,7 +176,7 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Available Signatures
 
-Core curated signatures: **783** across **47** curated source keys.
+Core curated signatures: **785** across **48** curated source keys.
 
 | Domain | SourceKey | Signatures | Format | Species | Context | Disease |
 | --- | --- | ---: | --- | --- | --- | --- |
@@ -187,6 +187,7 @@ Core curated signatures: **783** across **47** curated source keys.
 | `CAF` | `Grout22` | 3 | binary | human | cancer | unknown |
 | `CAF` | `Kieffer20` | 8 | binary | human | cancer | PDAC |
 | `CAF` | `Neuzillet22` | 4 | binary | human | cancer | PDAC |
+| `CAF` | `Peng26` | 2 | binary | human | cancer | PDAC |
 | `CAF` | `Qin23` | 4 | binary | human | cancer | PDAC |
 | `CAF` | `ReviewLiu26` | 24 | binary | human, mouse | cancer | unknown |
 | `CAF` | `Wang21` | 6 | binary | human | cancer | unknown |

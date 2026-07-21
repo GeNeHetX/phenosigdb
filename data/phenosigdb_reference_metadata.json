@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-07-21T11:14:15.359214+00:00",
+  "generated_at_utc": "2026-07-21T12:42:15.263399+00:00",
   "artifacts": {
     "original": {
       "parquet": "data/phenosigdb.parquet",
       "csv_gz": "data/phenosigdb.csv.gz",
-      "gene_rows": 219583,
-      "signature_count": 783,
+      "gene_rows": 219601,
+      "signature_count": 785,
       "species": [
         "human",
         "mouse"
@@ -14,17 +14,17 @@
     "human": {
       "parquet": "data/phenosigdb_human.parquet",
       "csv_gz": null,
-      "gene_rows": 219326,
-      "signature_count": 775,
+      "gene_rows": 219344,
+      "signature_count": 777,
       "species": [
         "human"
       ],
       "translation_signature_stats_tsv": "data/phenosigdb_human_translation_signature_stats.tsv",
       "translation_summary": {
         "target_species": "human",
-        "source_gene_rows": 219583,
-        "output_gene_rows": 219326,
-        "same_species_rows": 205450,
+        "source_gene_rows": 219601,
+        "output_gene_rows": 219344,
+        "same_species_rows": 205468,
         "needs_translation_rows": 14133,
         "unmapped_rows": 1063,
         "split_source_rows": 717,
@@ -42,28 +42,28 @@
     "mouse": {
       "parquet": "data/phenosigdb_mouse.parquet",
       "csv_gz": null,
-      "gene_rows": 193401,
-      "signature_count": 776,
+      "gene_rows": 193419,
+      "signature_count": 778,
       "species": [
         "mouse"
       ],
       "translation_signature_stats_tsv": "data/phenosigdb_mouse_translation_signature_stats.tsv",
       "translation_summary": {
         "target_species": "mouse",
-        "source_gene_rows": 219583,
-        "output_gene_rows": 193401,
+        "source_gene_rows": 219601,
+        "output_gene_rows": 193419,
         "same_species_rows": 14133,
-        "needs_translation_rows": 205450,
-        "unmapped_rows": 40060,
-        "split_source_rows": 7540,
-        "split_added_rows": 23589,
+        "needs_translation_rows": 205468,
+        "unmapped_rows": 40061,
+        "split_source_rows": 7541,
+        "split_added_rows": 23590,
         "max_split_size": 75,
         "collapse_output_rows": 5290,
         "collapse_removed_rows": 9711,
         "max_collapse_size": 20,
         "relation_source_rows": {
-          "one_to_one": 155585,
-          "many_to_one": 9805
+          "one_to_one": 155601,
+          "many_to_one": 9806
         }
       }
     }

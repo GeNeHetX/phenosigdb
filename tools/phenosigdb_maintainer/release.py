@@ -97,10 +97,11 @@ def main() -> None:
     _run(["pytest", "-q", "packages/python/tests"])
     _run(["pytest", "-q", "tests/maintainer"])
     archive = build_r_release(version)
+    _run(["R", "CMD", "check", "--no-manual", str(archive)])
 
     print(f"Prepared release {version}")
     print(f"R package: {archive}")
-    print("Next steps: commit, tag v<version>, and push. GitHub Actions will publish the release assets.")
+    print("Next steps: commit, push main, tag v<version>, push the tag, and upload both dist archives to the GitHub release.")
 
 
 if __name__ == "__main__":

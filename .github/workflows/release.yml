@@ -1,4 +1,4 @@
-name: Release
+name: Verify Release Tag
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  verify-and-publish:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,27 +34,3 @@ jobs:
 
       - name: Run maintainer tests
         run: pytest -q tests/maintainer
-
-      - uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: "release"
-
-      - name: Install R dependencies
-        run: Rscript -e 'install.packages(c("arrow", "jsonlite", "rappdirs", "testthat"), repos = "https://cloud.r-project.org")'
-
-      - name: Build R package
-        run: |
-          mkdir -p dist
-          R CMD build packages/r
-          mv phenosigdb_*.tar.gz dist/
-          cp dist/phenosigdb_*.tar.gz dist/phenosigdb-r.tar.gz
-
-      - name: Check R package
-        run: R CMD check --no-manual dist/phenosigdb_*.tar.gz
-
-      - name: Publish GitHub release
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release create "$GITHUB_REF_NAME" --verify-tag --generate-notes || true
-          gh release upload "$GITHUB_REF_NAME" dist/phenosigdb_*.tar.gz dist/phenosigdb-r.tar.gz --clobber

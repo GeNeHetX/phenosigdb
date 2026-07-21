@@ -1,4 +1,4 @@
-.phenosigdb_package_version <- "0.1.6"
+.phenosigdb_package_version <- "0.1.8"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
