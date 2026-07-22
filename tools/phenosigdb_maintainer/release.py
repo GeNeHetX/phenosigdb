@@ -67,6 +67,20 @@ def bump_versions(version: str, root: str | Path | None = None) -> None:
         if count != 1:
             raise ValueError(f"Could not update version in {target}")
         target.write_text(replaced, encoding="utf-8")
+    _update_pinned_install_urls(version, base)
+
+
+def _update_pinned_install_urls(version: str, root: Path) -> None:
+    pattern = re.compile(
+        r"(releases/download/)v\d+\.\d+\.\d+/(phenosigdb_)\d+\.\d+\.\d+(\.tar\.gz)"
+    )
+    for relative in ("README.md", "MAINTAINING.md", "packages/r/README.md"):
+        target = root / relative
+        if not target.exists():
+            continue
+        content = target.read_text(encoding="utf-8")
+        updated = pattern.sub(rf"\g<1>v{version}/\g<2>{version}\g<3>", content)
+        target.write_text(updated, encoding="utf-8")
 
 
 def _run(command: list[str], *, cwd: Path = ROOT) -> None:
@@ -247,7 +261,12 @@ def main() -> None:
         print(f"Resource archive: {resource_archive}")
     print(f"Release log: {log_path}")
     print(f"Release manifest: {report_path}")
-    print("Next steps: commit, push main, tag v<version>, push the tag, and upload all dist archives to the GitHub release.")
+    print("\nPublish this release:")
+    print(f'git add -A && git commit -m "Release v{version}"')
+    print("git push origin main")
+    print(f'git tag -a v{version} -m "Release v{version}"')
+    print(f"git push origin v{version}")
+    print(f"gh release create v{version} dist/* --verify-tag --generate-notes")
 
 
 if __name__ == "__main__":

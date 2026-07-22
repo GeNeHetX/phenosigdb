@@ -16,7 +16,7 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.10/phenosigdb_0.1.10.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.13/phenosigdb_0.1.13.tar.gz")
 ```
 
 ## Quick Start
