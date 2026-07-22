@@ -10,6 +10,7 @@ __pycache__/
 **/__pycache__/
 *.egg-info/
 dist/
+.cache/
 phenosigdb_*.tar.gz
 *.whl
 .Rhistory

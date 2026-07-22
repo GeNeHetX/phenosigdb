@@ -77,61 +77,6 @@ CAF.JournalB25.restCAF
 
 Use simple uppercase domains, stable source keys, ASCII signature names, and no Greek letters.
 
-## Outputs
+## Finish
 
-- `data/phenosigdb.parquet`
-- `data/phenosigdb_human.parquet`
-- `data/phenosigdb_mouse.parquet`
-- `data/phenosigdb_reference_metadata.json`
-- `data/phenosigdb_human_translation_signature_stats.tsv`
-- `data/phenosigdb_mouse_translation_signature_stats.tsv`
-
-## Versioning
-
-- curated core data changes when the repo curation changes
-- optional resources are pinned by PhenoSigDB release code and manifests
-- MSigDB resources use explicit upstream release URLs
-- WikiPathways resolves the current Homo sapiens GMT file and records the resolved version in the installed manifest
-- Reactome is fetched from the official current GMT zip and recorded with install metadata and checksum
-
-## Release
-
-R must have `arrow`, `jsonlite`, `rappdirs`, and `testthat` installed. Run this from the repository root:
-
-For a new source, run exactly this from the repository root. Replace the parser path and version for future releases.
-
-```bash
-Rscript signatures/source_material/CAF.Peng.26/build_curated.R
-./tools/phenosigdb-release 0.1.8
-git diff --stat
-git diff -- README.md
-git add -A
-git commit -m "Release v0.1.8"
-git push origin main
-git tag -a v0.1.8 -m "Release v0.1.8"
-git push origin v0.1.8
-gh release create v0.1.8 \
-  dist/phenosigdb_0.1.8.tar.gz \
-  dist/phenosigdb-r.tar.gz \
-  --verify-tag --generate-notes
-```
-
-The final `gh` command publishes the local tarballs. The tag workflow only verifies the release; it does not build or upload files.
-
-Install the exact release in R:
-
-```r
-remotes::install_url(
-  "https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.8/phenosigdb_0.1.8.tar.gz"
-)
-```
-
-Later, install the latest published release:
-
-```r
-remotes::install_url(
-  "https://github.com/GeNeHetX/phenosigdb/releases/latest/download/phenosigdb-r.tar.gz"
-)
-```
-
-More curation rules live in [signatures/curated/README.md](/Users/remy.nicolle/Workspace/DEV/phenosigdb/signatures/curated/README.md).
+Follow [MAINTAINING.md](../MAINTAINING.md) for the release command.

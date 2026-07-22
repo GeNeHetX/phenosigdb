@@ -8,13 +8,14 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.5/phenosigdb_0.1.5.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.10/phenosigdb_0.1.10.tar.gz")
 ```
 
 Public API:
 
 - `list_signatures(query = NULL, reference_species = "human", fixed = FALSE)`
 - `get_signatures(signature_ids = NULL, reference_species = "human")`
+- `get_signature(signature_id, reference_species = "human")`
 - `phenosigdb_resources(action = "list", resource = NULL, force = FALSE, verbose = TRUE)`
 - `phenosigdb_version()`
 
@@ -25,6 +26,9 @@ library(phenosigdb)
 
 # List all signatures
 meta <- list_signatures()
+caf <- list_signatures("CAF", domain = "CAF", species = "human")
+sig <- get_signatures(caf)
+one_sig <- get_signature("CAF.Elyada19.iCAF")
 
 # Query behavior (regex by default, case-insensitive):
 # Searches: signature_id, signature_name, domain, source, collection,
@@ -74,6 +78,8 @@ Notes:
 - `get_signatures()` downloads only the missing optional resource required by a requested ID
 - Optional resources persist in the user cache across package upgrades
 - `phenosigdb_resources("update")` explicitly refreshes installed resources
+- `domain`, `species`, `cell_family`, `context`, `disease`, `source_resource`, and `collection` are exact filters
+- Query and filters intersect by default; use `logic = "or"` to union them
 - Query uses regex by default; set `fixed = TRUE` for literal text matching
 - All query matching is case-insensitive
 

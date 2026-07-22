@@ -5,7 +5,7 @@
 get_signatures(signature_ids = NULL, reference_species = "human")
 }
 \arguments{
-  \item{signature_ids}{Optional character vector of signature IDs.}
+  \item{signature_ids}{Optional character vector of signature IDs or the data frame returned by \code{list_signatures()}.}
   \item{reference_species}{One of \code{"human"}, \code{"mouse"}, or \code{"original"}.}
 }
 \value{

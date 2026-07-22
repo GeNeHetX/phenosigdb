@@ -13,16 +13,6 @@ Raw supplementary material and one-off parsers:
 
 - `signatures/source_material/<SourceKey>/`
 
-## Build
-
-```bash
-pip install -e packages/python
-./tools/phenosigdb-build
-./tools/phenosigdb-build --download-homology
-./tools/phenosigdb-validate
-pytest -q tests/maintainer
-```
-
 ## Curated Row Schema
 
 Canonical built columns:
@@ -110,13 +100,7 @@ Some translated signatures can drop to zero output rows. Check the translation s
 
 ## Workflow
 
-- intake raw data under `source_material/<SourceKey>/`
-- write one local parser for that source
-- emit curated `source.yaml` + `members.tsv`
-- run build
-- run validate
-
-No repo-wide intake/promote CLI is needed for paper-specific curation.
+Add raw material and a parser under `signatures/source_material/`, emit `source.yaml` and `members.tsv`, then follow [MAINTAINING.md](../../MAINTAINING.md).
 
 ## External Imports Boundary
 

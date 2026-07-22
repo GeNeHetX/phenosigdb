@@ -230,15 +230,9 @@ def _render_readme_signature_section(meta: pd.DataFrame) -> list[str]:
             "",
             f"Optional downloadable references available through `phenosigdb_resources()`: **{len(OPTIONAL_RESOURCES)}**.",
             "",
-            "| Resource | Source Resource | Collection | Prefix | Format | Context |",
-            "| --- | --- | --- | --- | --- | --- |",
+            README_END,
         ]
     )
-    for resource in OPTIONAL_RESOURCES:
-        lines.append(
-            f"| `{resource['resource']}` | `{resource['source_resource']}` | `{resource['collection']}` | `{resource['prefix']}` | {resource['signature_format']} | {resource['context']} |"
-        )
-    lines.extend(["", README_END])
     return lines
 
 
@@ -350,7 +344,7 @@ def build_database(
         )
 
     if homology_ref_path is None:
-        build_meta["homology"] = {"status": "missing", "reason": "No local homology reference found. Run phenosigdb-build --download-homology"}
+        build_meta["homology"] = {"status": "missing", "reason": "No local homology reference found; the release workflow should refresh it."}
         for target in ("human", "mouse"):
             build_meta["artifacts"][target] = {"status": "skipped", "reason": "homology_missing"}
         _write_reference_metadata(build_meta, output_dir)

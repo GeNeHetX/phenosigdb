@@ -74,9 +74,6 @@ CONTINUOUS_TABLE_COLUMNS = ["signature_id", "gene", "weight"]
 
 ALLOWED_REFERENCE_SPECIES = {"original", "human", "mouse"}
 DEFAULT_GITHUB_RELEASE_REPOSITORY = "GeNeHetX/phenosigdb"
-# Optional archives have their own release cadence. Change this only when
-# the published optional-resource artifacts are rebuilt.
-DEFAULT_RESOURCE_RELEASE = "v0.1.9"
 
 
 @dataclass(frozen=True)
@@ -330,7 +327,7 @@ def _default_resource_source(spec: RuntimeResourceSpec) -> str:
         base = os.getenv("PHENOSIGDB_RESOURCES_BASE_URL")
         if base:
             return base.rstrip("/") + "/" + str(spec.archive_name)
-        release_ref = os.getenv("PHENOSIGDB_RESOURCES_RELEASE", DEFAULT_RESOURCE_RELEASE)
+        release_ref = os.getenv("PHENOSIGDB_RESOURCES_RELEASE", f"v{__version__}")
         return f"https://github.com/{DEFAULT_GITHUB_RELEASE_REPOSITORY}/releases/download/{release_ref}/{spec.archive_name}"
     if spec.download_url is None:
         raise ValueError(f"Resource {spec.resource} is missing a download_url")
@@ -340,6 +337,17 @@ def _default_resource_source(spec: RuntimeResourceSpec) -> str:
 def _download_file(source: str, destination: Path) -> dict[str, Any]:
     parsed = urlparse(source)
     destination.parent.mkdir(parents=True, exist_ok=True)
+    if destination.exists():
+        checksum = _sha256_file(destination)
+        return {
+            "url": source,
+            "resolved_url": source,
+            "path": str(destination),
+            "bytes": destination.stat().st_size,
+            "sha256": checksum,
+            "downloaded_at_utc": None,
+            "from_cache": True,
+        }
     if parsed.scheme in {"", "file"}:
         local_path = Path(parsed.path if parsed.scheme == "file" else source).expanduser()
         if not local_path.exists():
@@ -403,13 +411,15 @@ def _write_resources_manifest(root: str | Path | None = None) -> pd.DataFrame:
 
 
 def _resource_listing(root: str | Path | None = None) -> pd.DataFrame:
-    manifest = _read_json(resources_manifest_path(root=root))
     current = pd.DataFrame([_read_status(resource, root=root) for resource in known_resources()])
-    if manifest and isinstance(manifest.get("resources"), list):
-        frame = pd.DataFrame(manifest["resources"])
-        if set(frame.get("resource", [])) == set(current.get("resource", [])):
-            return current.loc[:, list(current.columns)]
-    return current
+    if "size_mb" not in current.columns:
+        current["size_mb"] = current.apply(
+            lambda row: round(sum(path.stat().st_size for path in resource_dir(row["resource"], root=root).rglob("*") if path.is_file()) / 1e6, 3)
+            if bool(row["installed"]) else 0.0,
+            axis=1,
+        )
+    columns = ["resource", "installed", "version", "n_signatures", "size_mb"]
+    return current.loc[:, columns]
 
 
 def _extract_resource_dir(archive_path: Path, resource: str) -> Path:
@@ -669,27 +679,27 @@ def _install_direct_resource(resource: str, root: str | Path | None = None, verb
         resolved_version = listing_version or resolved_version
 
     suffix = ".zip" if spec.install_kind == "zip_gmt" else ".gmt"
-    staged_file = Path(tempfile.mkdtemp(prefix=f"phenosigdb-{resource}-raw-")) / f"{resource}{suffix}"
-    try:
-        download_meta = _download_file(resolved_source, staged_file)
-        entries = _read_gmt_entries(staged_file, kind=spec.install_kind)
-        metadata, binary, resource_json = _build_direct_binary_resource(
-            spec,
-            resolved_source_url=resolved_source,
-            source_version=resolved_version,
-            entries=entries,
-            download_meta=download_meta,
-        )
-        return _write_runtime_resource_dir(
-            resource,
-            metadata=metadata,
-            values=binary,
-            resource_json=resource_json,
-            root=root,
-            verbose=verbose,
-        )
-    finally:
-        shutil.rmtree(staged_file.parent, ignore_errors=True)
+    resource_cache_root = Path(root) if root is not None else cache_root()
+    cache_dir = resource_cache_root / "_downloads"
+    cache_key = hashlib.sha256(resolved_source.encode("utf-8")).hexdigest()
+    staged_file = cache_dir / f"{cache_key}{suffix}"
+    download_meta = _download_file(resolved_source, staged_file)
+    entries = _read_gmt_entries(staged_file, kind=spec.install_kind)
+    metadata, binary, resource_json = _build_direct_binary_resource(
+        spec,
+        resolved_source_url=resolved_source,
+        source_version=resolved_version,
+        entries=entries,
+        download_meta=download_meta,
+    )
+    return _write_runtime_resource_dir(
+        resource,
+        metadata=metadata,
+        values=binary,
+        resource_json=resource_json,
+        root=root,
+        verbose=verbose,
+    )
 
 
 def _remove_resource(resource: str, root: str | Path | None = None, verbose: bool = True) -> dict[str, Any]:
@@ -759,9 +769,14 @@ def _fetch_resource(
                 print(f"{resource_key} is already up to date")
             return current
         return _install_direct_resource(resource_key, root=root, verbose=verbose)
+    archive_cache = (Path(root) if root is not None else cache_root()) / "_downloads"
+    archive_cache.mkdir(parents=True, exist_ok=True)
+    archive_key = hashlib.sha256(_default_resource_source(spec).encode("utf-8")).hexdigest()
+    cached_archive = archive_cache / f"{archive_key}-{spec.archive_name}"
     archive_path = Path(tempfile.mkdtemp(prefix=f"phenosigdb-{resource_key}-archive-")) / spec.archive_name
     try:
-        download_meta = _download_resource_file(spec, archive_path)
+        download_meta = _download_file(_default_resource_source(spec), cached_archive)
+        shutil.copy2(cached_archive, archive_path)
         extracted_dir = _extract_resource_dir(archive_path, resource_key)
         _validate_installed_files(resource_key, extracted_dir)
         resource_json = _read_json(extracted_dir / "resource.json") or {}
@@ -803,8 +818,10 @@ def phenosigdb_resources(action: str = "list", resource: str | None = None, forc
     if len(resource_keys) == 1 and resource is not None and str(resource).strip():
         return _fetch_resource(resource_keys[0], action_key=action_key, force=force, verbose=verbose)
 
-    for resource_key in resource_keys:
-        _fetch_resource(resource_key, action_key=action_key, force=force, verbose=verbose)
+    for index, resource_key in enumerate(resource_keys, start=1):
+        if verbose:
+            print(f"[{index}/{len(resource_keys)}] {resource_key}")
+        _fetch_resource(resource_key, action_key=action_key, force=force, verbose=False)
     return _resource_listing()
 
 

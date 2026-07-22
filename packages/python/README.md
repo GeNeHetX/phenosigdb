@@ -3,13 +3,14 @@
 Install:
 
 ```bash
-pip install git+https://github.com/GeNeHetX/phenosigdb.git#subdirectory=python
+pip install git+https://github.com/GeNeHetX/phenosigdb.git#subdirectory=packages/python
 ```
 
 Public API:
 
 - `list_signatures(query=None, reference_species="human", fixed=False)`
 - `get_signatures(signature_ids=None, reference_species="human")`
+- `get_signature(signature_id, reference_species="human")`
 - `phenosigdb_resources(action="list", resource=None, force=False, verbose=True)`
 - `phenosigdb_version()`
 - Constants: `DEFAULT_REFERENCE_SPECIES`, `ALLOWED_REFERENCE_SPECIES`
@@ -36,6 +37,7 @@ meta = list_signatures()
 # Regex search (default - fixed=False)
 immune = list_signatures("immune")
 caf_sigs = list_signatures(r"^CAF\.")
+pdac_caf = list_signatures("CAF", domain="CAF", species="human")
 pdac_pathways = list_signatures(r"PDAC.*pathway")
 
 # Literal text search (fixed=True)
@@ -48,6 +50,8 @@ continuous = meta[meta["signature_format"] == "continuous"]
 
 # Get signatures
 sig = get_signatures(["CAF.Elyada19.iCAF"])
+sig = get_signatures(list_signatures("CAF"))
+one_sig = get_signature("CAF.Elyada19.iCAF")
 weighted = get_signatures(["PDAC.PAMG20.PDX"])
 
 mouse_sig = get_signatures(["CAF.Elyada19.iCAF"], reference_species="mouse")
@@ -75,8 +79,9 @@ Notes:
 - no path argument is needed
 - curated reference parquet downloads automatically on first use
 - `get_signatures()` auto-installs missing optional resources
-- Query uses regex by default; set `fixed=True` for literal text matching
-- All query matching is case-insensitive
+- Query uses case-insensitive regex by default; set `fixed=True` for literal text matching
+- `domain`, `species`, `cell_family`, `context`, `disease`, `source_resource`, and `collection` are exact filters
+- Query and filters intersect by default; set `logic="or"` to union them; set `ignore_case=False` for case-sensitive matching
 
 Optional resources:
 

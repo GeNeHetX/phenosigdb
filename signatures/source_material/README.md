@@ -11,8 +11,7 @@ Most older curated signatures were migrated from CancerRNASig. New direct curati
 3. Add one local parser such as `build_curated.R` or `build_curated.py`.
 4. Emit `signatures/curated/<DOMAIN>.<SourceKey>/source.yaml`.
 5. Emit `signatures/curated/<DOMAIN>.<SourceKey>/members.tsv`.
-6. Run `./tools/phenosigdb-build`.
-7. Run `./tools/phenosigdb-validate`.
+6. Run the complete release workflow in [MAINTAINING.md](../../MAINTAINING.md).
 
 ## Rules
 

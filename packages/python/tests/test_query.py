@@ -128,11 +128,9 @@ def test_list_signatures_returns_simple_metadata_table(monkeypatch):
     assert list(metadata.columns) == [
         "signature_id",
         "signature_name",
-        "domain",
-        "source",
-        "collection",
         "source_resource",
-        "signature_format",
+        "domain",
+        "collection",
         "species",
         "cell_family",
         "context",
@@ -140,10 +138,8 @@ def test_list_signatures_returns_simple_metadata_table(monkeypatch):
         "n_genes",
     ]
     assert set(metadata["domain"]) == {"CAF", "PDAC"}
-    assert set(metadata["source"]) == {"Elyada19", "PAMG20"}
     assert set(metadata["collection"]) == {"curated"}
     assert set(metadata["source_resource"]) == {"core"}
-    assert set(metadata["signature_format"]) == {"binary", "continuous"}
     assert metadata["n_genes"].tolist() == [2, 1, 2]
 
 

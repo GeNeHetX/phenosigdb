@@ -136,7 +136,10 @@ def build_runtime_cellmarker(staging_root: str | Path | None = None) -> tuple[pd
         "source_label",
         "signature_metadata_json",
     ]
-    merged = members.merge(signatures.loc[:, signature_cols], on="signature_id", how="left", sort=False)
+    # Members also carry source-level species fields. Keep only the runtime
+    # gene key here so the metadata join cannot create species_x/species_y.
+    member_genes = members.loc[:, ["signature_id", "gene"]].copy()
+    merged = member_genes.merge(signatures.loc[:, signature_cols], on="signature_id", how="left", sort=False)
     merged["species"] = merged["species"].map(lambda x: _safe_text(x))
     merged["species_original"] = merged["species_original"].map(lambda x: _safe_text(x))
     merged["tissue_or_organ"] = merged["tissue"].map(normalize_whitespace)
@@ -235,12 +238,19 @@ RUNTIME_BUILDERS = {
 }
 
 
-def build_runtime_resource_dir(resource: str, output_dir: str | Path, staging_root: str | Path | None = None) -> Path:
+def build_runtime_resource_dir(
+    resource: str,
+    output_dir: str | Path,
+    staging_root: str | Path | None = None,
+    package_version: str | None = None,
+) -> Path:
     resource_key = resource.strip().casefold()
     if resource_key not in RESOURCE_SPECS:
         raise KeyError(f"Unknown runtime resource: {resource}")
     builder = RUNTIME_BUILDERS[resource_key]
     metadata, values, resource_json = builder(staging_root=staging_root)
+    if package_version is not None:
+        resource_json["package_version"] = package_version
 
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
@@ -254,11 +264,21 @@ def build_runtime_resource_dir(resource: str, output_dir: str | Path, staging_ro
     return out
 
 
-def package_runtime_resource(resource: str, archive_path: str | Path, staging_root: str | Path | None = None) -> Path:
+def package_runtime_resource(
+    resource: str,
+    archive_path: str | Path,
+    staging_root: str | Path | None = None,
+    package_version: str | None = None,
+) -> Path:
     resource_key = resource.strip().casefold()
     with tempfile.TemporaryDirectory(prefix=f"phenosigdb-package-{resource_key}-") as tmp_dir_str:
         tmp_dir = Path(tmp_dir_str)
-        resource_dir = build_runtime_resource_dir(resource_key, tmp_dir / resource_key, staging_root=staging_root)
+        resource_dir = build_runtime_resource_dir(
+            resource_key,
+            tmp_dir / resource_key,
+            staging_root=staging_root,
+            package_version=package_version,
+        )
         archive = Path(archive_path)
         archive.parent.mkdir(parents=True, exist_ok=True)
         with tarfile.open(archive, "w:gz") as handle:

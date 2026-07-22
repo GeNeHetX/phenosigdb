@@ -4,6 +4,7 @@ import zipfile
 from pathlib import Path
 
 import pandas as pd
+import pytest
 
 from phenosigdb import get_signatures, list_signatures, phenosigdb_resources
 from phenosigdb import query as query_mod
@@ -276,23 +277,24 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
     human_meta = list_signatures(reference_species="human")
     assert set(human_meta["source_resource"]) == {"core"}
 
-    mixed = get_signatures(
-        [
-            "CAF.Elyada19.iCAF",
-            "CELLTYPIST.Immune_All_Low.CD8_T_cell",
-            "CELLMARKER.mouse_Brain_Normal.Neuron",
-        ],
-        reference_species="original",
-    )
-    assert mixed["CAF.Elyada19.iCAF"] == ["COL1A1"]
-    assert mixed["CELLTYPIST.Immune_All_Low.CD8_T_cell"] == {"CD3D": 1.25, "TRBC1": 0.5}
-    assert mixed["CELLMARKER.mouse_Brain_Normal.Neuron"] == ["Rbfox3", "Snap25"]
+    with pytest.raises(ValueError, match="Mixed species"):
+        get_signatures(
+            [
+                "CAF.Elyada19.iCAF",
+                "CELLTYPIST.Immune_All_Low.CD8_T_cell",
+                "CELLMARKER.mouse_Brain_Normal.Neuron",
+            ],
+            reference_species="original",
+        )
     assert (cache_dir / "celltypist" / "continuous.parquet").exists()
     assert (cache_dir / "cellmarker" / "binary.parquet").exists()
 
     human_meta = list_signatures(reference_species="human")
     assert set(human_meta["source_resource"]) == {"core", "celltypist"}
-    assert "signature_format" in human_meta.columns
+    assert list(human_meta.columns) == [
+        "signature_id", "signature_name", "source_resource", "domain", "collection",
+        "species", "cell_family", "context", "disease", "n_genes",
+    ]
 
     mouse_meta = list_signatures(reference_species="mouse")
     assert "CELLMARKER.mouse_Brain_Normal.Neuron" in set(mouse_meta["signature_id"])
@@ -332,7 +334,6 @@ def test_direct_gmt_resources_install_and_auto_install(monkeypatch, tmp_path: Pa
     assert row["source_resource"] == "msigdb"
     assert row["collection"] == "C7"
     assert row["context"] == "immunology"
-    assert row["signature_format"] == "binary"
 
     sigs = get_signatures(["REACTOME.Pathways.REACTOME_INTERFERON_SIGNALING", "WIKIPATHWAYS.HomoSapiens.WP_FIBROBLAST_SIGNALING"])
     assert sigs["REACTOME.Pathways.REACTOME_INTERFERON_SIGNALING"] == ["IRF9", "STAT1"]

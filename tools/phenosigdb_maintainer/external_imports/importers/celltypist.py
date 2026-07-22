@@ -14,7 +14,7 @@ def _require_celltypist():
         from celltypist import models  # type: ignore
         import celltypist  # type: ignore
     except ImportError as exc:  # pragma: no cover - exercised via unit tests with monkeypatch
-        raise ImportError("CellTypist importer requires `pip install -e .[external-import]`") from exc
+        raise ImportError("CellTypist importer requires `pip install celltypist`") from exc
     return celltypist, models
 
 

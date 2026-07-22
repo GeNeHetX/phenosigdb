@@ -26,8 +26,8 @@ jobs:
 
       - name: Build and validate core data
         run: |
-          ./tools/phenosigdb-build
-          ./tools/phenosigdb-validate
+          PYTHONPATH=packages/python:tools python -c "from phenosigdb_maintainer.build import build_database; build_database()"
+          PYTHONPATH=packages/python:tools python -c "from phenosigdb_maintainer.validate import main; main()"
 
       - name: Run Python tests
         run: pytest -q packages/python/tests

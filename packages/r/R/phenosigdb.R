@@ -1,14 +1,10 @@
-.phenosigdb_package_version <- "0.1.10"
-# Optional archives have their own release cadence.
-.phenosigdb_resource_release <- "v0.1.9"
+.phenosigdb_package_version <- "0.1.12"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
-  "domain",
-  "source",
-  "collection",
   "source_resource",
-  "signature_format",
+  "domain",
+  "collection",
   "species",
   "cell_family",
   "context",
@@ -18,6 +14,8 @@
 
 .phenosigdb_resource_metadata_columns <- c(
   .phenosigdb_public_metadata_columns,
+  "source",
+  "signature_format",
   "resource_key",
   "species_original",
   "source_version",
@@ -254,7 +252,7 @@
     if (nzchar(base)) {
       return(paste0(sub("/+$", "", base), "/", info$archive_name[[1]]))
     }
-    release_ref <- Sys.getenv("PHENOSIGDB_RESOURCES_RELEASE", unset = .phenosigdb_resource_release)
+    release_ref <- Sys.getenv("PHENOSIGDB_RESOURCES_RELEASE", unset = paste0("v", .phenosigdb_package_version))
     return(paste0("https://github.com/GeNeHetX/phenosigdb/releases/download/", release_ref, "/", info$archive_name[[1]]))
   }
   info$download_url[[1]]
@@ -310,6 +308,7 @@
     checksum = manifest_value("checksum", NA_character_),
     package_version = manifest_value("package_version", NA_character_),
     cache_path = normalizePath(dir_path, winslash = "/", mustWork = FALSE),
+    size_mb = if (installed) sum(file.info(list.files(dir_path, recursive = TRUE, full.names = TRUE))$size, na.rm = TRUE) / 1e6 else 0,
     stringsAsFactors = FALSE
   )
 }
@@ -662,10 +661,13 @@
   if (length(resources) == 1L) {
     return(.phenosigdb_install_resource(resources[[1]], force = force, verbose = verbose, action = action))
   }
-  for (resource in resources) {
-    .phenosigdb_install_resource(resource, force = force, verbose = verbose, action = action)
+  for (i in seq_along(resources)) {
+    resource <- resources[[i]]
+    if (verbose) message("[", i, "/", length(resources), "] ", resource)
+    .phenosigdb_install_resource(resource, force = force, verbose = FALSE, action = action)
   }
-  do.call(rbind, lapply(known, .phenosigdb_resource_status_row))
+  result <- do.call(rbind, lapply(known, .phenosigdb_resource_status_row))
+  result[, c("resource", "installed", "version", "n_signatures", "size_mb"), drop = FALSE]
 }
 
 .phenosigdb_remove_resource <- function(resource, verbose = TRUE) {
@@ -679,21 +681,43 @@
   row
 }
 
-.phenosigdb_search_mask <- function(table, query, columns, fixed = FALSE) {
-  mask <- rep(FALSE, nrow(table))
-  if (is.null(query) || !nrow(table)) {
-    return(mask)
-  }
-  query <- as.character(query)[1]
-  for (column in columns) {
-    if (!column %in% names(table)) {
-      next
+.phenosigdb_search_mask <- function(table, query, columns, fixed = FALSE, domain = NULL,
+                                    species = NULL, cell_family = NULL, context = NULL,
+                                    disease = NULL, source_resource = NULL, collection = NULL,
+                                    logic = c("and", "or"), ignore_case = TRUE) {
+  logic <- match.arg(logic)
+  masks <- list()
+  if (!is.null(query)) {
+    query <- trimws(as.character(query)[1])
+    if (!fixed) {
+      query <- gsub("[^ -~]", ".", query)
     }
+    query_mask <- rep(FALSE, nrow(table))
+    for (column in columns) {
+      if (!column %in% names(table)) next
+      values <- as.character(table[[column]])
+      values[is.na(values)] <- ""
+      query_mask <- query_mask | grepl(query, values, ignore.case = ignore_case, fixed = fixed)
+    }
+    masks[[length(masks) + 1L]] <- query_mask
+  }
+  filters <- list(domain = domain, species = species, cell_family = cell_family,
+                  context = context, disease = disease, source_resource = source_resource,
+                  collection = collection)
+  for (column in names(filters)) {
+    value <- filters[[column]]
+    if (is.null(value)) next
     values <- as.character(table[[column]])
     values[is.na(values)] <- ""
-    mask <- mask | grepl(query, values, ignore.case = TRUE, fixed = fixed)
+    masks[[length(masks) + 1L]] <- if (ignore_case) {
+      tolower(values) == tolower(trimws(as.character(value)[1]))
+    } else {
+      values == trimws(as.character(value)[1])
+    }
   }
-  mask
+  if (!length(masks)) return(rep(TRUE, nrow(table)))
+  mask_matrix <- do.call(cbind, masks)
+  if (logic == "and") apply(mask_matrix, 1, all) else apply(mask_matrix, 1, any)
 }
 
 .phenosigdb_core_metadata <- function(reference_species = "human") {
@@ -839,7 +863,8 @@ phenosigdb_resources <- function(action = "list", resource = NULL, force = FALSE
     return(.phenosigdb_cache_dir_create())
   }
   if (identical(action, "list")) {
-    return(do.call(rbind, lapply(.phenosigdb_known_resources()$resource, .phenosigdb_resource_status_row)))
+    rows <- do.call(rbind, lapply(.phenosigdb_known_resources()$resource, .phenosigdb_resource_status_row))
+    return(rows[, c("resource", "installed", "version", "n_signatures", "size_mb"), drop = FALSE])
   }
   if (identical(action, "install") && (is.null(resource) || !nzchar(trimws(resource)))) {
     return(.phenosigdb_install_resources(force = force, verbose = verbose, action = "install"))
@@ -864,15 +889,27 @@ phenosigdb_resources <- function(action = "list", resource = NULL, force = FALSE
   .phenosigdb_install_resource(resource, force = force, verbose = verbose, action = "update")
 }
 
-list_signatures <- function(query = NULL, reference_species = "human", fixed = FALSE) {
+list_signatures <- function(query = NULL, reference_species = "human", fixed = FALSE,
+                            domain = NULL, species = NULL, cell_family = NULL,
+                            context = NULL, disease = NULL, source_resource = NULL,
+                            collection = NULL, logic = c("and", "or"), ignore_case = TRUE) {
   reference_species <- match.arg(reference_species, c("human", "mouse", "original"))
+  logic <- match.arg(logic)
   core <- .phenosigdb_core_metadata(reference_species = reference_species)
   optional <- .phenosigdb_optional_metadata(reference_species = reference_species)
   meta <- if (nrow(optional)) rbind(core, optional) else core
   meta <- meta[order(meta$signature_id), .phenosigdb_public_metadata_columns, drop = FALSE]
   if (!is.null(query)) {
     search_columns <- setdiff(names(meta), "n_genes")
-    meta <- meta[.phenosigdb_search_mask(meta, query = query, columns = search_columns, fixed = fixed), , drop = FALSE]
+    meta <- meta[.phenosigdb_search_mask(meta, query = query, columns = search_columns, fixed = fixed,
+      domain = domain, species = species, cell_family = cell_family, context = context,
+      disease = disease, source_resource = source_resource, collection = collection,
+      logic = logic, ignore_case = ignore_case), , drop = FALSE]
+  } else if (any(!vapply(list(domain, species, cell_family, context, disease, source_resource, collection), is.null, logical(1)))) {
+    meta <- meta[.phenosigdb_search_mask(meta, query = NULL, columns = character(), fixed = fixed,
+      domain = domain, species = species, cell_family = cell_family, context = context,
+      disease = disease, source_resource = source_resource, collection = collection,
+      logic = logic, ignore_case = ignore_case), , drop = FALSE]
   }
   rownames(meta) <- NULL
   meta
@@ -892,7 +929,13 @@ get_signatures <- function(signature_ids = NULL, reference_species = "human") {
     db <- db[order(db$signature_id, db$gene), , drop = FALSE]
     ordered_ids <- unique(db$signature_id)
   } else {
-    ordered_ids <- unique(as.character(signature_ids))
+    if (is.data.frame(signature_ids)) {
+      if (!"signature_id" %in% names(signature_ids)) stop("signature table must contain a 'signature_id' column", call. = FALSE)
+      ordered_ids <- as.character(signature_ids$signature_id)
+    } else {
+      ordered_ids <- as.character(signature_ids)
+    }
+    ordered_ids <- unique(ordered_ids)
     ordered_ids <- ordered_ids[!is.na(ordered_ids) & nzchar(trimws(ordered_ids))]
     db <- db[db$signature_id %in% ordered_ids, , drop = FALSE]
     if (nrow(db)) {
@@ -922,5 +965,22 @@ get_signatures <- function(signature_ids = NULL, reference_species = "human") {
   if (is.null(signature_ids)) {
     return(signatures)
   }
+  missing <- setdiff(ordered_ids, names(signatures))
+  if (length(missing) == length(ordered_ids)) {
+    stop("No requested signatures found: ", paste(missing, collapse = ", "), call. = FALSE)
+  }
+  if (length(missing)) warning("Some requested signatures were not found: ", paste(missing, collapse = ", "), call. = FALSE)
+  if (!is.null(signature_ids) && reference_species == "original") {
+    requested_species <- unique(tolower(as.character(db$species[db$signature_id %in% ordered_ids])))
+    requested_species <- requested_species[nzchar(requested_species) & !is.na(requested_species)]
+    if (length(requested_species) > 1L) {
+      stop("Mixed species request. Select one species or use reference_species = 'human' or 'mouse'.", call. = FALSE)
+    }
+  }
   signatures[ordered_ids[ordered_ids %in% names(signatures)]]
+}
+
+get_signature <- function(signature_id, reference_species = "human") {
+  values <- get_signatures(signature_id, reference_species = reference_species)
+  values[[as.character(signature_id)[1]]]
 }

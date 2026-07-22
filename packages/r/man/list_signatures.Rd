@@ -2,17 +2,23 @@
 \alias{list_signatures}
 \title{List available signatures}
 \usage{
-list_signatures(query = NULL, reference_species = "human", fixed = FALSE)
+list_signatures(query = NULL, reference_species = "human", fixed = FALSE,
+domain = NULL, species = NULL, cell_family = NULL, context = NULL,
+disease = NULL, source_resource = NULL, collection = NULL,
+logic = c("and", "or"), ignore_case = TRUE)
 }
 \arguments{
   \item{query}{Optional search string. Regex by default (set \code{fixed = TRUE} for literal text).}
   \item{reference_species}{One of \code{"human"}, \code{"mouse"}, or \code{"original"}.}
   \item{fixed}{Logical. If \code{TRUE}, treat \code{query} as literal text. If \code{FALSE} (default), treat as regular expression.}
+  \item{domain, species, cell_family, context, disease, source_resource, collection}{Optional exact metadata filters.}
+  \item{logic}{Combine the query and filters with \code{"and"} (default) or \code{"or"}.}
+  \item{ignore_case}{Logical. Ignore case in the query and filters. Default \code{TRUE}.}
 }
 \value{
 A data frame with one row per signature and these columns:
-\code{signature_id}, \code{signature_name}, \code{domain}, \code{source},
-\code{collection}, \code{source_resource}, \code{signature_format},
+\code{signature_id}, \code{signature_name}, \code{source_resource}, \code{domain},
+\code{collection},
 \code{species}, \code{cell_family}, \code{context}, \code{disease},
 \code{n_genes}.
 }

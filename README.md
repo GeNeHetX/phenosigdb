@@ -16,23 +16,25 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.5/phenosigdb_0.1.5.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.10/phenosigdb_0.1.10.tar.gz")
 ```
 
 ## Quick Start
 
 ### Python
 ```python
-from phenosigdb import list_signatures, get_signatures, phenosigdb_resources
+from phenosigdb import list_signatures, get_signatures, get_signature, phenosigdb_resources
 
 # List all available signatures
 meta = list_signatures()
 
 # Search signatures (regex by default, case-insensitive)
-caf_signatures = list_signatures("CAF|FIBRO")
+caf_signatures = list_signatures("CAF")
 
 # Get a specific signature
 sig = get_signatures("CAF.Elyada19.iCAF")
+sig = get_signatures(list_signatures("CAF"))
+one_sig = get_signature("CAF.Elyada19.iCAF")
 
 # Install optional resources
 phenosigdb_resources("install", "pid")
@@ -64,6 +66,9 @@ List signatures with metadata. **Default: regex search, case-insensitive.** Use 
 - `query`: Optional search string (all metadata columns except `n_genes`)
 - `reference_species`: `"human"` (default), `"mouse"`, or `"original"`
 - `fixed`: If `True`, literal text matching
+- `domain`, `species`, `cell_family`, `context`, `disease`, `source_resource`, `collection`: Exact column filters
+- `logic`: `"and"` (default) or `"or"` for combining query and filters
+- `ignore_case`: `True` (default) or `False`
 
 **Returns:** DataFrame with signature metadata.
 
@@ -75,6 +80,11 @@ Retrieve signature gene sets. If an ID belongs to an optional resource that is n
 - `reference_species`: Species filter
 
 **Returns:** Dict mapping signature_id → gene list (binary) or gene→weight dict (continuous).
+
+`signature_ids` also accepts the table returned by `list_signatures()`.
+
+### `get_signature(signature_id, reference_species="human")`
+Return one signature directly.
 
 ### `phenosigdb_resources(action, resource=None, force=False, verbose=True)`
 Manage optional resources.
@@ -97,15 +107,15 @@ Return package version string.
 | `signature_id` | Unique identifier (e.g., `CAF.Elyada19.iCAF`) |
 | `signature_name` | Human-readable name (e.g., `iCAF`) |
 | `domain` | Broad category (e.g., `CAF`, `PDAC`, `IMMUNE`) |
-| `source` | Source paper/key (e.g., `Elyada19`) |
 | `collection` | Subgroup (e.g., `curated`) |
 | `source_resource` | Runtime origin: `core`, `celltypist`, `cellmarker`, `msigdb`, `pid`, `biocarta`, `reactome`, `wikipathways` |
-| `signature_format` | `binary` (gene set) or `continuous` (weighted) |
 | `species` | Species (human/mouse) |
 | `cell_family` | Cell type family (e.g., `fibroblast`, `tumor`) |
 | `context` | Biological context (e.g., `cancer`, `pathway`) |
 | `disease` | Disease association (e.g., `PDAC`, `HCC`) |
 | `n_genes` | Number of genes in signature |
+
+`source_resource` answers “where did this data come from?” (`core`, `celltypist`, `msigdb`, etc.). `collection` answers “which subgroup within that source?” (`curated`, `C7`, `C8`, `PID`, etc.).
 
 ## Query Behavior
 
@@ -128,32 +138,13 @@ For bundled signatures: `list_signatures()` then filter by `source_resource == "
 
 ## Optional Resources
 
-Optional resources are downloaded only when needed and stored in your user cache. Install them once; they remain available after package upgrades.
-
-Install one resource:
-
-```r
-phenosigdb_resources("install", "celltypist")
-```
-
-Install all available optional resources:
+Install optional resources once when needed:
 
 ```r
 phenosigdb_resources("install")
 ```
 
-Use `get_signatures()` with an optional ID and the needed resource is installed automatically if missing. Refresh installed resources only when wanted:
-
-```r
-phenosigdb_resources("update")
-```
-
-Available names: `celltypist`, `cellmarker`, `msigdb_c7immune`, `msigdb_c8celltype`, `pid`, `biocarta`, `reactome`, `wikipathways`.
-
-## Versioning
-
-- Curated signatures: Versioned with repository releases
-- Optional resources have independent versions and persist across package upgrades
+They remain available after package upgrades. `get_signatures()` installs a missing resource automatically. Use `phenosigdb_resources("update")` to refresh them.
 
 ```python
 from phenosigdb import phenosigdb_version
@@ -163,16 +154,6 @@ print(phenosigdb_version())
 ```r
 phenosigdb_version()
 ```
-
-## Repository Layout
-
-- `packages/python/`: Python library
-- `packages/r/`: R package
-- `signatures/`: curated inputs and raw source material
-- `data/`: generated core parquet files
-- `tools/`: maintainer build, validation, and release commands
-
-Maintainer documentation: [signatures/README.md](signatures/README.md)
 
 ---
 
@@ -238,16 +219,5 @@ Core curated signatures: **785** across **48** curated source keys.
 | `SINET` | `Patte25` | 4 | binary | human | cancer | siNETs |
 
 Optional downloadable references available through `phenosigdb_resources()`: **8**.
-
-| Resource | Source Resource | Collection | Prefix | Format | Context |
-| --- | --- | --- | --- | --- | --- |
-| `celltypist` | `celltypist` | `reference_models` | `CELLTYPIST.*` | continuous | cell_type |
-| `cellmarker` | `cellmarker` | `cell_markers` | `CELLMARKER.*` | binary | cell_type |
-| `msigdb_c7immune` | `msigdb` | `C7` | `MSIGDB.C7.*` | binary | immunology |
-| `msigdb_c8celltype` | `msigdb` | `C8` | `MSIGDB.C8.*` | binary | cell_type |
-| `pid` | `pid` | `PID` | `PID.*` | binary | pathway |
-| `biocarta` | `biocarta` | `BIOCARTA` | `BIOCARTA.*` | binary | pathway |
-| `reactome` | `reactome` | `ReactomePathways` | `REACTOME.PATHWAYS.*` | binary | pathway |
-| `wikipathways` | `wikipathways` | `WikiPathways` | `WIKIPATHWAYS.*` | binary | pathway |
 
 <!-- PHENOSIGDB_SIGNATURES_END -->

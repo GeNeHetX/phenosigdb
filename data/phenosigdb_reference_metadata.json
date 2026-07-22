@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-21T13:21:10.637964+00:00",
+  "generated_at_utc": "2026-07-22T12:38:06.763963+00:00",
   "artifacts": {
     "original": {
       "parquet": "data/phenosigdb.parquet",
@@ -14,8 +14,8 @@
     "human": {
       "parquet": "data/phenosigdb_human.parquet",
       "csv_gz": null,
-      "gene_rows": 219344,
-      "signature_count": 777,
+      "gene_rows": 219307,
+      "signature_count": 773,
       "species": [
         "human"
       ],
@@ -23,10 +23,10 @@
       "translation_summary": {
         "target_species": "human",
         "source_gene_rows": 219601,
-        "output_gene_rows": 219344,
+        "output_gene_rows": 219307,
         "same_species_rows": 205468,
         "needs_translation_rows": 14133,
-        "unmapped_rows": 1063,
+        "unmapped_rows": 1100,
         "split_source_rows": 717,
         "split_added_rows": 1174,
         "max_split_size": 9,
@@ -34,7 +34,7 @@
         "collapse_removed_rows": 368,
         "max_collapse_size": 6,
         "relation_source_rows": {
-          "one_to_one": 12353,
+          "one_to_one": 12316,
           "one_to_many": 717
         }
       }
@@ -42,7 +42,7 @@
     "mouse": {
       "parquet": "data/phenosigdb_mouse.parquet",
       "csv_gz": null,
-      "gene_rows": 193419,
+      "gene_rows": 193392,
       "signature_count": 778,
       "species": [
         "mouse"
@@ -51,29 +51,29 @@
       "translation_summary": {
         "target_species": "mouse",
         "source_gene_rows": 219601,
-        "output_gene_rows": 193419,
+        "output_gene_rows": 193392,
         "same_species_rows": 14133,
         "needs_translation_rows": 205468,
-        "unmapped_rows": 40061,
+        "unmapped_rows": 40089,
         "split_source_rows": 7541,
         "split_added_rows": 23590,
         "max_split_size": 75,
-        "collapse_output_rows": 5290,
-        "collapse_removed_rows": 9711,
+        "collapse_output_rows": 5289,
+        "collapse_removed_rows": 9710,
         "max_collapse_size": 20,
         "relation_source_rows": {
-          "one_to_one": 155601,
-          "many_to_one": 9806
+          "one_to_one": 155574,
+          "many_to_one": 9805
         }
       }
     }
   },
   "homology": {
     "status": "used",
-    "path": "data/reference/homology/mgi_alliance_mouse_human_homology_20260615.tsv",
-    "tag": "20260615",
+    "path": "data/reference/homology/mgi_alliance_mouse_human_homology_20260720.tsv",
+    "tag": "20260720",
     "url": "https://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt",
-    "downloaded_at_utc": "2026-06-16T21:00:53.374363+00:00",
-    "source_last_modified": "Mon, 15 Jun 2026 12:00:26 GMT"
+    "downloaded_at_utc": "2026-07-21T13:56:59.664260+00:00",
+    "source_last_modified": "Mon, 20 Jul 2026 12:00:22 GMT"
   }
 }
