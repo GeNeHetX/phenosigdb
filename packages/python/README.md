@@ -33,8 +33,8 @@ meta = list_signatures()
 
 # Regex search (default - fixed=False)
 immune = list_signatures("immune")
-caf_sigs = list_signatures(r"^CAF\.")
-pdac_caf = list_signatures("CAF", domain="CAF", species="human")
+caf_sigs = list_signatures(r"^FIBROBLAST\.")
+pdac_caf = list_signatures("FIBROBLAST", domain="FIBROBLAST", species="human")
 pdac_pathways = list_signatures(r"PDAC.*pathway")
 
 # Literal text search (fixed=True)
@@ -46,11 +46,11 @@ pathways = meta[meta["context"] == "pathway"]
 continuous = meta[meta["signature_format"] == "continuous"]
 
 # Get signatures
-sig = get_signatures(["CAF.Elyada19.iCAF"])
-sig = get_signatures(list_signatures("CAF"))
+sig = get_signatures(["FIBROBLAST.Elyada19.iCAF"])
+sig = get_signatures(list_signatures("FIBROBLAST"))
 weighted = get_signatures(["PDAC.PAMG20.PDX"])
 
-mouse_sig = get_signatures(["CAF.Elyada19.iCAF"], reference_species="mouse")
+mouse_sig = get_signatures(["FIBROBLAST.Elyada19.iCAF"], reference_species="mouse")
 
 print(ALLOWED_REFERENCE_SPECIES)  # {'human', 'mouse', 'original'}
 

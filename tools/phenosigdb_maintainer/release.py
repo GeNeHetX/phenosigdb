@@ -149,8 +149,9 @@ def check_release_dependencies() -> None:
 def build_r_release(version: str) -> Path:
     dist = ROOT / "dist"
     dist.mkdir(parents=True, exist_ok=True)
-    for old in dist.glob("phenosigdb*.tar.gz"):
-        old.unlink()
+    for old in (*dist.glob("phenosigdb_*.tar.gz"), dist / "phenosigdb-r.tar.gz"):
+        if old.exists():
+            old.unlink()
 
     _run(["R", "CMD", "build", str(ROOT / "packages" / "r")], cwd=dist)
     versioned = dist / f"phenosigdb_{version}.tar.gz"

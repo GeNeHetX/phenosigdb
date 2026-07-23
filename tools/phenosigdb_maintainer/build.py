@@ -124,6 +124,15 @@ def _clean_record(record: dict[str, Any]) -> dict[str, Any]:
     record["tags"] = normalize_tags(record.get("tags"))
     for key in ("signature_id", "signature_name", "source", "disease"):
         record[key] = normalize_blank(record.get(key))
+    if record["signature_id"]:
+        legacy_domain, separator, remainder = record["signature_id"].partition(".")
+        domain_map = {
+            "CAF": "FIBROBLAST",
+            "CANCERSEA": "CANCER_ATLAS",
+            "PAN_CANCER": "CANCER_ATLAS",
+            "CELL": "CELL_ATLAS",
+        }
+        record["signature_id"] = f"{domain_map.get(legacy_domain, legacy_domain)}{separator}{remainder}"
     parsed_source = _parse_source(record.get("source"))
     for key, value in parsed_source.items():
         if normalize_blank(record.get(key)) is None and value is not None:

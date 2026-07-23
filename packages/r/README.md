@@ -8,7 +8,7 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.14/phenosigdb_0.1.14.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.16/phenosigdb_0.1.16.tar.gz")
 ```
 
 Public API:
@@ -24,7 +24,7 @@ library(phenosigdb)
 
 # List all signatures
 meta <- list_signatures()
-caf <- list_signatures("CAF", domain = "CAF", species = "human")
+caf <- list_signatures("FIBROBLAST", domain = "FIBROBLAST", species = "human")
 sig <- get_signatures(caf)
 
 # Query behavior (regex by default, case-insensitive):
@@ -34,7 +34,7 @@ sig <- get_signatures(caf)
 
 # Regex search (default - fixed = FALSE)
 immune <- list_signatures("immune")
-caf_sigs <- list_signatures("^CAF\\.")
+caf_sigs <- list_signatures("^FIBROBLAST\\.")
 pdac_pathways <- list_signatures("PDAC.*pathway")
 
 # Literal text search (fixed = TRUE)
@@ -46,10 +46,10 @@ pathways <- meta[meta$context == "pathway", ]
 continuous <- meta[meta$signature_format == "continuous", ]
 
 # Get signatures
-sig <- get_signatures("CAF.Elyada19.iCAF")
+sig <- get_signatures("FIBROBLAST.Elyada19.iCAF")
 weighted <- get_signatures("PDAC.PAMG20.PDX")
 
-mouse_sig <- get_signatures("CAF.Elyada19.iCAF", reference_species = "mouse")
+mouse_sig <- get_signatures("FIBROBLAST.Elyada19.iCAF", reference_species = "mouse")
 
 # Resource management
 phenosigdb_resources("list")

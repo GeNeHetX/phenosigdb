@@ -16,7 +16,7 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.14/phenosigdb_0.1.14.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.16/phenosigdb_0.1.16.tar.gz")
 ```
 
 ## Quick Start
@@ -29,7 +29,7 @@ from phenosigdb import list_signatures, get_signatures, phenosigdb_resources
 meta = list_signatures()
 
 # Search signatures (regex by default, case-insensitive)
-caf_signatures = list_signatures("CAF")
+caf_signatures = list_signatures("FIBROBLAST")
 
 # Get signatures selected from the metadata table
 sig = get_signatures(caf_signatures)
@@ -46,7 +46,7 @@ library(phenosigdb)
 meta <- list_signatures()
 
 # Search signatures (regex by default, case-insensitive)
-caf_signatures <- list_signatures("CAF")
+caf_signatures <- list_signatures("FIBROBLAST")
 
 # Get signatures selected from the metadata table
 sig <- get_signatures(caf_signatures)
@@ -60,7 +60,7 @@ phenosigdb_resources("install", "pid")
 ### Find signatures
 
 ```r
-list_signatures("CAF", cell_family = "fibroblast")
+list_signatures("FIBROBLAST", cell_family = "fibroblast")
 ```
 
 Use `cell_family` for the cell type, `disease` for the disease, or `domain` for the broad biology group. The table can also be searched by `species`, `source_resource`, and `collection`. Regex search is case-insensitive by default; filters intersect with the search. Use `logic = "or"` to combine alternatives.
@@ -89,9 +89,9 @@ phenosigdb_resources("update")
 
 | Column | Description |
 |--------|-------------|
-| `signature_id` | Unique identifier (e.g., `CAF.Elyada19.iCAF`) |
+| `signature_id` | Unique identifier (e.g., `FIBROBLAST.Elyada19.iCAF`) |
 | `signature_name` | Human-readable name (e.g., `iCAF`) |
-| `domain` | Broad category (e.g., `CAF`, `PDAC`, `IMMUNE`) |
+| `domain` | Broad category (e.g., `FIBROBLAST`, `PDAC`, `IMMUNE`) |
 | `collection` | Subgroup (e.g., `curated`) |
 | `source_resource` | Runtime origin: `core`, `celltypist`, `cellmarker`, `msigdb`, `pid`, `biocarta`, `reactome`, `wikipathways` |
 | `species` | Species (human/mouse) |
@@ -114,7 +114,7 @@ phenosigdb_resources("update")
 
 Organized by domain. Bundled signatures have `source_resource = "core"` and `collection = "curated"`.
 
-- **CAF**: Multiple PDAC CAF subtypes (iCAF, myoCAF, etc.) from Elyada19, Dominguez20, Kieffer20, etc.
+- **FIBROBLAST**: Multiple PDAC CAF subtypes (iCAF, myoCAF, etc.) from Elyada19, Dominguez20, Kieffer20, etc.
 - **PDAC**: Tumor, stromal, immune signatures from Bailey16, Moffitt15, Collisson11, etc.
 - **IMMUNE**: Immune cell type signatures from Becht16, Chu23, Mulder21, Rodrigues18, Wu24
 - **Other**: GASTRIC, HCC, ORGANOID, CCA, etc.
@@ -135,26 +135,27 @@ Core curated signatures: **785** across **48** curated source keys.
 
 | Domain | SourceKey | Signatures | Format | Species | Context | Disease |
 | --- | --- | ---: | --- | --- | --- | --- |
-| `CAF` | `Affo21` | 3 | binary | human | cancer | unknown |
-| `CAF` | `Cords23` | 9 | binary | human | cancer | PDAC |
-| `CAF` | `Dominguez20` | 3 | binary | human | cancer | PDAC |
-| `CAF` | `Elyada19` | 2 | binary | human | cancer | PDAC |
-| `CAF` | `Grout22` | 3 | binary | human | cancer | unknown |
-| `CAF` | `Kieffer20` | 8 | binary | human | cancer | PDAC |
-| `CAF` | `Neuzillet22` | 4 | binary | human | cancer | PDAC |
-| `CAF` | `Peng26` | 2 | binary | human | cancer | PDAC |
-| `CAF` | `Qin23` | 4 | binary | human | cancer | PDAC |
-| `CAF` | `ReviewLiu26` | 24 | binary | human, mouse | cancer | unknown |
-| `CAF` | `Wang21` | 6 | binary | human | cancer | unknown |
-| `CAF` | `Xing21` | 4 | binary | human | cancer | unknown |
-| `CAF` | `Zhang23` | 8 | binary | human | cancer | PDAC |
-| `CANCERSEA` | `Yuan18` | 14 | binary | human | cancer | cancer |
+| `CANCER_ATLAS` | `Gavish23` | 41 | binary | human | cancer | cancer |
+| `CANCER_ATLAS` | `Yuan18` | 14 | binary | human | cancer | cancer |
 | `CCA` | `Serrano23` | 5 | binary | human | cancer | cholangiocarcinoma |
 | `CCA` | `Sia13` | 2 | binary | human | cancer | cholangiocarcinoma |
-| `CELL` | `PanglaoDB2020` | 163 | binary | human, mouse | physiology | unknown |
+| `CELL_ATLAS` | `PanglaoDB2020` | 163 | binary | human, mouse | physiology | unknown |
 | `ECM` | `Helms22` | 1 | binary | human | cancer | PDAC |
+| `FIBROBLAST` | `Affo21` | 3 | binary | human | cancer | unknown |
+| `FIBROBLAST` | `Cords23` | 9 | binary | human | cancer | PDAC |
+| `FIBROBLAST` | `Dominguez20` | 3 | binary | human | cancer | PDAC |
+| `FIBROBLAST` | `Elyada19` | 2 | binary | human | cancer | PDAC |
 | `FIBROBLAST` | `Gao24` | 20 | binary | human | unknown | unknown |
+| `FIBROBLAST` | `Grout22` | 3 | binary | human | cancer | unknown |
+| `FIBROBLAST` | `Kieffer20` | 8 | binary | human | cancer | PDAC |
+| `FIBROBLAST` | `Neuzillet22` | 4 | binary | human | cancer | PDAC |
 | `FIBROBLAST` | `Patrick24` | 11 | binary | mouse | unknown | unknown |
+| `FIBROBLAST` | `Peng26` | 2 | binary | human | cancer | PDAC |
+| `FIBROBLAST` | `Qin23` | 4 | binary | human | cancer | PDAC |
+| `FIBROBLAST` | `ReviewLiu26` | 24 | binary | human, mouse | cancer | unknown |
+| `FIBROBLAST` | `Wang21` | 6 | binary | human | cancer | unknown |
+| `FIBROBLAST` | `Xing21` | 4 | binary | human | cancer | unknown |
+| `FIBROBLAST` | `Zhang23` | 8 | binary | human | cancer | PDAC |
 | `GASTRIC` | `Bockerstett20` | 15 | binary | human | physiology | normal |
 | `GASTRIC` | `Ma21` | 11 | binary | mouse | physiology | normal |
 | `GASTRIC_CANCER` | `Kim22` | 7 | binary | human | cancer | gastric_cancer |
@@ -170,7 +171,6 @@ Core curated signatures: **785** across **48** curated source keys.
 | `ORGANOID` | `Xu25` | 48 | binary | human | organoid | unknown |
 | `PANCREAS` | `Fernandez24` | 23 | binary | mouse | physiology | normal |
 | `PANCREAS` | `Schlesinger20` | 14 | binary | mouse | physiology | normal |
-| `PAN_CANCER` | `Gavish23` | 41 | binary | human | cancer | cancer |
 | `PDAC` | `Bailey16` | 4 | binary | human | cancer | PDAC |
 | `PDAC` | `ChanSengYue20` | 12 | binary | human | cancer | PDAC |
 | `PDAC` | `Collisson11` | 3 | binary | human | cancer | PDAC |
@@ -183,7 +183,5 @@ Core curated signatures: **785** across **48** curated source keys.
 | `PDAC` | `PAMG20` | 4 | continuous | human | cancer | PDAC |
 | `PDAC` | `Puleo18` | 10 | binary | human | cancer | PDAC |
 | `SINET` | `Patte25` | 4 | binary | human | cancer | siNETs |
-
-Optional downloadable references available through `phenosigdb_resources()`: **8**.
 
 <!-- PHENOSIGDB_SIGNATURES_END -->

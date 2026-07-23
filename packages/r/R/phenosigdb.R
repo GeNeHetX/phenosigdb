@@ -1,4 +1,4 @@
-.phenosigdb_package_version <- "0.1.14"
+.phenosigdb_package_version <- "0.1.16"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
@@ -917,7 +917,12 @@ list_signatures <- function(query = NULL, reference_species = "human", fixed = F
   logic <- match.arg(logic)
   core <- .phenosigdb_core_metadata(reference_species = reference_species)
   optional <- .phenosigdb_optional_metadata(reference_species = reference_species)
-  meta <- if (nrow(optional)) rbind(core, optional) else core
+  if (nrow(optional)) {
+    optional <- optional[, .phenosigdb_public_metadata_columns, drop = FALSE]
+    meta <- rbind(core, optional)
+  } else {
+    meta <- core
+  }
   meta <- meta[order(meta$signature_id), .phenosigdb_public_metadata_columns, drop = FALSE]
   if (!is.null(query)) {
     search_columns <- setdiff(names(meta), "n_genes")
