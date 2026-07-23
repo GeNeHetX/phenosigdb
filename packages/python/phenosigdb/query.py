@@ -5,7 +5,6 @@ import warnings
 
 import pandas as pd
 
-from ._version import __version__
 from .io import read_database
 from .resources import ALLOWED_REFERENCE_SPECIES, PUBLIC_METADATA_COLUMNS, ensure_optional_resource_available, installed_resource_metadata, installed_resource_values
 
@@ -310,18 +309,3 @@ def get_signatures(
     if ordered_ids is None:
         return signatures
     return {signature_id: signatures[signature_id] for signature_id in ordered_ids if signature_id in signatures}
-
-
-def get_signature(signature_id: str, reference_species: str = DEFAULT_REFERENCE_SPECIES):
-    """Get one signature by ID; equivalent to ``get_signatures(signature_id)[signature_id]``."""
-    values = get_signatures(signature_id, reference_species=reference_species)
-    return values[signature_id]
-
-
-def phenosigdb_version() -> str:
-    """Return the PhenoSigDB version.
-
-    Returns:
-        The version string.
-    """
-    return __version__

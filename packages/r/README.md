@@ -8,16 +8,14 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.13/phenosigdb_0.1.13.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.14/phenosigdb_0.1.14.tar.gz")
 ```
 
 Public API:
 
 - `list_signatures(query = NULL, reference_species = "human", fixed = FALSE)`
 - `get_signatures(signature_ids = NULL, reference_species = "human")`
-- `get_signature(signature_id, reference_species = "human")`
 - `phenosigdb_resources(action = "list", resource = NULL, force = FALSE, verbose = TRUE)`
-- `phenosigdb_version()`
 
 Examples:
 
@@ -28,7 +26,6 @@ library(phenosigdb)
 meta <- list_signatures()
 caf <- list_signatures("CAF", domain = "CAF", species = "human")
 sig <- get_signatures(caf)
-one_sig <- get_signature("CAF.Elyada19.iCAF")
 
 # Query behavior (regex by default, case-insensitive):
 # Searches: signature_id, signature_name, domain, source, collection,
@@ -53,9 +50,6 @@ sig <- get_signatures("CAF.Elyada19.iCAF")
 weighted <- get_signatures("PDAC.PAMG20.PDX")
 
 mouse_sig <- get_signatures("CAF.Elyada19.iCAF", reference_species = "mouse")
-
-# Version info
-phenosigdb_version()
 
 # Resource management
 phenosigdb_resources("list")

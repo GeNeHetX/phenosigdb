@@ -10,9 +10,7 @@ Public API:
 
 - `list_signatures(query=None, reference_species="human", fixed=False)`
 - `get_signatures(signature_ids=None, reference_species="human")`
-- `get_signature(signature_id, reference_species="human")`
 - `phenosigdb_resources(action="list", resource=None, force=False, verbose=True)`
-- `phenosigdb_version()`
 - Constants: `DEFAULT_REFERENCE_SPECIES`, `ALLOWED_REFERENCE_SPECIES`
 
 Examples:
@@ -22,7 +20,6 @@ from phenosigdb import (
     get_signatures,
     list_signatures,
     phenosigdb_resources,
-    phenosigdb_version,
     ALLOWED_REFERENCE_SPECIES,
 )
 
@@ -51,13 +48,10 @@ continuous = meta[meta["signature_format"] == "continuous"]
 # Get signatures
 sig = get_signatures(["CAF.Elyada19.iCAF"])
 sig = get_signatures(list_signatures("CAF"))
-one_sig = get_signature("CAF.Elyada19.iCAF")
 weighted = get_signatures(["PDAC.PAMG20.PDX"])
 
 mouse_sig = get_signatures(["CAF.Elyada19.iCAF"], reference_species="mouse")
 
-# Version info
-print(phenosigdb_version())
 print(ALLOWED_REFERENCE_SPECIES)  # {'human', 'mouse', 'original'}
 
 # Resource management

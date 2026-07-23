@@ -1,4 +1,4 @@
-.phenosigdb_package_version <- "0.1.13"
+.phenosigdb_package_version <- "0.1.14"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
@@ -274,7 +274,19 @@
     }
     return(destination)
   }
-  utils::download.file(source, destination, mode = "wb", quiet = TRUE)
+  tryCatch(
+    utils::download.file(source, destination, mode = "wb", quiet = TRUE),
+    error = function(error) {
+      if (grepl("404|not found", conditionMessage(error), ignore.case = TRUE)) {
+        stop(
+          "Optional resource archive is missing: ", source,
+          ". Publish the generated resource archive with the matching GitHub release tag.",
+          call. = FALSE
+        )
+      }
+      stop(error)
+    }
+  )
   destination
 }
 
@@ -864,7 +876,15 @@ phenosigdb_resources <- function(action = "list", resource = NULL, force = FALSE
   }
   if (identical(action, "list")) {
     rows <- do.call(rbind, lapply(.phenosigdb_known_resources()$resource, .phenosigdb_resource_status_row))
-    return(rows[, c("resource", "installed", "version", "n_signatures", "size_mb"), drop = FALSE])
+    core_path <- .phenosigdb_repo_core_path("human")
+    core_n <- if (!is.null(core_path)) {
+      .phenosigdb_require_arrow()
+      nrow(unique(arrow::read_parquet(core_path, as_data_frame = TRUE)["signature_id"]))
+    } else NA_real_
+    core_size <- if (!is.null(core_path)) file.info(core_path)$size / 1e6 else 0
+    core <- data.frame(resource = "core", installed = TRUE, version = .phenosigdb_package_version,
+      n_signatures = core_n, size_mb = core_size, stringsAsFactors = FALSE)
+    return(rbind(core, rows[, c("resource", "installed", "version", "n_signatures", "size_mb"), drop = FALSE]))
   }
   if (identical(action, "install") && (is.null(resource) || !nzchar(trimws(resource)))) {
     return(.phenosigdb_install_resources(force = force, verbose = verbose, action = "install"))
@@ -913,10 +933,6 @@ list_signatures <- function(query = NULL, reference_species = "human", fixed = F
   }
   rownames(meta) <- NULL
   meta
-}
-
-phenosigdb_version <- function() {
-  .phenosigdb_package_version
 }
 
 get_signatures <- function(signature_ids = NULL, reference_species = "human") {
@@ -978,9 +994,4 @@ get_signatures <- function(signature_ids = NULL, reference_species = "human") {
     }
   }
   signatures[ordered_ids[ordered_ids %in% names(signatures)]]
-}
-
-get_signature <- function(signature_id, reference_species = "human") {
-  values <- get_signatures(signature_id, reference_species = reference_species)
-  values[[as.character(signature_id)[1]]]
 }

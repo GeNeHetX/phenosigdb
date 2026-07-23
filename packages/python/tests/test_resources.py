@@ -170,7 +170,7 @@ def test_phenosigdb_resources_install_remove_update(monkeypatch, tmp_path: Path)
 
     listing = phenosigdb_resources("list")
     assert {"celltypist", "cellmarker"}.issubset(set(listing["resource"]))
-    assert not listing["installed"].any()
+    assert not listing.loc[listing["resource"] != "core", "installed"].any()
 
     installed_ct = phenosigdb_resources("install", "celltypist", verbose=False)
     installed_cm = phenosigdb_resources("install", "cellmarker", verbose=False)

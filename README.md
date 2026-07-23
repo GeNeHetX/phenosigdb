@@ -16,14 +16,14 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.13/phenosigdb_0.1.13.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.14/phenosigdb_0.1.14.tar.gz")
 ```
 
 ## Quick Start
 
 ### Python
 ```python
-from phenosigdb import list_signatures, get_signatures, get_signature, phenosigdb_resources
+from phenosigdb import list_signatures, get_signatures, phenosigdb_resources
 
 # List all available signatures
 meta = list_signatures()
@@ -31,10 +31,8 @@ meta = list_signatures()
 # Search signatures (regex by default, case-insensitive)
 caf_signatures = list_signatures("CAF")
 
-# Get a specific signature
-sig = get_signatures("CAF.Elyada19.iCAF")
-sig = get_signatures(list_signatures("CAF"))
-one_sig = get_signature("CAF.Elyada19.iCAF")
+# Get signatures selected from the metadata table
+sig = get_signatures(caf_signatures)
 
 # Install optional resources
 phenosigdb_resources("install", "pid")
@@ -50,8 +48,8 @@ meta <- list_signatures()
 # Search signatures (regex by default, case-insensitive)
 caf_signatures <- list_signatures("CAF")
 
-# Get a specific signature
-sig <- get_signatures("CAF.Elyada19.iCAF")
+# Get signatures selected from the metadata table
+sig <- get_signatures(caf_signatures)
 
 # Install optional resources
 phenosigdb_resources("install", "pid")
@@ -59,46 +57,33 @@ phenosigdb_resources("install", "pid")
 
 ## Public API
 
-### `list_signatures(query=None, reference_species="human", fixed=False)`
-List signatures with metadata. **Default: regex search, case-insensitive.** Use `fixed=True` for literal text.
+### Find signatures
 
-**Parameters:**
-- `query`: Optional search string (all metadata columns except `n_genes`)
-- `reference_species`: `"human"` (default), `"mouse"`, or `"original"`
-- `fixed`: If `True`, literal text matching
-- `domain`, `species`, `cell_family`, `context`, `disease`, `source_resource`, `collection`: Exact column filters
-- `logic`: `"and"` (default) or `"or"` for combining query and filters
-- `ignore_case`: `True` (default) or `False`
+```r
+list_signatures("CAF", cell_family = "fibroblast")
+```
 
-**Returns:** DataFrame with signature metadata.
+Use `cell_family` for the cell type, `disease` for the disease, or `domain` for the broad biology group. The table can also be searched by `species`, `source_resource`, and `collection`. Regex search is case-insensitive by default; filters intersect with the search. Use `logic = "or"` to combine alternatives.
 
-### `get_signatures(signature_ids=None, reference_species="human")`
-Retrieve signature gene sets. If an ID belongs to an optional resource that is not installed, that resource is downloaded automatically.
+### Get signatures
 
-**Parameters:**
-- `signature_ids`: Signature ID, list of IDs, or `None` (all signatures)
-- `reference_species`: Species filter
+Pass either IDs from the `signature_id` column of `list_signatures()` or the complete table returned by `list_signatures()`:
 
-**Returns:** Dict mapping signature_id → gene list (binary) or gene→weight dict (continuous).
+```r
+get_signatures(caf_signatures)
+```
 
-`signature_ids` also accepts the table returned by `list_signatures()`.
+Python uses the same calls with a DataFrame and returns a dictionary. R returns a named list. Binary signatures are gene vectors; weighted signatures are gene-to-weight mappings.
 
-### `get_signature(signature_id, reference_species="human")`
-Return one signature directly.
+### Manage resources
 
-### `phenosigdb_resources(action, resource=None, force=False, verbose=True)`
-Manage optional resources.
+```r
+phenosigdb_resources("list")
+phenosigdb_resources("install")
+phenosigdb_resources("update")
+```
 
-**Parameters:**
-- `action`: `"list"`, `"install"`, `"remove"`, `"update"`, `"path"`
-- `resource`: Resource name (optional for list/install all)
-- `force`: Reinstall existing resources
-- `verbose`: Print progress messages
-
-**Returns:** Path string ("path") or DataFrame with resource status.
-
-### `phenosigdb_version()`
-Return package version string.
+`list` shows the bundled `core` database and optional resources, including versions and installed status. `install` adds missing optional resources. `update` refreshes installed optional resources.
 
 ## Metadata Columns
 
@@ -135,25 +120,6 @@ Organized by domain. Bundled signatures have `source_resource = "core"` and `col
 - **Other**: GASTRIC, HCC, ORGANOID, CCA, etc.
 
 For bundled signatures: `list_signatures()` then filter by `source_resource == "core"` or `collection == "curated"`.
-
-## Optional Resources
-
-Install optional resources once when needed:
-
-```r
-phenosigdb_resources("install")
-```
-
-They remain available after package upgrades. `get_signatures()` installs a missing resource automatically. Use `phenosigdb_resources("update")` to refresh them.
-
-```python
-from phenosigdb import phenosigdb_version
-print(phenosigdb_version())
-```
-
-```r
-phenosigdb_version()
-```
 
 ---
 

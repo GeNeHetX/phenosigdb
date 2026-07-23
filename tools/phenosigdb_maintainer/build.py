@@ -30,7 +30,6 @@ from .io import (
     translation_signature_stats_path,
     write_database,
 )
-from .optional_resources import OPTIONAL_RESOURCES
 from .validate import validate_database
 
 README_START = "<!-- PHENOSIGDB_SIGNATURES_START -->"
@@ -227,8 +226,6 @@ def _render_readme_signature_section(meta: pd.DataFrame) -> list[str]:
 
     lines.extend(
         [
-            "",
-            f"Optional downloadable references available through `phenosigdb_resources()`: **{len(OPTIONAL_RESOURCES)}**.",
             "",
             README_END,
         ]

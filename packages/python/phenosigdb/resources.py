@@ -418,8 +418,18 @@ def _resource_listing(root: str | Path | None = None) -> pd.DataFrame:
             if bool(row["installed"]) else 0.0,
             axis=1,
         )
+    core_path = Path(__file__).resolve().parents[3] / "data" / "phenosigdb_human.parquet"
+    core_size = round(core_path.stat().st_size / 1e6, 3) if core_path.exists() else 0.0
+    core_n = int(pd.read_parquet(core_path)["signature_id"].nunique()) if core_path.exists() else pd.NA
+    core = pd.DataFrame([{
+        "resource": "core",
+        "installed": True,
+        "version": __version__,
+        "n_signatures": core_n,
+        "size_mb": core_size,
+    }])
     columns = ["resource", "installed", "version", "n_signatures", "size_mb"]
-    return current.loc[:, columns]
+    return pd.concat([core, current.loc[:, columns]], ignore_index=True)
 
 
 def _extract_resource_dir(archive_path: Path, resource: str) -> Path:

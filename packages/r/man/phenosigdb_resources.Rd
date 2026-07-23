@@ -14,5 +14,5 @@ phenosigdb_resources(action = "list", resource = NULL, force = FALSE, verbose = 
 Either a cache path or a data frame describing optional resources.
 }
 \description{
-Lists, installs, updates, removes, or locates optional PhenoSigDB resources. With \code{action = "install"} and \code{resource = NULL}, installs all missing optional resources.
+Lists the bundled \code{core} database and optional resources. With \code{action = "install"} and \code{resource = NULL}, installs all missing optional resources.
 }
