@@ -1,4 +1,4 @@
-.phenosigdb_package_version <- "0.1.17"
+.phenosigdb_package_version <- "0.1.19"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
@@ -14,10 +14,7 @@
 
 .phenosigdb_resource_metadata_columns <- c(
   .phenosigdb_public_metadata_columns,
-  "source_resource",
   "collection",
-  "source",
-  "signature_format",
   "resource_key",
   "species_original",
   "source_version",
@@ -52,14 +49,14 @@
       "wikipathways"
     ),
     prefix = c(
-      "CELLTYPIST.",
+      "CELL.CellTypist.",
       "CELL.CellMarker.",
-      "MSIGDB.C7.",
-      "MSIGDB.C8.",
-      "PID.",
-      "BIOCARTA.",
-      "PATHWAY.Reactome.",
-      "PATHWAY.WikiPathways."
+      "PATHWAY.MSigDB.C7_",
+      "PATHWAY.MSigDB.C8_",
+      "PATHWAY.PID_",
+      "PATHWAY.BioCarta_",
+      "PATHWAY.Reactome_",
+      "PATHWAY.WikiPathways_"
     ),
     signature_format = c("continuous", "binary", "binary", "binary", "binary", "binary", "binary", "binary"),
     install_kind = c("archive", "archive", "gmt", "gmt", "gmt", "gmt", "zip_gmt", "wikipathways_current_gmt"),
@@ -79,10 +76,9 @@
       "https://data.wikipathways.org/current/gmt/"
     ),
     version = c(NA, NA, "2025.1.Hs", "2025.1.Hs", "2025.1.Hs", "2025.1.Hs", "current", "current"),
-    public_domain = c(NA, NA, "MSIGDB", "MSIGDB", "PATHWAY", "PATHWAY", "PATHWAY", "PATHWAY"),
+    public_domain = c(NA, NA, "PATHWAY", "CELL", "PATHWAY", "PATHWAY", "PATHWAY", "PATHWAY"),
     public_source = c(NA, NA, "C7", "C8", "PID", "BioCarta", "Reactome", "WikiPathways"),
-    public_collection = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "ReactomePathways", "WikiPathways"),
-    public_source_resource = c(NA, NA, "msigdb", "msigdb", "pid", "biocarta", "reactome", "wikipathways"),
+    public_collection = c(NA, NA, "msigdb.C7", "msigdb.C8", "PID", "BioCarta", "Reactome", "WikiPathways"),
     public_context = c(NA, NA, "immunology", "cell_type", "pathway", "pathway", "pathway", "pathway"),
     public_tags = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "Reactome", "WikiPathways"),
     public_species = c(NA, NA, "human", "human", "human", "human", "human", "human"),
@@ -418,6 +414,24 @@
   ifelse(nzchar(text), text, "unknown")
 }
 
+.phenosigdb_runtime_signature_id <- function(resource, name) {
+  clean <- .phenosigdb_clean_wikipathways_name(name)
+  clean <- gsub("^(BIOCARTA|BioCarta|REACTOME|Reactome)[_.-]+", "", clean, ignore.case = TRUE)
+  clean <- gsub("[^A-Za-z0-9]+", "_", clean)
+  clean <- gsub("^_+|_+$", "", clean)
+  prefix <- switch(resource,
+    msigdb_c7immune = "PATHWAY.MSigDB.C7_",
+    msigdb_c8celltype = "PATHWAY.MSigDB.C8_",
+    pid = "PATHWAY.PID_",
+    biocarta = "PATHWAY.BioCarta_",
+    reactome = "PATHWAY.Reactome_",
+    wikipathways = "PATHWAY.WikiPathways_",
+    celltypist = "CELL.CellTypist.",
+    cellmarker = "CELL.CellMarker."
+  )
+  paste0(prefix, clean)
+}
+
 .phenosigdb_resolve_wikipathways_source <- function(source) {
   if (!grepl("^https?://", source) || grepl("\\.gmt$", source, ignore.case = TRUE)) {
     return(list(url = source, version = NA_character_))
@@ -525,14 +539,13 @@
     clean_name <- if (identical(resource, "wikipathways")) {
       .phenosigdb_clean_wikipathways_name(entry$signature_name)
     } else entry$signature_name
-    signature_id <- .phenosigdb_signature_id(info$public_domain[[1]], info$public_source[[1]], clean_name)
+    signature_id <- .phenosigdb_runtime_signature_id(resource, clean_name)
     metadata_rows[[length(metadata_rows) + 1L]] <- data.frame(
       signature_id = signature_id,
       signature_name = clean_name,
       domain = info$public_domain[[1]],
       source = info$public_source[[1]],
       collection = info$public_collection[[1]],
-      source_resource = info$public_source_resource[[1]],
       resource_key = resource,
       signature_format = "binary",
       species = info$public_species[[1]],
@@ -585,7 +598,6 @@
       n_signatures = nrow(metadata),
       n_rows = nrow(binary),
       package_version = .phenosigdb_package_version,
-      source_resource = info$public_source_resource[[1]],
       source_url = resolved_source
     ),
     verbose = verbose
@@ -711,7 +723,7 @@
 
 .phenosigdb_search_mask <- function(table, query, columns, fixed = FALSE, domain = NULL,
                                     species = NULL, cell_family = NULL, context = NULL,
-                                    disease = NULL, source_resource = NULL, collection = NULL,
+                                    disease = NULL, collection = NULL,
                                     logic = c("and", "or"), ignore_case = TRUE) {
   logic <- match.arg(logic)
   masks <- list()
@@ -730,8 +742,7 @@
     masks[[length(masks) + 1L]] <- query_mask
   }
   filters <- list(domain = domain, species = species, cell_family = cell_family,
-                  context = context, disease = disease, source_resource = source_resource,
-                  collection = collection)
+                  context = context, disease = disease, collection = collection)
   for (column in names(filters)) {
     value <- filters[[column]]
     if (is.null(value)) next
@@ -767,7 +778,6 @@
   meta$domain <- sub("\\..*$", "", meta$signature_id)
   meta$source <- paste0("curated.", sub("^[^.]+\\.([^.]+)\\..*$", "\\1", meta$signature_id))
   meta$collection <- "curated"
-  meta$source_resource <- "core"
   if ("weight" %in% names(db)) {
     weight_present <- tapply(!is.na(db$weight), db$signature_id, any)
     meta$signature_format <- ifelse(weight_present[meta$signature_id], "continuous", "binary")

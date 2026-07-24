@@ -35,6 +35,7 @@ metabolism = list_signatures("metabolism", columns=["signature_name", "context"]
 pdac = meta[meta["disease"] == "PDAC"]
 pathways = meta[meta["context"] == "pathway"]
 continuous = meta[meta["signature_format"] == "continuous"]
+msigdb_c7 = meta[meta["collection"] == "msigdb.C7"]
 
 # Get signatures
 sig = get_signatures(["FIBROBLAST.Elyada19.iCAF"])

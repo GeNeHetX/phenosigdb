@@ -45,7 +45,7 @@ def test_runtime_builders_normalize_celltypist_and_group_cellmarker(tmp_path):
     (ct_stage / "manifest.json").write_text(json.dumps({"resource_version": "2026.06"}), encoding="utf-8")
 
     ct_meta, ct_values, _ = build_runtime_celltypist(staging_root=ct_stage)
-    assert ct_meta.loc[0, "signature_id"] == "CELLTYPIST.Immune_All_Low.CD8_T_cell"
+    assert ct_meta.loc[0, "signature_id"] == "CELL.CellTypist.Immune_All_Low_CD8_T_cell"
     assert list(ct_values["gene"]) == ["CD3D", "TRBC2"]
     assert str(ct_values["weight"].dtype) == "float32"
 

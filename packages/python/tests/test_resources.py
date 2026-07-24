@@ -93,12 +93,11 @@ def test_phenosigdb_resources_install_remove_update(monkeypatch, tmp_path: Path)
     ct_meta = pd.DataFrame(
         [
             {
-                "signature_id": "CELLTYPIST.Immune_All_Low.CD8_T_cell",
+                    "signature_id": "CELL.CellTypist.Immune_All_Low_CD8_T_cell",
                 "signature_name": "CD8 T cell",
                 "domain": "CELLTYPIST",
                 "source": "Immune_All_Low",
                 "collection": "Immune_All_Low",
-                "source_resource": "celltypist",
                 "resource_key": "celltypist",
                 "signature_format": "continuous",
                 "species": "human",
@@ -122,8 +121,8 @@ def test_phenosigdb_resources_install_remove_update(monkeypatch, tmp_path: Path)
     )
     ct_values = pd.DataFrame(
         [
-            {"signature_id": "CELLTYPIST.Immune_All_Low.CD8_T_cell", "gene": "CD3D", "weight": 1.0},
-            {"signature_id": "CELLTYPIST.Immune_All_Low.CD8_T_cell", "gene": "TRBC1", "weight": 0.5},
+            {"signature_id": "CELL.CellTypist.Immune_All_Low_CD8_T_cell", "gene": "CD3D", "weight": 1.0},
+            {"signature_id": "CELL.CellTypist.Immune_All_Low_CD8_T_cell", "gene": "TRBC1", "weight": 0.5},
         ]
     )
     cm_meta = pd.DataFrame(
@@ -133,8 +132,7 @@ def test_phenosigdb_resources_install_remove_update(monkeypatch, tmp_path: Path)
                 "signature_name": "Hepatocyte",
                 "domain": "CELLMARKER",
                 "source": "human__Liver__Normal",
-                "collection": "grouped",
-                "source_resource": "cellmarker",
+                "collection": "CellMarker",
                 "resource_key": "cellmarker",
                 "signature_format": "binary",
                 "species": "human",
@@ -144,7 +142,7 @@ def test_phenosigdb_resources_install_remove_update(monkeypatch, tmp_path: Path)
                 "disease": "Normal",
                 "n_genes": 2,
                 "source_version": "3.0",
-                "source_label": "CellMarker grouped",
+                "source_label": "CellMarker grouped internally",
                 "source_pmid": "12345",
                 "source_doi": None,
                 "source_url": "https://example.org/cellmarker",
@@ -202,12 +200,11 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
     ct_meta = pd.DataFrame(
         [
             {
-                "signature_id": "CELLTYPIST.Immune_All_Low.CD8_T_cell",
+                "signature_id": "CELL.CellTypist.Immune_All_Low_CD8_T_cell",
                 "signature_name": "CD8 T cell",
                 "domain": "CELLTYPIST",
                 "source": "Immune_All_Low",
                 "collection": "Immune_All_Low",
-                "source_resource": "celltypist",
                 "resource_key": "celltypist",
                 "signature_format": "continuous",
                 "species": "human",
@@ -231,8 +228,8 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
     )
     ct_values = pd.DataFrame(
         [
-            {"signature_id": "CELLTYPIST.Immune_All_Low.CD8_T_cell", "gene": "CD3D", "weight": 1.25},
-            {"signature_id": "CELLTYPIST.Immune_All_Low.CD8_T_cell", "gene": "TRBC1", "weight": 0.5},
+                {"signature_id": "CELL.CellTypist.Immune_All_Low_CD8_T_cell", "gene": "CD3D", "weight": 1.25},
+                {"signature_id": "CELL.CellTypist.Immune_All_Low_CD8_T_cell", "gene": "TRBC1", "weight": 0.5},
         ]
     )
     cm_meta = pd.DataFrame(
@@ -242,8 +239,7 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
                 "signature_name": "Neuron",
                 "domain": "CELLMARKER",
                 "source": "mouse__Brain__Normal",
-                "collection": "grouped",
-                "source_resource": "cellmarker",
+                    "collection": "CellMarker",
                 "resource_key": "cellmarker",
                 "signature_format": "binary",
                 "species": "mouse",
@@ -253,7 +249,7 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
                 "disease": "Normal",
                 "n_genes": 2,
                 "source_version": "3.0",
-                "source_label": "CellMarker grouped",
+                "source_label": "CellMarker grouped internally",
                 "source_pmid": "12345",
                 "source_doi": None,
                 "source_url": "https://example.org/cellmarker",
@@ -281,7 +277,7 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
         get_signatures(
             [
                 "CAF.Elyada19.iCAF",
-                "CELLTYPIST.Immune_All_Low.CD8_T_cell",
+                "CELL.CellTypist.Immune_All_Low_CD8_T_cell",
                 "CELL.CellMarker.mouse_Brain_Normal_Neuron",
             ],
             reference_species="original",
@@ -298,7 +294,7 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
 
     mouse_meta = list_signatures()
     assert "CELL.CellMarker.mouse_Brain_Normal_Neuron" in set(mouse_meta["signature_id"])
-    assert "CELLTYPIST.Immune_All_Low.CD8_T_cell" in set(mouse_meta["signature_id"])
+    assert "CELL.CellTypist.Immune_All_Low_CD8_T_cell" in set(mouse_meta["signature_id"])
 
 
 def test_direct_gmt_resources_install_and_auto_install(monkeypatch, tmp_path: Path, capsys):
@@ -330,12 +326,12 @@ def test_direct_gmt_resources_install_and_auto_install(monkeypatch, tmp_path: Pa
     assert (cache_dir / "msigdb_c7immune" / "binary.parquet").exists()
 
     meta = list_signatures()
-    row = meta.loc[meta["signature_id"] == "MSIGDB.C7.CD8_EFFECTOR_UP"].iloc[0]
+    row = meta.loc[meta["signature_id"] == "PATHWAY.MSigDB.C7_CD8_EFFECTOR_UP"].iloc[0]
     assert row["source"] == "C7"
     assert row["context"] == "immunology"
 
-    sigs = get_signatures(["PATHWAY.Reactome.REACTOME_INTERFERON_SIGNALING", "PATHWAY.WikiPathways.WP_FIBROBLAST_SIGNALING"])
-    assert sigs["PATHWAY.Reactome.REACTOME_INTERFERON_SIGNALING"] == ["IRF9", "STAT1"]
-    assert sigs["PATHWAY.WikiPathways.WP_FIBROBLAST_SIGNALING"] == ["COL1A1", "COL3A1"]
+    sigs = get_signatures(["PATHWAY.Reactome_INTERFERON_SIGNALING", "PATHWAY.WikiPathways_WP_FIBROBLAST_SIGNALING"])
+    assert sigs["PATHWAY.Reactome_INTERFERON_SIGNALING"] == ["IRF9", "STAT1"]
+    assert sigs["PATHWAY.WikiPathways_WP_FIBROBLAST_SIGNALING"] == ["COL1A1", "COL3A1"]
     assert (cache_dir / "reactome" / "binary.parquet").exists()
     assert (cache_dir / "wikipathways" / "binary.parquet").exists()

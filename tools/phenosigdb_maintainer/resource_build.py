@@ -14,6 +14,7 @@ from phenosigdb.resources import (
     CONTINUOUS_TABLE_COLUMNS,
     RESOURCE_METADATA_COLUMNS,
     RESOURCE_SPECS,
+    _normalize_token,
     normalize_resource_signature_id,
 )
 from .external_imports.utils import infer_cell_family, normalize_blank, normalize_gene_symbol, normalize_whitespace
@@ -52,11 +53,10 @@ def build_runtime_celltypist(staging_root: str | Path | None = None) -> tuple[pd
 
     signatures = signatures.copy()
     signatures["runtime_signature_id"] = signatures.apply(
-        lambda row: normalize_resource_signature_id(
-            "CELLTYPIST",
-            row.get("dataset_id") or row.get("dataset_name") or row.get("source_identifier") or "unknown",
-            row.get("cell_type_original") or row.get("signature_name") or "unknown",
-        ),
+        lambda row: "CELL.CellTypist."
+        + _normalize_token(row.get("dataset_id") or row.get("dataset_name") or row.get("source_identifier") or "unknown")
+        + "_"
+        + _normalize_token(row.get("cell_type_original") or row.get("signature_name") or "unknown"),
         axis=1,
     )
     signature_map = dict(zip(signatures["signature_id"], signatures["runtime_signature_id"]))
@@ -76,9 +76,8 @@ def build_runtime_celltypist(staging_root: str | Path | None = None) -> tuple[pd
     metadata = metadata.merge(counts, on="signature_id", how="left", sort=False)
     metadata["n_genes"] = metadata["n_genes"].fillna(0).astype(int)
     metadata["domain"] = "CELL"
-    metadata["source"] = "CellTypist." + metadata["dataset_id"].fillna(metadata["dataset_name"]).fillna("unknown")
-    metadata["collection"] = metadata["dataset_id"].fillna(metadata["dataset_name"]).fillna("unknown")
-    metadata["source_resource"] = "celltypist"
+    metadata["source"] = metadata["dataset_id"].fillna(metadata["dataset_name"]).fillna("CellTypist")
+    metadata["collection"] = "CellTypist"
     metadata["resource_key"] = "celltypist"
     metadata["signature_format"] = "continuous"
     metadata["source_version"] = metadata["resource_version"]
@@ -103,7 +102,6 @@ def build_runtime_celltypist(staging_root: str | Path | None = None) -> tuple[pd
         "n_rows": int(len(continuous)),
         "package_version": __version__,
         "source_manifest_path": str(staged_dir / "manifest.json"),
-        "source_resource": "celltypist",
     }
     return metadata, continuous, resource_json
 
@@ -186,8 +184,7 @@ def build_runtime_cellmarker(staging_root: str | Path | None = None) -> tuple[pd
                 "signature_name": first["cell_type"],
                 "domain": "CELL",
                 "source": "CellMarker",
-                "collection": "",
-                "source_resource": "cellmarker",
+                "collection": "CellMarker",
                 "resource_key": "cellmarker",
                 "signature_format": "binary",
                 "species": first["species"],
@@ -227,7 +224,6 @@ def build_runtime_cellmarker(staging_root: str | Path | None = None) -> tuple[pd
         "n_rows": int(len(binary)),
         "package_version": __version__,
         "source_manifest_path": str(staged_dir / "manifest.json"),
-        "source_resource": "cellmarker",
     }
     return metadata, binary, resource_json
 

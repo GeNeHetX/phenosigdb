@@ -234,7 +234,7 @@ def get_signatures(
         available = _combined_metadata()
         available_ids = set(available["signature_id"])
         missing = [sid for sid in ordered_ids if sid not in available_ids]
-        unknown_optional = [sid for sid in missing if any(sid.upper().startswith(prefix) for prefix in ("CELLTYPIST.", "CELL.CELLMARKER.", "MSIGDB.C7.", "MSIGDB.C8.", "PID.", "BIOCARTA.", "PATHWAY.REACTOME.", "PATHWAY.WIKIPATHWAYS."))]
+        unknown_optional = [sid for sid in missing if any(sid.upper().startswith(prefix) for prefix in ("CELL.CELLTYPIST.", "CELL.CELLMARKER.", "PATHWAY.MSIGDB.C7_", "PATHWAY.MSIGDB.C8_", "PATHWAY.PID_", "PATHWAY.BIOCARTA_", "PATHWAY.REACTOME_", "PATHWAY.WIKIPATHWAYS_"))]
         if unknown_optional:
             available = _combined_metadata()
             missing = [sid for sid in ordered_ids if sid not in set(available["signature_id"])]

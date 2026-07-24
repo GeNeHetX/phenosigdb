@@ -16,7 +16,7 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.17/phenosigdb_0.1.17.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.19/phenosigdb_0.1.19.tar.gz")
 ```
 
 ## Quick Start
@@ -94,6 +94,7 @@ phenosigdb_resources("update")
 | `signature_name` | Human-readable name (e.g., `iCAF`) |
 | `source` | Signature origin, e.g. `curated.Elyada19`, `MSigDB.C8`, `BioCarta` |
 | `domain` | Broad biology group, e.g. `CELL`, `CANCER`, `PATHWAY` |
+| `collection` | Resource family, e.g. `CellMarker`, `msigdb.C7`, `Reactome` |
 | `species` | Species (human/mouse) |
 | `cell_family` | Cell type family (e.g., `fibroblast`, `tumor`) |
 | `context` | Biological context (e.g., `cancer`, `pathway`) |

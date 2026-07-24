@@ -20,5 +20,6 @@ audit_human_empty_signatures/
 audit_new_caf_sources_20260627/
 data/external_imports/
 .venv/
+.venv-release/
 .Rlib/
 *.Rcheck/

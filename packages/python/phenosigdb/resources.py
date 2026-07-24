@@ -30,10 +30,9 @@ except ImportError:  # pragma: no cover - dependency fallback
 RESOURCE_METADATA_COLUMNS = [
     "signature_id",
     "signature_name",
-    "domain",
     "source",
+    "domain",
     "collection",
-    "source_resource",
     "resource_key",
     "signature_format",
     "species",
@@ -57,10 +56,9 @@ RESOURCE_METADATA_COLUMNS = [
 PUBLIC_METADATA_COLUMNS = [
     "signature_id",
     "signature_name",
-    "domain",
     "source",
+    "domain",
     "collection",
-    "source_resource",
     "signature_format",
     "species",
     "cell_family",
@@ -89,7 +87,6 @@ class RuntimeResourceSpec:
     public_domain: str | None = None
     public_source: str | None = None
     public_collection: str | None = None
-    public_source_resource: str | None = None
     public_context: str | None = None
     public_tags: str | None = None
     public_species: str | None = None
@@ -107,7 +104,7 @@ MSIGDB_LICENSE_NOTICE = (
 RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     "celltypist": RuntimeResourceSpec(
         resource="celltypist",
-        signature_id_prefixes=("CELLTYPIST.",),
+        signature_id_prefixes=("CELL.CellTypist.",),
         signature_format="continuous",
         expected_files=("metadata.parquet", "continuous.parquet", "resource.json"),
         archive_name="phenosigdb-resource-celltypist.tar.gz",
@@ -121,16 +118,15 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     ),
     "msigdb_c7immune": RuntimeResourceSpec(
         resource="msigdb_c7immune",
-        signature_id_prefixes=("MSIGDB.C7.",),
+        signature_id_prefixes=("PATHWAY.MSigDB.C7_",),
         signature_format="binary",
         expected_files=("metadata.parquet", "binary.parquet", "resource.json"),
         install_kind="gmt",
         download_url="https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2025.1.Hs/c7.all.v2025.1.Hs.symbols.gmt",
         version="2025.1.Hs",
-        public_domain="MSIGDB",
+        public_domain="PATHWAY",
         public_source="C7",
-        public_collection="C7",
-        public_source_resource="msigdb",
+        public_collection="msigdb.C7",
         public_context="immunology",
         public_tags="C7",
         public_species="human",
@@ -139,16 +135,15 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     ),
     "msigdb_c8celltype": RuntimeResourceSpec(
         resource="msigdb_c8celltype",
-        signature_id_prefixes=("MSIGDB.C8.",),
+        signature_id_prefixes=("PATHWAY.MSigDB.C8_",),
         signature_format="binary",
         expected_files=("metadata.parquet", "binary.parquet", "resource.json"),
         install_kind="gmt",
         download_url="https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2025.1.Hs/c8.all.v2025.1.Hs.symbols.gmt",
         version="2025.1.Hs",
-        public_domain="MSIGDB",
+        public_domain="CELL",
         public_source="C8",
-        public_collection="C8",
-        public_source_resource="msigdb",
+        public_collection="msigdb.C8",
         public_context="cell_type",
         public_tags="C8",
         public_species="human",
@@ -166,7 +161,6 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
         public_domain="PATHWAY",
         public_source="PID",
         public_collection="PID",
-        public_source_resource="pid",
         public_context="pathway",
         public_tags="PID",
         public_species="human",
@@ -175,7 +169,7 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     ),
     "biocarta": RuntimeResourceSpec(
         resource="biocarta",
-        signature_id_prefixes=("BIOCARTA.",),
+        signature_id_prefixes=("PATHWAY.BioCarta_",),
         signature_format="binary",
         expected_files=("metadata.parquet", "binary.parquet", "resource.json"),
         install_kind="gmt",
@@ -183,8 +177,7 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
         version="2025.1.Hs",
         public_domain="PATHWAY",
         public_source="BioCarta",
-        public_collection="BIOCARTA",
-        public_source_resource="biocarta",
+        public_collection="BioCarta",
         public_context="pathway",
         public_tags="BIOCARTA",
         public_species="human",
@@ -193,7 +186,7 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     ),
     "reactome": RuntimeResourceSpec(
         resource="reactome",
-        signature_id_prefixes=("PATHWAY.Reactome.",),
+        signature_id_prefixes=("PATHWAY.Reactome_",),
         signature_format="binary",
         expected_files=("metadata.parquet", "binary.parquet", "resource.json"),
         install_kind="zip_gmt",
@@ -201,8 +194,7 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
         version="current",
         public_domain="PATHWAY",
         public_source="Reactome",
-        public_collection="ReactomePathways",
-        public_source_resource="reactome",
+        public_collection="Reactome",
         public_context="pathway",
         public_tags="Reactome",
         public_species="human",
@@ -210,7 +202,7 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     ),
     "wikipathways": RuntimeResourceSpec(
         resource="wikipathways",
-        signature_id_prefixes=("PATHWAY.WikiPathways.",),
+        signature_id_prefixes=("PATHWAY.WikiPathways_",),
         signature_format="binary",
         expected_files=("metadata.parquet", "binary.parquet", "resource.json"),
         install_kind="wikipathways_current_gmt",
@@ -219,7 +211,6 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
         public_domain="PATHWAY",
         public_source="WikiPathways",
         public_collection="WikiPathways",
-        public_source_resource="wikipathways",
         public_context="pathway",
         public_tags="WikiPathways",
         public_species="human",
@@ -271,6 +262,25 @@ def normalize_resource_signature_id(domain: str, source_key: Any, signature_name
             _normalize_token(signature_name),
         ]
     )
+
+
+def _resource_signature_id(spec: RuntimeResourceSpec, name: str) -> str:
+    clean = _normalize_token(name)
+    if spec.resource == "msigdb_c7immune":
+        return f"PATHWAY.MSigDB.C7_{clean}"
+    if spec.resource == "msigdb_c8celltype":
+        return f"PATHWAY.MSigDB.C8_{clean}"
+    if spec.resource == "pid":
+        return f"PATHWAY.PID_{clean}"
+    if spec.resource == "biocarta":
+        clean = re.sub(r"^(?:BIOCARTA|BioCarta)[_.-]+", "", str(name), flags=re.IGNORECASE)
+        return f"PATHWAY.BioCarta_{_normalize_token(clean)}"
+    if spec.resource == "reactome":
+        clean = re.sub(r"^(?:REACTOME|Reactome)[_.-]+", "", str(name), flags=re.IGNORECASE)
+        return f"PATHWAY.Reactome_{_normalize_token(clean)}"
+    if spec.resource == "wikipathways":
+        return f"PATHWAY.WikiPathways_{_normalize_token(_clean_wikipathways_name(name))}"
+    return normalize_resource_signature_id(spec.public_domain or spec.resource, spec.public_collection or spec.resource, name)
 
 
 def _clean_wikipathways_name(value: Any) -> str:
@@ -595,13 +605,12 @@ def _build_direct_binary_resource(
     binary_rows: list[dict[str, str]] = []
     domain = spec.public_domain or spec.resource.upper()
     source_key = spec.public_source or spec.resource
-    source_resource = spec.public_source_resource or spec.resource
     species = spec.public_species or "unknown"
     cell_family = spec.public_cell_family or ""
 
     for set_name, description, genes in entries:
         clean_name = _clean_wikipathways_name(set_name) if spec.resource == "wikipathways" else set_name
-        signature_id = normalize_resource_signature_id(domain, source_key, clean_name)
+        signature_id = _resource_signature_id(spec, clean_name)
         metadata_rows.append(
             {
                 "signature_id": signature_id,
@@ -609,7 +618,6 @@ def _build_direct_binary_resource(
                 "domain": domain,
                 "source": source_key,
                 "collection": spec.public_collection or source_key,
-                "source_resource": source_resource,
                 "resource_key": spec.resource,
                 "signature_format": "binary",
                 "species": species,
@@ -654,7 +662,6 @@ def _build_direct_binary_resource(
         "n_signatures": int(metadata["signature_id"].nunique()),
         "n_rows": int(len(binary)),
         "package_version": __version__,
-        "source_resource": source_resource,
         "source_url": resolved_source_url,
         "download_url": download_meta.get("url"),
         "resolved_download_url": download_meta.get("resolved_url"),
