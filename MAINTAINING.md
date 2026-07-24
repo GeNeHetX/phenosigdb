@@ -88,7 +88,7 @@ gh release create v0.1.11 dist/* --verify-tag --generate-notes
 
 ```r
 remotes::install_url(
-  "https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.19/phenosigdb_0.1.19.tar.gz"
+  "https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.20/phenosigdb_0.1.20.tar.gz"
 )
 ```
 

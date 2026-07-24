@@ -210,3 +210,10 @@ def test_celltypist_importer_extracts_coefficients(tmp_path: Path, monkeypatch):
     assert package.signatures["signature_id"].nunique() == 2
     assert package.members["weight"].notna().all()
     assert sorted(package.members["gene"].unique().tolist()) == ["CD3D", "NKG7"]
+
+
+def test_celltypist_species_is_a_label_not_provenance_text():
+    assert celltypist_mod._infer_model_species(
+        "adult_chspcs_illumina.pkl_human_circulating_hematopoietic_stem_and_progenitor_cell_types",
+        {"details": "https://doi.org/10.1038/s41591-025-03716-5_v1"},
+    ) == "human"

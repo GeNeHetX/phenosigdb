@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -30,7 +31,16 @@ def _infer_model_species(model_name: str, description: dict) -> str | None:
             ],
         )
     )
-    return normalize_species(text)
+    key = text.casefold().replace("_", " ")
+    has_human = bool(re.search(r"\b(?:human|homo\s+sapiens|hs)\b", key))
+    has_mouse = bool(re.search(r"\b(?:mouse|mus\s+musculus|mm)\b", key))
+    if has_human and has_mouse:
+        return "mixed"
+    if has_human:
+        return "human"
+    if has_mouse:
+        return "mouse"
+    return None
 
 
 class CellTypistImporter(ExternalImporter):

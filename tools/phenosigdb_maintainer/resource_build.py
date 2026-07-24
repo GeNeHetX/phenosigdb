@@ -52,6 +52,11 @@ def build_runtime_celltypist(staging_root: str | Path | None = None) -> tuple[pd
     manifest = json.loads((staged_dir / "manifest.json").read_text(encoding="utf-8"))
 
     signatures = signatures.copy()
+    signatures["runtime_signature_name"] = signatures.apply(
+        lambda row: f"{row.get('dataset_id') or row.get('dataset_name') or 'CellTypist'} | "
+        f"{row.get('cell_type_original') or row.get('signature_name') or 'unknown'}",
+        axis=1,
+    )
     signatures["runtime_signature_id"] = signatures.apply(
         lambda row: "CELL.CellTypist."
         + _normalize_token(row.get("dataset_id") or row.get("dataset_name") or row.get("source_identifier") or "unknown")
@@ -73,6 +78,7 @@ def build_runtime_celltypist(staging_root: str | Path | None = None) -> tuple[pd
     counts = continuous.groupby("signature_id", as_index=False)["gene"].nunique().rename(columns={"gene": "n_genes"})
     metadata = signatures.copy()
     metadata["signature_id"] = metadata["runtime_signature_id"]
+    metadata["signature_name"] = metadata["runtime_signature_name"]
     metadata = metadata.merge(counts, on="signature_id", how="left", sort=False)
     metadata["n_genes"] = metadata["n_genes"].fillna(0).astype(int)
     metadata["domain"] = "CELL"
