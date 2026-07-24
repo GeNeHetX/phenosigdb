@@ -8,7 +8,7 @@ pip install git+https://github.com/GeNeHetX/phenosigdb.git#subdirectory=packages
 
 Public API:
 
-- `list_signatures(query=None, reference_species="human", fixed=False)`
+- `list_signatures(query=None, columns=None, min_genes=None, signature_format=None)`
 - `get_signatures(signature_ids=None, reference_species="human")`
 - `phenosigdb_resources(action="list", resource=None, force=False, verbose=True)`
 - Constants: `DEFAULT_REFERENCE_SPECIES`, `ALLOWED_REFERENCE_SPECIES`
@@ -26,19 +26,10 @@ from phenosigdb import (
 # List all signatures
 meta = list_signatures()
 
-# Query behavior (regex by default, case-insensitive):
-# Searches: signature_id, signature_name, domain, source, collection,
-# source_resource, signature_format, species, cell_family, context, disease
-# Does NOT search: n_genes
-
-# Regex search (default - fixed=False)
+# Case-insensitive regex search across the default metadata columns
 immune = list_signatures("immune")
-caf_sigs = list_signatures(r"^FIBROBLAST\.")
-pdac_caf = list_signatures("FIBROBLAST", domain="FIBROBLAST", species="human")
-pdac_pathways = list_signatures(r"PDAC.*pathway")
-
-# Literal text search (fixed=True)
-exact_match = list_signatures("iCAF", fixed=True)
+source_slice = list_signatures("MSigDB.C8")
+metabolism = list_signatures("metabolism", columns=["signature_name", "context"])
 
 # normal filtering is just pandas filtering
 pdac = meta[meta["disease"] == "PDAC"]
@@ -73,9 +64,8 @@ Notes:
 - no path argument is needed
 - curated reference parquet downloads automatically on first use
 - `get_signatures()` auto-installs missing optional resources
-- Query uses case-insensitive regex by default; set `fixed=True` for literal text matching
-- `domain`, `species`, `cell_family`, `context`, `disease`, `source_resource`, and `collection` are exact filters
-- Query and filters intersect by default; set `logic="or"` to union them; set `ignore_case=False` for case-sensitive matching
+- Query is a case-insensitive regex across `signature_id`, `signature_name`, `source`, `domain`, `cell_family`, `context`, and `disease`
+- `columns` selects a smaller search set; `min_genes` and `signature_format` are optional filters
 
 Optional resources:
 

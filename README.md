@@ -16,7 +16,7 @@ remotes::install_url(
 )
 
 # Reproducible release:
-# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.16/phenosigdb_0.1.16.tar.gz")
+# remotes::install_url("https://github.com/GeNeHetX/phenosigdb/releases/download/v0.1.17/phenosigdb_0.1.17.tar.gz")
 ```
 
 ## Quick Start
@@ -28,7 +28,7 @@ from phenosigdb import list_signatures, get_signatures, phenosigdb_resources
 # List all available signatures
 meta = list_signatures()
 
-# Search signatures (regex by default, case-insensitive)
+# Search signatures (case-insensitive regex across default metadata columns)
 caf_signatures = list_signatures("FIBROBLAST")
 
 # Get signatures selected from the metadata table
@@ -60,10 +60,11 @@ phenosigdb_resources("install", "pid")
 ### Find signatures
 
 ```r
-list_signatures("FIBROBLAST", cell_family = "fibroblast")
+list_signatures("FIBROBLAST")
+list_signatures("metabolism", columns = c("signature_name", "context"))
 ```
 
-Use `cell_family` for the cell type, `disease` for the disease, or `domain` for the broad biology group. The table can also be searched by `species`, `source_resource`, and `collection`. Regex search is case-insensitive by default; filters intersect with the search. Use `logic = "or"` to combine alternatives.
+`query` is one case-insensitive regex searched across `signature_id`, `signature_name`, `source`, `domain`, `cell_family`, `context`, and `disease`. `columns` is optional. `min_genes` and `signature_format` provide simple size/type filters.
 
 ### Get signatures
 
@@ -91,35 +92,27 @@ phenosigdb_resources("update")
 |--------|-------------|
 | `signature_id` | Unique identifier (e.g., `FIBROBLAST.Elyada19.iCAF`) |
 | `signature_name` | Human-readable name (e.g., `iCAF`) |
-| `domain` | Broad category (e.g., `FIBROBLAST`, `PDAC`, `IMMUNE`) |
-| `collection` | Subgroup (e.g., `curated`) |
-| `source_resource` | Runtime origin: `core`, `celltypist`, `cellmarker`, `msigdb`, `pid`, `biocarta`, `reactome`, `wikipathways` |
+| `source` | Signature origin, e.g. `curated.Elyada19`, `MSigDB.C8`, `BioCarta` |
+| `domain` | Broad biology group, e.g. `CELL`, `CANCER`, `PATHWAY` |
 | `species` | Species (human/mouse) |
 | `cell_family` | Cell type family (e.g., `fibroblast`, `tumor`) |
 | `context` | Biological context (e.g., `cancer`, `pathway`) |
 | `disease` | Disease association (e.g., `PDAC`, `HCC`) |
+| `signature_format` | `binary` or `continuous` |
 | `n_genes` | Number of genes in signature |
 
-`source_resource` answers “where did this data come from?” (`core`, `celltypist`, `msigdb`, etc.). `collection` answers “which subgroup within that source?” (`curated`, `C7`, `C8`, `PID`, etc.).
-
-## Query Behavior
-
-- **Default**: Regex search, case-insensitive
-- **Literal text**: Set `fixed=True` (Python) or `fixed=TRUE` (R)
-- **Searched columns**: All metadata columns except `n_genes`
-- **Examples**: `"^CAF\."` (starts with CAF.), `"pathway"` (contains pathway)
-- **Remember**: Escape dots in regex: `\.` for literal dots
+`list_signatures()` lists original signatures once. `get_signatures()` serves them as human by default, or translates to mouse/original identifiers when requested with `reference_species`.
 
 ## Curated Signatures
 
-Organized by domain. Bundled signatures have `source_resource = "core"` and `collection = "curated"`.
+Organized by domain. Bundled signatures are the core curated database.
 
 - **FIBROBLAST**: Multiple PDAC CAF subtypes (iCAF, myoCAF, etc.) from Elyada19, Dominguez20, Kieffer20, etc.
 - **PDAC**: Tumor, stromal, immune signatures from Bailey16, Moffitt15, Collisson11, etc.
 - **IMMUNE**: Immune cell type signatures from Becht16, Chu23, Mulder21, Rodrigues18, Wu24
 - **Other**: GASTRIC, HCC, ORGANOID, CCA, etc.
 
-For bundled signatures: `list_signatures()` then filter by `source_resource == "core"` or `collection == "curated"`.
+For bundled signatures: `list_signatures()` returns the core curated database.
 
 ---
 

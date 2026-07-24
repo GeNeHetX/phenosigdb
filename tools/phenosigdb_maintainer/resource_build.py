@@ -75,8 +75,8 @@ def build_runtime_celltypist(staging_root: str | Path | None = None) -> tuple[pd
     metadata["signature_id"] = metadata["runtime_signature_id"]
     metadata = metadata.merge(counts, on="signature_id", how="left", sort=False)
     metadata["n_genes"] = metadata["n_genes"].fillna(0).astype(int)
-    metadata["domain"] = "CELLTYPIST"
-    metadata["source"] = metadata["dataset_id"].fillna(metadata["dataset_name"]).fillna("unknown")
+    metadata["domain"] = "CELL"
+    metadata["source"] = "CellTypist." + metadata["dataset_id"].fillna(metadata["dataset_name"]).fillna("unknown")
     metadata["collection"] = metadata["dataset_id"].fillna(metadata["dataset_name"]).fillna("unknown")
     metadata["source_resource"] = "celltypist"
     metadata["resource_key"] = "celltypist"
@@ -161,7 +161,7 @@ def build_runtime_cellmarker(staging_root: str | Path | None = None) -> tuple[pd
                 _safe_text(first["disease"]),
             ]
         )
-        signature_id = normalize_resource_signature_id("CELLMARKER", source_key, first["cell_type"])
+        signature_id = normalize_resource_signature_id("CELL", "CellMarker", "__".join([source_key, first["cell_type"]]))
         genes = sorted(
             {
                 gene
@@ -184,16 +184,16 @@ def build_runtime_cellmarker(staging_root: str | Path | None = None) -> tuple[pd
             {
                 "signature_id": signature_id,
                 "signature_name": first["cell_type"],
-                "domain": "CELLMARKER",
-                "source": source_key,
-                "collection": "grouped",
+                "domain": "CELL",
+                "source": "CellMarker",
+                "collection": "",
                 "source_resource": "cellmarker",
                 "resource_key": "cellmarker",
                 "signature_format": "binary",
                 "species": first["species"],
                 "species_original": first["species_original"],
                 "cell_family": first["cell_family"] or infer_cell_family(first["cell_type"], first["tissue_or_organ"]),
-                "context": first["context"] or "unknown",
+                "context": first["context"] or "",
                 "disease": first["disease"],
                 "n_genes": len(genes),
                 "source_version": first["resource_version"],

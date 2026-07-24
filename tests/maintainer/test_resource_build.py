@@ -113,6 +113,6 @@ def test_runtime_builders_normalize_celltypist_and_group_cellmarker(tmp_path):
 
     cm_meta, cm_values, _ = build_runtime_cellmarker(staging_root=cm_stage)
     assert len(cm_meta) == 1
-    assert cm_meta.loc[0, "signature_id"] == "CELLMARKER.human_Liver_Normal.Hepatocyte"
+    assert cm_meta.loc[0, "signature_id"] == "CELL.CellMarker.human_Liver_Normal_Hepatocyte"
     assert sorted(cm_values["gene"].tolist()) == ["ALB", "APOA1", "TTR"]
     assert json.loads(cm_meta.loc[0, "resource_metadata_json"])["publication_count"] == 2

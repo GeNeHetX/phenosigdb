@@ -128,19 +128,27 @@ def test_list_signatures_returns_simple_metadata_table(monkeypatch):
     assert list(metadata.columns) == [
         "signature_id",
         "signature_name",
-        "source_resource",
+        "source",
         "domain",
-        "collection",
         "species",
         "cell_family",
         "context",
         "disease",
+        "signature_format",
         "n_genes",
     ]
     assert set(metadata["domain"]) == {"CAF", "PDAC"}
-    assert set(metadata["collection"]) == {"curated"}
-    assert set(metadata["source_resource"]) == {"core"}
+    assert set(metadata["source"]) == {"curated.Elyada19", "curated.PAMG20"}
+    assert set(metadata["signature_format"]) == {"binary", "continuous"}
     assert metadata["n_genes"].tolist() == [2, 1, 2]
+
+
+def test_list_signatures_uses_predictable_regex_columns(monkeypatch):
+    monkeypatch.setattr(query_mod, "read_database", lambda reference_species="human": _fake_core_read(reference_species=reference_species))
+    metadata = list_signatures("CAF")
+    assert set(metadata["signature_id"]) == {"CAF.Elyada19.iCAF", "CAF.Elyada19.myo"}
+    assert set(list_signatures("PAMG", columns=["source"])["signature_id"]) == {"PDAC.PAMG20.PDX"}
+    assert set(list_signatures(min_genes=2, signature_format="continuous")["signature_id"]) == {"PDAC.PAMG20.PDX"}
 
 
 def test_get_signatures_accepts_signature_id_vector(monkeypatch):

@@ -1,19 +1,21 @@
-.phenosigdb_package_version <- "0.1.16"
+.phenosigdb_package_version <- "0.1.17"
 .phenosigdb_public_metadata_columns <- c(
   "signature_id",
   "signature_name",
-  "source_resource",
+  "source",
   "domain",
-  "collection",
   "species",
   "cell_family",
   "context",
   "disease",
+  "signature_format",
   "n_genes"
 )
 
 .phenosigdb_resource_metadata_columns <- c(
   .phenosigdb_public_metadata_columns,
+  "source_resource",
+  "collection",
   "source",
   "signature_format",
   "resource_key",
@@ -51,13 +53,13 @@
     ),
     prefix = c(
       "CELLTYPIST.",
-      "CELLMARKER.",
+      "CELL.CellMarker.",
       "MSIGDB.C7.",
       "MSIGDB.C8.",
       "PID.",
       "BIOCARTA.",
-      "REACTOME.PATHWAYS.",
-      "WIKIPATHWAYS."
+      "PATHWAY.Reactome.",
+      "PATHWAY.WikiPathways."
     ),
     signature_format = c("continuous", "binary", "binary", "binary", "binary", "binary", "binary", "binary"),
     install_kind = c("archive", "archive", "gmt", "gmt", "gmt", "gmt", "zip_gmt", "wikipathways_current_gmt"),
@@ -77,8 +79,8 @@
       "https://data.wikipathways.org/current/gmt/"
     ),
     version = c(NA, NA, "2025.1.Hs", "2025.1.Hs", "2025.1.Hs", "2025.1.Hs", "current", "current"),
-    public_domain = c(NA, NA, "MSIGDB", "MSIGDB", "PID", "BIOCARTA", "REACTOME", "WIKIPATHWAYS"),
-    public_source = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "Pathways", "WikiPathways"),
+    public_domain = c(NA, NA, "MSIGDB", "MSIGDB", "PATHWAY", "PATHWAY", "PATHWAY", "PATHWAY"),
+    public_source = c(NA, NA, "C7", "C8", "PID", "BioCarta", "Reactome", "WikiPathways"),
     public_collection = c(NA, NA, "C7", "C8", "PID", "BIOCARTA", "ReactomePathways", "WikiPathways"),
     public_source_resource = c(NA, NA, "msigdb", "msigdb", "pid", "biocarta", "reactome", "wikipathways"),
     public_context = c(NA, NA, "immunology", "cell_type", "pathway", "pathway", "pathway", "pathway"),
@@ -405,6 +407,17 @@
   paste(normalize_token(domain, upper = TRUE), normalize_token(source_key), normalize_token(signature_name), sep = ".")
 }
 
+.phenosigdb_clean_wikipathways_name <- function(x) {
+  text <- trimws(as.character(x))
+  text <- sub("^%?WikiPathways_[0-9]+%?", "", text, ignore.case = TRUE)
+  text <- gsub("(^|_)WP[0-9]+(?=_|$)", "", text, perl = TRUE, ignore.case = TRUE)
+  text <- sub("_Homo_sapiens$", "", text, ignore.case = TRUE)
+  text <- sub("^(WikiPathways|HomoSapiens)[_.-]+", "", text, ignore.case = TRUE)
+  text <- gsub("_+", "_", text)
+  text <- gsub("^_|_$", "", text)
+  ifelse(nzchar(text), text, "unknown")
+}
+
 .phenosigdb_resolve_wikipathways_source <- function(source) {
   if (!grepl("^https?://", source) || grepl("\\.gmt$", source, ignore.case = TRUE)) {
     return(list(url = source, version = NA_character_))
@@ -509,10 +522,13 @@
   metadata_rows <- list()
   binary_rows <- list()
   for (entry in entries) {
-    signature_id <- .phenosigdb_signature_id(info$public_domain[[1]], info$public_source[[1]], entry$signature_name)
+    clean_name <- if (identical(resource, "wikipathways")) {
+      .phenosigdb_clean_wikipathways_name(entry$signature_name)
+    } else entry$signature_name
+    signature_id <- .phenosigdb_signature_id(info$public_domain[[1]], info$public_source[[1]], clean_name)
     metadata_rows[[length(metadata_rows) + 1L]] <- data.frame(
       signature_id = signature_id,
-      signature_name = entry$signature_name,
+      signature_name = clean_name,
       domain = info$public_domain[[1]],
       source = info$public_source[[1]],
       collection = info$public_collection[[1]],
@@ -521,9 +537,9 @@
       signature_format = "binary",
       species = info$public_species[[1]],
       species_original = info$public_species[[1]],
-      cell_family = info$public_cell_family[[1]],
+      cell_family = ifelse(is.na(info$public_cell_family[[1]]) || identical(info$public_cell_family[[1]], "unknown"), "", info$public_cell_family[[1]]),
       context = info$public_context[[1]],
-      disease = "unknown",
+      disease = "",
       n_genes = length(entry$genes),
       source_version = resolved_version,
       source_label = entry$description,
@@ -749,7 +765,7 @@
   meta_columns <- meta_columns[meta_columns %in% names(db)]
   meta <- db[!duplicated(db$signature_id), meta_columns, drop = FALSE]
   meta$domain <- sub("\\..*$", "", meta$signature_id)
-  meta$source <- sub("^[^.]+\\.([^.]+)\\..*$", "\\1", meta$signature_id)
+  meta$source <- paste0("curated.", sub("^[^.]+\\.([^.]+)\\..*$", "\\1", meta$signature_id))
   meta$collection <- "curated"
   meta$source_resource <- "core"
   if ("weight" %in% names(db)) {
@@ -909,14 +925,10 @@ phenosigdb_resources <- function(action = "list", resource = NULL, force = FALSE
   .phenosigdb_install_resource(resource, force = force, verbose = verbose, action = "update")
 }
 
-list_signatures <- function(query = NULL, reference_species = "human", fixed = FALSE,
-                            domain = NULL, species = NULL, cell_family = NULL,
-                            context = NULL, disease = NULL, source_resource = NULL,
-                            collection = NULL, logic = c("and", "or"), ignore_case = TRUE) {
-  reference_species <- match.arg(reference_species, c("human", "mouse", "original"))
-  logic <- match.arg(logic)
-  core <- .phenosigdb_core_metadata(reference_species = reference_species)
-  optional <- .phenosigdb_optional_metadata(reference_species = reference_species)
+list_signatures <- function(query = NULL, columns = NULL, min_genes = NULL,
+                            signature_format = NULL, ...) {
+  core <- .phenosigdb_core_metadata(reference_species = "original")
+  optional <- .phenosigdb_optional_metadata(reference_species = "original")
   if (nrow(optional)) {
     optional <- optional[, .phenosigdb_public_metadata_columns, drop = FALSE]
     meta <- rbind(core, optional)
@@ -925,16 +937,30 @@ list_signatures <- function(query = NULL, reference_species = "human", fixed = F
   }
   meta <- meta[order(meta$signature_id), .phenosigdb_public_metadata_columns, drop = FALSE]
   if (!is.null(query)) {
-    search_columns <- setdiff(names(meta), "n_genes")
-    meta <- meta[.phenosigdb_search_mask(meta, query = query, columns = search_columns, fixed = fixed,
-      domain = domain, species = species, cell_family = cell_family, context = context,
-      disease = disease, source_resource = source_resource, collection = collection,
-      logic = logic, ignore_case = ignore_case), , drop = FALSE]
-  } else if (any(!vapply(list(domain, species, cell_family, context, disease, source_resource, collection), is.null, logical(1)))) {
-    meta <- meta[.phenosigdb_search_mask(meta, query = NULL, columns = character(), fixed = fixed,
-      domain = domain, species = species, cell_family = cell_family, context = context,
-      disease = disease, source_resource = source_resource, collection = collection,
-      logic = logic, ignore_case = ignore_case), , drop = FALSE]
+    query <- trimws(as.character(query)[1])
+    if (!nzchar(query)) stop("query must not be empty", call. = FALSE)
+    search_columns <- if (is.null(columns)) {
+      c("signature_id", "signature_name", "source", "domain", "cell_family", "context", "disease")
+    } else as.character(columns)
+    invalid <- setdiff(search_columns, names(meta))
+    if (length(invalid)) stop("Unknown search column(s): ", paste(invalid, collapse = ", "), call. = FALSE)
+    regex_options <- list(...)
+    regex_options <- c(list(ignore.case = TRUE, perl = TRUE), regex_options)
+    mask <- rep(FALSE, nrow(meta))
+    for (column in search_columns) {
+      values <- as.character(meta[[column]])
+      values[is.na(values)] <- ""
+      mask <- mask | do.call(grepl, c(list(pattern = query, x = values), regex_options))
+    }
+    meta <- meta[mask, , drop = FALSE]
+  }
+  if (!is.null(min_genes)) {
+    if (length(min_genes) != 1L || is.na(min_genes) || min_genes < 0) stop("min_genes must be non-negative", call. = FALSE)
+    meta <- meta[meta$n_genes >= as.integer(min_genes), , drop = FALSE]
+  }
+  if (!is.null(signature_format)) {
+    signature_format <- match.arg(signature_format, c("binary", "continuous"))
+    meta <- meta[meta$signature_format == signature_format, , drop = FALSE]
   }
   rownames(meta) <- NULL
   meta

@@ -238,7 +238,7 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
     cm_meta = pd.DataFrame(
         [
             {
-                "signature_id": "CELLMARKER.mouse_Brain_Normal.Neuron",
+                "signature_id": "CELL.CellMarker.mouse_Brain_Normal_Neuron",
                 "signature_name": "Neuron",
                 "domain": "CELLMARKER",
                 "source": "mouse__Brain__Normal",
@@ -267,38 +267,38 @@ def test_list_signatures_and_get_signatures_include_optional_resources(monkeypat
     )
     cm_values = pd.DataFrame(
         [
-            {"signature_id": "CELLMARKER.mouse_Brain_Normal.Neuron", "gene": "Snap25"},
-            {"signature_id": "CELLMARKER.mouse_Brain_Normal.Neuron", "gene": "Rbfox3"},
+            {"signature_id": "CELL.CellMarker.mouse_Brain_Normal_Neuron", "gene": "Snap25"},
+            {"signature_id": "CELL.CellMarker.mouse_Brain_Normal_Neuron", "gene": "Rbfox3"},
         ]
     )
     monkeypatch.setenv("PHENOSIGDB_RESOURCE_URL_CELLTYPIST", str(_resource_archive(tmp_path / "ct", "celltypist", ct_meta, ct_values)))
     monkeypatch.setenv("PHENOSIGDB_RESOURCE_URL_CELLMARKER", str(_resource_archive(tmp_path / "cm", "cellmarker", cm_meta, cm_values)))
 
-    human_meta = list_signatures(reference_species="human")
-    assert set(human_meta["source_resource"]) == {"core"}
+    human_meta = list_signatures()
+    assert "curated.Elyada19" in set(human_meta["source"])
 
     with pytest.raises(ValueError, match="Mixed species"):
         get_signatures(
             [
                 "CAF.Elyada19.iCAF",
                 "CELLTYPIST.Immune_All_Low.CD8_T_cell",
-                "CELLMARKER.mouse_Brain_Normal.Neuron",
+                "CELL.CellMarker.mouse_Brain_Normal_Neuron",
             ],
             reference_species="original",
         )
     assert (cache_dir / "celltypist" / "continuous.parquet").exists()
     assert (cache_dir / "cellmarker" / "binary.parquet").exists()
 
-    human_meta = list_signatures(reference_species="human")
-    assert set(human_meta["source_resource"]) == {"core", "celltypist"}
+    human_meta = list_signatures()
+    assert "Immune_All_Low" in " ".join(human_meta["source"].astype(str).tolist())
     assert list(human_meta.columns) == [
-        "signature_id", "signature_name", "source_resource", "domain", "collection",
-        "species", "cell_family", "context", "disease", "n_genes",
+        "signature_id", "signature_name", "source", "domain", "species",
+        "cell_family", "context", "disease", "signature_format", "n_genes",
     ]
 
-    mouse_meta = list_signatures(reference_species="mouse")
-    assert "CELLMARKER.mouse_Brain_Normal.Neuron" in set(mouse_meta["signature_id"])
-    assert "CELLTYPIST.Immune_All_Low.CD8_T_cell" not in set(mouse_meta["signature_id"])
+    mouse_meta = list_signatures()
+    assert "CELL.CellMarker.mouse_Brain_Normal_Neuron" in set(mouse_meta["signature_id"])
+    assert "CELLTYPIST.Immune_All_Low.CD8_T_cell" in set(mouse_meta["signature_id"])
 
 
 def test_direct_gmt_resources_install_and_auto_install(monkeypatch, tmp_path: Path, capsys):
@@ -329,14 +329,13 @@ def test_direct_gmt_resources_install_and_auto_install(monkeypatch, tmp_path: Pa
     assert installed["resource"] == "msigdb_c7immune"
     assert (cache_dir / "msigdb_c7immune" / "binary.parquet").exists()
 
-    meta = list_signatures(reference_species="human")
+    meta = list_signatures()
     row = meta.loc[meta["signature_id"] == "MSIGDB.C7.CD8_EFFECTOR_UP"].iloc[0]
-    assert row["source_resource"] == "msigdb"
-    assert row["collection"] == "C7"
+    assert row["source"] == "C7"
     assert row["context"] == "immunology"
 
-    sigs = get_signatures(["REACTOME.Pathways.REACTOME_INTERFERON_SIGNALING", "WIKIPATHWAYS.HomoSapiens.WP_FIBROBLAST_SIGNALING"])
-    assert sigs["REACTOME.Pathways.REACTOME_INTERFERON_SIGNALING"] == ["IRF9", "STAT1"]
-    assert sigs["WIKIPATHWAYS.HomoSapiens.WP_FIBROBLAST_SIGNALING"] == ["COL1A1", "COL3A1"]
+    sigs = get_signatures(["PATHWAY.Reactome.REACTOME_INTERFERON_SIGNALING", "PATHWAY.WikiPathways.WP_FIBROBLAST_SIGNALING"])
+    assert sigs["PATHWAY.Reactome.REACTOME_INTERFERON_SIGNALING"] == ["IRF9", "STAT1"]
+    assert sigs["PATHWAY.WikiPathways.WP_FIBROBLAST_SIGNALING"] == ["COL1A1", "COL3A1"]
     assert (cache_dir / "reactome" / "binary.parquet").exists()
     assert (cache_dir / "wikipathways" / "binary.parquet").exists()

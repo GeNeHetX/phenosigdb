@@ -114,7 +114,7 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     ),
     "cellmarker": RuntimeResourceSpec(
         resource="cellmarker",
-        signature_id_prefixes=("CELLMARKER.",),
+        signature_id_prefixes=("CELL.CellMarker.",),
         signature_format="binary",
         expected_files=("metadata.parquet", "binary.parquet", "resource.json"),
         archive_name="phenosigdb-resource-cellmarker.tar.gz",
@@ -163,7 +163,7 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
         install_kind="gmt",
         download_url="https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2025.1.Hs/c2.cp.pid.v2025.1.Hs.symbols.gmt",
         version="2025.1.Hs",
-        public_domain="PID",
+        public_domain="PATHWAY",
         public_source="PID",
         public_collection="PID",
         public_source_resource="pid",
@@ -181,8 +181,8 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
         install_kind="gmt",
         download_url="https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2025.1.Hs/c2.cp.biocarta.v2025.1.Hs.symbols.gmt",
         version="2025.1.Hs",
-        public_domain="BIOCARTA",
-        public_source="BIOCARTA",
+        public_domain="PATHWAY",
+        public_source="BioCarta",
         public_collection="BIOCARTA",
         public_source_resource="biocarta",
         public_context="pathway",
@@ -193,14 +193,14 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     ),
     "reactome": RuntimeResourceSpec(
         resource="reactome",
-        signature_id_prefixes=("REACTOME.PATHWAYS.",),
+        signature_id_prefixes=("PATHWAY.Reactome.",),
         signature_format="binary",
         expected_files=("metadata.parquet", "binary.parquet", "resource.json"),
         install_kind="zip_gmt",
         download_url="https://reactome.org/download/current/ReactomePathways.gmt.zip",
         version="current",
-        public_domain="REACTOME",
-        public_source="Pathways",
+        public_domain="PATHWAY",
+        public_source="Reactome",
         public_collection="ReactomePathways",
         public_source_resource="reactome",
         public_context="pathway",
@@ -210,14 +210,14 @@ RESOURCE_SPECS: dict[str, RuntimeResourceSpec] = {
     ),
     "wikipathways": RuntimeResourceSpec(
         resource="wikipathways",
-        signature_id_prefixes=("WIKIPATHWAYS.",),
+        signature_id_prefixes=("PATHWAY.WikiPathways.",),
         signature_format="binary",
         expected_files=("metadata.parquet", "binary.parquet", "resource.json"),
         install_kind="wikipathways_current_gmt",
         download_url="https://data.wikipathways.org/current/gmt/",
         version="current",
-        public_domain="WIKIPATHWAYS",
-        public_source="HomoSapiens",
+        public_domain="PATHWAY",
+        public_source="WikiPathways",
         public_collection="WikiPathways",
         public_source_resource="wikipathways",
         public_context="pathway",
@@ -271,6 +271,16 @@ def normalize_resource_signature_id(domain: str, source_key: Any, signature_name
             _normalize_token(signature_name),
         ]
     )
+
+
+def _clean_wikipathways_name(value: Any) -> str:
+    text = str(value).strip()
+    text = re.sub(r"^%?WikiPathways_\d+%?", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"(?:^|_)WP\d+(?=_|$)", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"(?:^|_)Homo_sapiens$", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"^(?:WikiPathways|HomoSapiens)[_.-]+", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"_+", "_", text).strip("_")
+    return text or "unknown"
 
 
 def cache_root() -> Path:
@@ -585,28 +595,28 @@ def _build_direct_binary_resource(
     binary_rows: list[dict[str, str]] = []
     domain = spec.public_domain or spec.resource.upper()
     source_key = spec.public_source or spec.resource
-    collection = spec.public_collection or source_key
     source_resource = spec.public_source_resource or spec.resource
     species = spec.public_species or "unknown"
-    cell_family = spec.public_cell_family or "unknown"
+    cell_family = spec.public_cell_family or ""
 
     for set_name, description, genes in entries:
-        signature_id = normalize_resource_signature_id(domain, source_key, set_name)
+        clean_name = _clean_wikipathways_name(set_name) if spec.resource == "wikipathways" else set_name
+        signature_id = normalize_resource_signature_id(domain, source_key, clean_name)
         metadata_rows.append(
             {
                 "signature_id": signature_id,
-                "signature_name": set_name,
+                "signature_name": clean_name,
                 "domain": domain,
                 "source": source_key,
-                "collection": collection,
+                "collection": spec.public_collection or source_key,
                 "source_resource": source_resource,
                 "resource_key": spec.resource,
                 "signature_format": "binary",
                 "species": species,
                 "species_original": species,
                 "cell_family": cell_family,
-                "context": spec.public_context or "unknown",
-                "disease": "unknown",
+                "context": spec.public_context or "",
+                "disease": "",
                 "n_genes": len(genes),
                 "source_version": source_version or spec.version,
                 "source_label": description,
