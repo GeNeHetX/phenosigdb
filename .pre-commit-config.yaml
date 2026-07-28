@@ -1,0 +1,36 @@
+# Pre-commit hooks for PhenoSigDB
+# Install: pip install pre-commit
+# Enable: pre-commit install
+
+repos:
+  # Validate curated sources before commit
+  - repo: local
+    hooks:
+      - id: validate-curation
+        name: Validate curated sources
+        entry: python tools/phenosigdb-validate-source --changed
+        language: system
+        pass_filenames: false
+        stages: [commit]
+
+  # YAML validation
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-yaml
+        name: Check YAML syntax
+        exclude: ^data/  # Skip generated data files
+
+  # Trailing whitespace
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^(data/|\.parquet|\.tsv|\.csv)$
+
+  # End of file newline
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: end-of-file-fixer
+        exclude: ^(data/|\.parquet|\.tsv|\.csv)$

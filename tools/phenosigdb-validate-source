@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+"""
+Validate PhenoSigDB curated sources.
+
+Usage:
+    python tools/phenosigdb-validate-source [SOURCE_KEY | --changed | --all]
+
+Examples:
+    python tools/phenosigdb-validate-source CAF.Xing21
+    python tools/phenosigdb-validate-source --changed
+    python tools/phenosigdb-validate-source --all
+"""
+
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tools"))
+
+from phenosigdb_maintainer.validate_source import main
+
+if __name__ == "__main__":
+    main()
