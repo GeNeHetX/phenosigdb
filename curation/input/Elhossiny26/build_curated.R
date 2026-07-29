@@ -20,10 +20,11 @@ source(file.path(repo_dir, "curation", "tools", "phenosigdb_maintainer", "parser
 raw_path <- file.path(source_dir, "cd-25-2001_supp_table_11_suppst11 (1).xlsx")
 dat <- read_excel(raw_path, sheet = 1, skip = 1)
 
-# Define metadata
+# Define metadata (ALL REQUIRED)
+# Get DOI and PubMed ID from the paper itself
 source_author <- "Elhossiny.etal"
-source_doi <- "10.1016/j.celrep.2025.114110"  # Example DOI, update if known
-source_pmid <- ""  # Add if available
+source_doi <- ""  # Add DOI from paper
+source_pmid <- ""  # Add PubMed ID if available
 species <- "human"
 cell_family <- "fibroblast"
 context <- "cancer"

@@ -18,11 +18,8 @@ python curation/tools/phenosigdb-scaffold Smith24 --domain FIBROBLAST
 # 3. Edit the parser
 #    curation/input/Smith24/build_curated.R
 
-# 4. Run it
-Rscript curation/input/Smith24/build_curated.R
-
-# 5. Validate
-python curation/tools/phenosigdb-validate-source FIBROBLAST.Smith24
+# 4. Test (runs parser + validates output)
+python curation/tools/tests/test_parser_cli.py Smith24
 ```
 
 ---
@@ -97,13 +94,14 @@ raw_path <- file.path(source_dir, "your_file.xlsx")
 dat <- read_excel(raw_path)  # or read.delim() for TSV
 
 # TODO: Define metadata (ALL REQUIRED)
+# Get DOI and PubMed ID from the paper's abstract page or PDF
 source_author <- "Smith.etal"
-source_doi <- "10.1038/xxxx"
-source_pmid <- "12345678"  # optional
-species <- "human"           # human, mouse, mixed, unknown
+source_doi <- ""        # Required: DOI from paper
+source_pmid <- ""       # Optional: PubMed ID
+species <- "human"      # human, mouse, mixed, unknown
 cell_family <- "fibroblast" # see allowed values below
-context <- "cancer"          # see allowed values below
-disease <- "PDAC"           # or "unknown"
+context <- "cancer"     # see allowed values below
+disease <- "PDAC"      # or "unknown"
 tags <- c("CAF", "pancreatic")  # optional
 
 # TODO: Parse signatures
@@ -171,8 +169,14 @@ See existing parsers in `curation/input/` for examples:
 
 ## Validation
 
-Pre-commit hook runs automatically. To validate manually:
+Pre-commit hook runs automatically.
 
+To test a single parser (runs parser + validates output):
+```bash
+python curation/tools/tests/test_parser_cli.py Smith24
+```
+
+To validate existing curated output without re-running parsers:
 ```bash
 # Single source
 python curation/tools/phenosigdb-validate-source FIBROBLAST.Smith24

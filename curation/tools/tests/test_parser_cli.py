@@ -49,6 +49,17 @@ def find_parser_path(source_key: str, repo_root: Path) -> tuple[Path, Path]:
     if parser_path.exists():
         return parser_path, input_dir
     
+    # Try stripping domain prefix (FIBROBLAST.Elhossiny26 -> Elhossiny26)
+    # Common domains: CELL, FIBROBLAST, CANCER, PATHWAY, CAF
+    domain_prefixes = ['CELL', 'FIBROBLAST', 'CANCER', 'PATHWAY', 'CAF', 'CELL_ATLAS', 'CANCER_ATLAS']
+    for domain in domain_prefixes:
+        if source_key.startswith(domain + "."):
+            source_only = source_key[len(domain) + 1:]
+            input_dir = repo_root / "curation" / "input" / source_only
+            parser_path = input_dir / "build_curated.R"
+            if parser_path.exists():
+                return parser_path, input_dir
+    
     # Try listing all input dirs and find match
     input_root = repo_root / "curation" / "input"
     if input_root.exists():
