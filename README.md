@@ -108,7 +108,7 @@ phenosigdb_resources("update")
 
 Organized by domain. Bundled signatures are the core curated database.
 
-- **FIBROBLAST**: Multiple PDAC CAF subtypes (iCAF, myoCAF, etc.) from Elyada19, Dominguez20, Kieffer20, etc.
+- **FIBROBLAST**: Multiple CAF subtypes (iCAF, myoCAF, etc.) from Elyada19, Dominguez20, Kieffer20, etc.
 - **PDAC**: Tumor, stromal, immune signatures from Bailey16, Moffitt15, Collisson11, etc.
 - **IMMUNE**: Immune cell type signatures from Becht16, Chu23, Mulder21, Rodrigues18, Wu24
 - **Other**: GASTRIC, HCC, ORGANOID, CCA, etc.

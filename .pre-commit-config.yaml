@@ -8,7 +8,7 @@ repos:
     hooks:
       - id: validate-curation
         name: Validate curated sources
-        entry: python tools/phenosigdb-validate-source --changed
+        entry: python curation/tools/phenosigdb-validate-source --changed
         language: system
         pass_filenames: false
         stages: [commit]
