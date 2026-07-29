@@ -52,6 +52,8 @@ PARSER_SOURCES = [
     ("CELL.PanglaoDB2020", "CELL"),
     ("Fibroblast.Patrick24", "FIBROBLAST"),
     ("CancerRNASigModels", "CANCER"),
+    # Elhossiny26
+    ("Elhossiny26", "FIBROBLAST"),
 ]
 
 
@@ -167,10 +169,17 @@ def test_parser_source_yaml_format(source_key: str, expected_domain: str):
     """Test that source.yaml has correct format and fields."""
     repo_root = Path(__file__).resolve().parents[3]
     
-    # Find the actual curated dir (handles SourceKey normalization)
+    # Find the actual curated dir (handles SourceKey normalization and DOMAIN prefix)
     _, _, curated_dir = find_parser_info(source_key, repo_root)
-    if curated_dir is None:
-        pytest.skip(f"Curated dir not found for: {source_key}")
+    if curated_dir is None or not curated_dir.exists():
+        # Try to find curated dir by searching
+        curated_root = repo_root / "curation" / "curated"
+        for entry in curated_root.iterdir():
+            if entry.is_dir() and source_key in entry.name:
+                curated_dir = entry
+                break
+        else:
+            pytest.skip(f"Curated dir not found for: {source_key}")
     
     yaml_path = curated_dir / "source.yaml"
     
@@ -199,10 +208,17 @@ def test_parser_members_tsv_format(source_key: str, expected_domain: str):
     """Test that members.tsv has correct format."""
     repo_root = Path(__file__).resolve().parents[3]
     
-    # Find the actual curated dir (handles SourceKey normalization)
+    # Find the actual curated dir (handles SourceKey normalization and DOMAIN prefix)
     _, _, curated_dir = find_parser_info(source_key, repo_root)
-    if curated_dir is None:
-        pytest.skip(f"Curated dir not found for: {source_key}")
+    if curated_dir is None or not curated_dir.exists():
+        # Try to find curated dir by searching
+        curated_root = repo_root / "curation" / "curated"
+        for entry in curated_root.iterdir():
+            if entry.is_dir() and source_key in entry.name:
+                curated_dir = entry
+                break
+        else:
+            pytest.skip(f"Curated dir not found for: {source_key}")
     
     tsv_path = curated_dir / "members.tsv"
     

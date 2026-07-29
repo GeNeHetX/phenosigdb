@@ -86,13 +86,24 @@ def run_parser(source_key: str) -> tuple[bool, str, Path]:
     output = result.stdout + result.stderr
     
     # Infer curated_dir from parser output or convention
-    # Try to extract from parser's out_dir
+    # The curated dir uses DOMAIN.SourceKey format, so we need to find it
+    # Try common domains as prefix
     curated_dir = repo_root / "curation" / "curated" / source_key
     if not curated_dir.exists():
         # Try normalized version
         import re
         normalized = re.sub(r'\.(\d{2,})', r'\1', source_key)
         curated_dir = repo_root / "curation" / "curated" / normalized
+    
+    # If still not found, search for directories containing source_key
+    if not curated_dir.exists():
+        curated_root = repo_root / "curation" / "curated"
+        for entry in curated_root.iterdir():
+            if entry.is_dir() and source_key in entry.name:
+                curated_dir = entry
+                break
+        else:
+            curated_dir = None
     
     return success, output, curated_dir
 
@@ -141,7 +152,9 @@ def main():
     
     # Validate
     print(f"[3/3] Validating output...")
-    errors = validate_source(source_key)
+    # Use the actual curated_dir name (which includes DOMAIN prefix)
+    curated_source_key = curated_dir.name
+    errors = validate_source(curated_source_key)
     
     if errors:
         print(f"❌ Validation FAILED")

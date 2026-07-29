@@ -28,10 +28,8 @@ R_PARSER_TEMPLATE = '''# PhenoSigDB Parser for {{DOMAIN}}.{{SOURCE_KEY}}
 library(readxl)
 
 # --- Auto-generated from scaffold ---
-script_path <- normalizePath(commandArgs(trailingOnly = FALSE)[grep("--file=", commandArgs(trailingOnly = FALSE))])
-if (length(script_path) == 0) {
-  script_path <- normalizePath(sys.frame[[1]])  # Fallback for Rscript without --file
-}
+args <- commandArgs(trailingOnly = FALSE)
+script_path <- normalizePath(sub("--file=", "", args[grep("--file=", args)]))
 source_dir <- dirname(script_path)
 repo_dir <- normalizePath(file.path(source_dir, "..", "..", ".."))
 out_dir <- file.path(repo_dir, "curation", "curated", "{{DOMAIN}}.{{SOURCE_KEY}}")
@@ -90,8 +88,8 @@ R_PARSER_TEMPLATE_MINIMAL = '''# PhenoSigDB Parser for {domain}.{source_key}
 
 library(readxl)
 
-script_path <- normalizePath(commandArgs(trailingOnly = FALSE)[grep("--file=", commandArgs(trailingOnly = FALSE))])
-if (length(script_path) == 0) script_path <- normalizePath(sys.frame[[1]])
+args <- commandArgs(trailingOnly = FALSE)
+script_path <- normalizePath(sub("--file=", "", args[grep("--file=", args)]))
 source_dir <- dirname(script_path)
 repo_dir <- normalizePath(file.path(source_dir, "..", "..", ".."))
 out_dir <- file.path(repo_dir, "curation", "curated", "{domain}.{source_key}")
