@@ -181,9 +181,9 @@ def main():
     print(f"✅ ALL CHECKS PASSED for {source_key}")
     print()
     print("Next steps:")
-    print(f"  - Review output: {curated_dir}")
-    print(f"  - Add to test suite: edit curation/tools/tests/test_parsers.py")
-    print(f"  - Commit changes")
+    print(f"  - Inspect output: {curated_dir}")
+    print(f"    (check signature names, gene counts, gene lists)")
+    print(f"  - Release: python curation/tools/phenosigdb-release <version>")
 
 
 if __name__ == "__main__":
